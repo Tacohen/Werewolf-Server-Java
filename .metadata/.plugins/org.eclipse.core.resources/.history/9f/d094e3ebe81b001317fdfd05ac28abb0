@@ -1,0 +1,5 @@
+package edu.wm.something.domain;
+
+public class Kill {
+
+}

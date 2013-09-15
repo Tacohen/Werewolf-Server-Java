@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+/home/timothy/Documents/workspace-sts-3.3.0/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+4075708488.index
+3416788558.index
+3882278912.index
+2322558286.index
+3097819163.index

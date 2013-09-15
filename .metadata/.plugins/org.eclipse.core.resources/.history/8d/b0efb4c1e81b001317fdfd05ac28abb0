@@ -1,0 +1,10 @@
+package edu.wm.something.domain;
+
+import java.util.Date;
+
+public class Game {
+	
+	private Date createdDate;
+	private int dayNightFreq;
+
+}

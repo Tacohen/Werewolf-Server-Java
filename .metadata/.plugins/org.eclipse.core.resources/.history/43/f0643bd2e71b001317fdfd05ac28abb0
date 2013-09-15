@@ -1,0 +1,10 @@
+package edu.wm.something.domain;
+
+public class User {
+	
+	private String firstName;
+	private String lastName;
+	private String imageURL;
+	private String hashedPassword;
+
+}

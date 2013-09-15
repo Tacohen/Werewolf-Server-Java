@@ -1,0 +1,15 @@
+package werewolf.dao;
+
+import java.util.List;
+
+import edu.wm.something.domain.Player;
+
+public interface PlayerDAO {
+	
+	List<Player> getAllAlive();
+	
+	void setDead(Player p);
+	
+	
+
+}
