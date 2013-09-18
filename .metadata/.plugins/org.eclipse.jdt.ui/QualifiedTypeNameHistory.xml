@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.User"/>
 <fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
+<fullyQualifiedTypeName name="werewolf.dao.IPlayerDAO"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 </qualifiedTypeNameHistroy>

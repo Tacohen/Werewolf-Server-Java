@@ -4,19 +4,26 @@ public class Player {
 	
 	private String id;
 	private boolean isDead;
-	private float lat;
-	private float lng;
+	private double lat;
+	private double lng;
 	private String userID;
+	private boolean isWereWolf;
 	
-	public Player(String id, boolean isDead, float lat, float lng, String userID) {
+	public Player(String id, boolean isDead, double lat, double lng, String userID, Boolean isWerewolf) {
 		super();
 		this.id = id;
 		this.isDead = isDead;
 		this.lat = lat;
 		this.lng = lng;
 		this.userID = userID;
+		this.isWereWolf = isWerewolf;
+		
 	}
 	
+	public Player() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public String getId() {
 		return id;
 	}
@@ -29,16 +36,16 @@ public class Player {
 	public void setDead(boolean isDead) {
 		this.isDead = isDead;
 	}
-	public float getLat() {
+	public double getLat() {
 		return lat;
 	}
-	public void setLat(float lat) {
+	public void setLat(double lat) {
 		this.lat = lat;
 	}
-	public float getLng() {
+	public double getLng() {
 		return lng;
 	}
-	public void setLng(float lng) {
+	public void setLng(double lng) {
 		this.lng = lng;
 	}
 	public String getUserID() {
@@ -46,6 +53,11 @@ public class Player {
 	}
 	public void setUserID(String userID) {
 		this.userID = userID;
+	}
+
+	public void setWerewolf(boolean b) {
+		this.isWereWolf = b;
+		
 	}
 
 }

@@ -6,7 +6,12 @@ public class NoPlayerFoundException extends Exception{
 	private String userID;
 	
 	public NoPlayerFoundException(String userId){
+		super();
 		this.userID = userId;
+	}
+	
+	public String getUserID(){
+		return userID;
 	}
 	
 }
