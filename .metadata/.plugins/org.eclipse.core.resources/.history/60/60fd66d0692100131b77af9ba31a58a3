@@ -1,0 +1,6 @@
+package edu.wm.service;
+
+public class GameService {
+
+		@autowired private playerDAO;
+}

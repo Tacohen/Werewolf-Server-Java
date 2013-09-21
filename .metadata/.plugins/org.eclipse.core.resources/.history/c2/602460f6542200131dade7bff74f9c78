@@ -1,0 +1,21 @@
+package edu.wm.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import werewolf.dao.IPlayerDAO;
+
+import edu.wm.something.domain.Player;
+
+public class GameService {
+
+		@Autowired private IPlayerDAO playerDao;
+		@Autowired private IPlayerDAO userDao;
+		
+		public List<Player> getAllAlive() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+		
+}

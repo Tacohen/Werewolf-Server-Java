@@ -8,14 +8,40 @@
 		<docs>http://blogs.law.harvard.edu/tech/rss</docs>
 		<language>en-us</language>
 		<managingEditor>sts@springsource.com</managingEditor>
-		<pubDate>Fri, 06 Sep 2013 10:38:33 +0100</pubDate>
-		<lastBuildDate>Fri, 06 Sep 2013 10:38:33 +0100</lastBuildDate>
+		<pubDate>Thu, 12 Sep 2013 10:38:33 +0100</pubDate>
+		<lastBuildDate>Thu, 12 Sep 2013 10:38:33 +0100</lastBuildDate>
 		<atom:link href="http://dist.springsource.com.s3.amazonaws.com/release/STS/doc/updates.xml" rel="self" type="application/rss+xml"/>
+
+		<item>
+            <title>Thanks for installing STS/GGTS 3.4.0.M1</title>
+            <link>http://spring.io/tools</link>
+			<description><![CDATA[<form><p><a href="http://gopivotal.com">Pivotal</a> has released the first milestone build of the upcoming next version of
+				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
+			<p>Please review the following documents:</p>
+			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy-M1.html">3.4.0.M1 New &amp; Noteworthy</a></li><p></p></form>]]></description>
+            <pubDate>Thu, 12 Sep 2013 12:13:33 +0100</pubDate>
+			<category>version=[3.4.0.201309102304-CI-B129,3.5.0)</category>
+<!--           <category>severity=important</category> -->
+	        <guid isPermaLink="false">thanks-for-installing-sts-340m1</guid>
+		</item>
+
+		<item>
+			<title>STS/GGTS 3.4.0.M1 has been released</title>
+			<link>http://spring.io/tools</link>
+			<description><![CDATA[<form><p><a href="http://gopivotal.com">Pivotal</a> has released the first milestone build of the upcoming next version of
+				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
+			<p>Please review the following documents:</p>
+			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy-M1.html">3.4.0.M1 New &amp; Noteworthy</a></li><p></p></form>]]></description>
+            <pubDate>Thu, 12 Sep 2013 12:13:33 +0100</pubDate>
+			<category>version=[0,3.4.0.201309102304-CI-B129)</category>
+			<category>severity=important</category>
+			<guid isPermaLink="false">sts-340m1-released</guid>
+		</item>
 
 		<item>
 			<title>Cloud Foundry Integration for Eclipse 1.5.1 released</title>
 			<link>http://www.cloudfoundry.com</link>
-            <description><![CDATA[<form><p><a href="http://www.gopivotal.com">Pivotal</a> has released version 1.5.1 of the Cloud Foundry Integration for Eclipse, which supports pushing applications to Pivotal CF organizations and spaces. New features include buildpack support, easier server instance creation to other organizations and spaces, and domain selection when setting application URLs.</p>
+            <description><![CDATA[<form><p><a href="http://gopivotal.com">Pivotal</a> has released version 1.5.1 of the Cloud Foundry Integration for Eclipse, which supports pushing applications to Pivotal CF organizations and spaces. New features include buildpack support, easier server instance creation to other organizations and spaces, and domain selection when setting application URLs.</p>
 								<li bindent="3"><a href="http://docs.cloudfoundry.com/docs/using/managing-apps/ide/sts.html">Getting Started with Eclipse/STS and Cloud Foundry</a></li>
 								<li bindent="3"><a href="https://github.com/SpringSource/eclipse-integration-cloudfoundry">Cloud Foundry Integration for Eclipse at GitHub</a></li>
 								<li bindent="3"><a href="http://docs.cloudfoundry.com/">Get Started with Cloud Foundry</a></li>
@@ -27,38 +53,10 @@
 			<guid isPermaLink="false">cloud-foundry-integration-151-released</guid>
 		</item>
 
-
-<!--
-		<item>
-            <title>Thanks for installing STS/GGTS 3.3.0.M2</title>
-            <link>http://www.springsource.org/sts</link>
-			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released the first milestone build of the upcoming next version of
-				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
-			<p>Please review the following documents:</p>
-			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy-M2.html">3.3.0.M2 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-            <pubDate>Wed, 05 Jun 2013 12:13:33 +0100</pubDate>
-			<category>version=[3.3.0.201306020927-M2,3.4.0)</category>
-           <category>severity=important</category>
-	        <guid isPermaLink="false">thanks-for-installing-sts-330m2</guid>
-		</item>
-
-		<item>
-			<title>STS/GGTS 3.3.0.M2 has been released</title>
-			<link>http://www.springsource.org/sts</link>
-			<description><![CDATA[<form><p><a href="http://springsource.com">SpringSource</a> has released the first milestone build of the upcoming next version of
-				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
-			<p>Please review the following documents:</p>
-			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy-M2.html">3.3.0.M2 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-        	<pubDate>Wed, 05 Jun 2013 12:12:33 +0100</pubDate>
-			<category>version=[0,3.3.0.201306020927-M2)</category>
-			<category>severity=important</category>
-			<guid isPermaLink="false">sts-330m2-released</guid>
-		</item>
--->
 		<item>
             <title>Thanks for installing STS/GGTS 3.3.0</title>
-            <link>http://www.springsource.org/sts</link>
-            <description><![CDATA[<form><p><a href="http://www.springsource.org">SpringSource</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p>
+            <link>http://spring.io/tools</link>
+            <description><![CDATA[<form><p><a href="http://gopivotal.com">Pivotal</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p>
 		<p>Please review the following documents:</p>
 		<li bindent="3"><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">3.3.0 New &amp; Noteworthy</a></li><p></p></form>]]></description>
             <pubDate>Tue, 09 Jul 2013 12:13:33 +0100</pubDate>
@@ -69,13 +67,13 @@
 		
 		<item>
 			<title>STS/GGTS 3.3.0 has been released</title>
-			<link>http://www.springsource.org/sts</link>
-			<description><![CDATA[<form><p><a href="http://www.springsource.org">SpringSource</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p><p>It is recommend to update as soon as possible. Users of STS 2.9.x or previous versions should start with a fresh install of STS/GGTS 3.3.0.</p>
+			<link>http://spring.io/tools</link>
+			<description><![CDATA[<form><p><a href="http://gopivotal.com">Pivotal</a> has released an update to Spring Tool Suite (STS) and Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy, and Grails powered enterprise application.</p><p>It is recommend to update as soon as possible. Users of STS 2.9.x or previous versions should start with a fresh install of STS/GGTS 3.3.0.</p>
 		<p>Please review the following documents:</p>
 		<li bindent="3"><a href="http://static.springsource.org/sts/nan/v330/NewAndNoteworthy.html">3.3.0 New &amp; Noteworthy</a></li><p></p></form>]]></description>
         	<pubDate>Tue, 09 Jul 2013 12:12:33 +0100</pubDate>
 			<category>version=[0,3.3.0.201307040632-RELEASE)</category>
-			<category>severity=important</category>
+<!--			<category>severity=important</category> -->
 			<guid isPermaLink="false">sts-330-released</guid>
 		</item>
 
