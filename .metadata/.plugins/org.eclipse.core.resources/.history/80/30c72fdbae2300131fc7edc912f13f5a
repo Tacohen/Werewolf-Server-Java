@@ -10,13 +10,9 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.support.SessionStatus;
 
 //import werewolf.dao.IPlayerDAO;
 
@@ -28,8 +24,6 @@ import edu.wm.something.domain.Player;
  */
 @Controller
 public class HomeController {
-	
-	int id;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -61,35 +55,10 @@ public class HomeController {
 		
 	}
 	
-	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.POST)
-	
-	public String processSubmit(
-            @ModelAttribute("pet") String pet,
-            BindingResult result, SessionStatus status) {
-		
-			return ("okay");
-	}
-	/**
-	}
-	public  @ResponseBody List<Player> killPlayerRequest(@PathVariable String ownerId)
+	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
+	public  @ResponseBody List<Player> getPlayerById()
 	{
-		List<Player> players = gameService.killPlayerRequest(ownerId);
-		return players;
-		
-	}*/
-	
-	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)
-	public  @ResponseBody List<Player> getPlayerById(@PathVariable String ownerId)
-	{
-		List<Player> players = gameService.getPlayerByID(ownerId);
-		return players;
-		
-	}
-	
-	@RequestMapping(value = "/players/alive/{ownerId}/pic", method = RequestMethod.GET)
-	public  @ResponseBody List<Player> getPicById(@PathVariable String ownerId)
-	{
-		List<Player> players = gameService.getPicByID(ownerId);
+		List<Player> players = gameService.getPlayerByID();
 		return players;
 		
 	}

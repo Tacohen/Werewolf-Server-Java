@@ -1,8 +1,0 @@
-package edu.wm.something.domain;
-
-public class Kill {
-	
-	private String killerID;
-	private String victimID;
-
-}

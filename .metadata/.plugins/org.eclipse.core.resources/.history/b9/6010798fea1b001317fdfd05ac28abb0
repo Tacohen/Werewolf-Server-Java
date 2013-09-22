@@ -1,5 +1,0 @@
-package werewolf.dao;
-
-public interface IUserDAO {
-
-}

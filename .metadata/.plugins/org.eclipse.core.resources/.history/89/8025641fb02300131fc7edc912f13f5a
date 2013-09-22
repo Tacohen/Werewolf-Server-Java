@@ -64,10 +64,5 @@ public class GameService {
 			// TODO Auto-generated method stub
 			return null;
 		}
-
-		public List<Player> killPlayerRequest(String ownerId) {
-			// TODO Auto-generated method stub
-			return null;
-		}
 		
 }
