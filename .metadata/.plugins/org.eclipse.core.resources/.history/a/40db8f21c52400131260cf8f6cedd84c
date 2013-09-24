@@ -1,0 +1,23 @@
+package werewolf.dao;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import com.mongodb.Mongo;
+import com.mongodb.MongoClient;
+
+import edu.wm.something.domain.User;
+
+public class MongoUserDAO extends AbstractMongoConfiguration implements IUserDAO  {
+
+	@Override
+	public void createUser(User user) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	 
+	}
+
+}

@@ -67,22 +67,22 @@ public class HomeController {
 	
 	
 	@RequestMapping(value="/players/alive/kill/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-    public @ResponseBody Boolean requestPlayerDeath(@PathVariable int ownerId) {
-		Boolean wasKilled = gameService.killPlayerRequest(ownerId);
+    public @ResponseBody List<Player> requestPlayerDeath(@PathVariable int ownerId) {
+		List<Player> players = gameService.killPlayerRequest(ownerId);
 		System.out.println("killPlayer");
-		return wasKilled;
+		return players;
     }
-	@RequestMapping(value="/players/alive/info/{ownerId}", method=RequestMethod.GET)
+	@RequestMapping(value="/players/alive/info/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
 	public @ResponseBody List<Player> requestPlayerInfo(@PathVariable int ownerId) {
-		List<Player> playerInfo = gameService.playerInfoRequest(ownerId);
+		List<Player> players = gameService.playerInfoRequest(ownerId);
 		System.out.println("playerInfo");
-		return playerInfo;
+		return players;
     }
 	@RequestMapping(value="/players/alive/vote/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-	public @ResponseBody Boolean voteOnPlayer(@PathVariable int ownerId) {
-		Boolean voteSuccessful = gameService.voteOnPlayer(ownerId);
+	public @ResponseBody List<Player> voteOnPlayer(@PathVariable int ownerId) {
+		List<Player> players = gameService.voteOnPlayer(ownerId);
 		System.out.println("voteOnPlayer");
-		return voteSuccessful;
+		return players;
     }
 	
 	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)

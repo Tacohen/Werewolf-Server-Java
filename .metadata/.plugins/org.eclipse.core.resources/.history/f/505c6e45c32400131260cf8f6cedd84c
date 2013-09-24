@@ -70,12 +70,17 @@ public class GameService {
 			return null;
 		}
 
+		public List<Player> requestKill() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
 		public List<Player> playerInfoRequest(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
-		public Boolean voteOnPlayer(int ownerId) {
+		public List<Player> voteOnPlayer(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
