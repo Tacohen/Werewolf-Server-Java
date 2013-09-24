@@ -55,17 +55,32 @@ public class GameService {
 			return null;
 		}
 
-		public List<Player> getPlayerByID(String ownerId) {
+		public List<Player> getPlayerByID(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
-		public List<Player> getPicByID(String ownerId) {
+		public List<Player> getPicByID(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
 
-		public List<Player> killPlayerRequest(String ownerId) {
+		public List<Player> killPlayerRequest(int ownerId) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public List<Player> requestKill() {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public List<Player> playerInfoRequest(int ownerId) {
+			// TODO Auto-generated method stub
+			return null;
+		}
+
+		public List<Player> voteOnPlayer(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}

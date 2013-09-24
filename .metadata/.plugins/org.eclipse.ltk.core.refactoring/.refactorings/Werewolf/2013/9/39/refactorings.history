@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Werewolf/src/main/webapp/WEB-INF/views/players/alive/303&apos; to &apos;303.jsp&apos;" description="Rename resource &apos;303&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/WEB-INF/views/players/alive/303" name="303.jsp" stamp="1379989896127" updateReferences="true"/>
+</session>

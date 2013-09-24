@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="80" version="2.0">
+<workbench progressCount="83" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024">
@@ -31,7 +31,7 @@
 <coolItem id="com.springsource.sts.config.ui.editors.SpringConfigEditor" itemType="typeToolBarContribution" x="257" y="30"/>
 <coolItem id="org.eclipse.m2e.editor.MavenPomEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="UserSeparator" itemType="typeSeparator"/>
@@ -64,7 +64,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HomeController.java" partName="HomeController.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/HomeController.java" title="HomeController.java" tooltip="Werewolf/src/main/java/edu/wm/something/HomeController.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/HomeController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1376" selectionTopPixel="243"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2318" selectionTopPixel="592"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Player.java" partName="Player.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/Player.java" title="Player.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Player.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
@@ -109,13 +109,13 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameService.java" partName="GameService.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/GameService.java" title="GameService.java" tooltip="Werewolf/src/main/java/edu/wm/service/GameService.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1182" selectionTopPixel="108"/>
+<editorState selectionHorizontalPixel="0" selectionLength="6" selectionOffset="1520" selectionTopPixel="651"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoUserDAO.java" partName="MongoUserDAO.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java" title="MongoUserDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="106" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractApplicationContext.class" partName="AbstractApplicationContext.class" path="/tmp/AbstractApplicationContext.class3493823460983320276.class" title="AbstractApplicationContext.class" tooltip="org.springframework.context.support.AbstractApplicationContext" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractApplicationContext.class" partName="AbstractApplicationContext.class" path="/tmp/AbstractApplicationContext.class6896751739015941548.class" title="AbstractApplicationContext.class" tooltip="org.springframework.context.support.AbstractApplicationContext" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Werewolf/\/home\/timothy\/.m2\/repository\/org\/springframework\/spring-context\/3.1.1.RELEASE\/spring-context-3.1.1.RELEASE.jar&lt;org.springframework.context.support(AbstractApplicationContext.class"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="968"/>
 </editor>
@@ -197,6 +197,9 @@
 </sorter>
 <filteredTreeFindHistory/>
 </viewState>
+</view>
+<view id="org.eclipse.egit.ui.RepositoriesView" partName="Git Repositories">
+<viewState CommonNavigator.LINKING_ENABLED="0"/>
 </view>
 <view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
 <viewState/>
@@ -288,6 +291,7 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.AllMarkersView"/>
 <view id="org.eclipse.ui.views.ProgressView"/>
+<view id="org.eclipse.egit.ui.RepositoriesView"/>
 <view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.springframework.ide.eclipse.ui.navigator.springExplorer"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
@@ -350,10 +354,11 @@
 </folder>
 </info>
 <info folder="true" part="bottom" ratio="0.8" ratioLeft="512" ratioRight="128" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.egit.ui.RepositoriesView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.AllMarkersView" label="Markers"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
+<page content="org.eclipse.egit.ui.RepositoriesView" label="Git Repositories"/>
 <page content="org.eclipse.ui.views.ProblemView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.TaskList" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="LabelNotFound"/>
@@ -367,6 +372,7 @@
 <part id="0"/>
 <part id="1"/>
 <part id="2"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
@@ -385,12 +391,8 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/something/HomeController.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.m2e.editor.MavenPomEditor" path="/Werewolf/pom.xml"/>
 <editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Werewolf/\/home\/timothy\/.m2\/repository\/org\/springframework\/spring-context\/3.1.1.RELEASE\/spring-context-3.1.1.RELEASE.jar&lt;org.springframework.context.support(AbstractApplicationContext.class"/>
 <editor factoryID="org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
@@ -404,112 +406,133 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
+<editor factoryID="org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=Werewolf/\/home\/timothy\/.m2\/repository\/org\/springframework\/spring-context\/3.1.1.RELEASE\/spring-context-3.1.1.RELEASE.jar&lt;org.springframework.context.support(AbstractApplicationContext.class"/>
+<editor factoryID="org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
 </editors>
-<item historyLabel="servlet-context.xml" index="2"/>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="servlet-context.xml" index="2"/>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="MongoPlayerDAO.java" index="0">
-<position info="not_deleted" x="156" y="0"/>
-</item>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="MongoPlayerDAO.java" index="0">
-<position info="not_deleted" x="156" y="0"/>
-</item>
-<item historyLabel="root-context.xml" index="1">
-<position info="not_deleted" x="544" y="29"/>
-</item>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="HomeController.java" index="3">
-<position info="not_deleted" x="1464" y="0"/>
-</item>
-<item historyLabel="GameService.java" index="4">
-<position info="not_deleted" x="245" y="0"/>
-</item>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="GameService.java" index="4">
-<position info="not_deleted" x="260" y="9"/>
-</item>
-<item historyLabel="HomeController.java" index="3">
-<position info="not_deleted" x="1584" y="0"/>
-</item>
-<item historyLabel="GameService.java" index="4">
-<position info="not_deleted" x="300" y="0"/>
-</item>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="MongoUserDAO.java" index="5">
-<position info="not_deleted" x="106" y="0"/>
-</item>
-<item historyLabel="Werewolf/pom.xml" index="6"/>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="HomeController.java" index="3">
+<item historyLabel="Werewolf/pom.xml" index="2"/>
+<item historyLabel="HomeController.java" index="1">
 <position info="not_deleted" x="524" y="0"/>
 </item>
-<item historyLabel="Werewolf/pom.xml" index="6"/>
-<item historyLabel="HomeController.java" index="3">
-<position info="not_deleted" x="524" y="0"/>
-</item>
-<item historyLabel="root-context.xml" index="1"/>
-<item historyLabel="HomeController.java" index="3">
+<item historyLabel="root-context.xml" index="0"/>
+<item historyLabel="HomeController.java" index="1">
 <position info="not_deleted" x="1518" y="0"/>
 </item>
-<item historyLabel="Werewolf/pom.xml" index="6"/>
-<item historyLabel="HomeController.java" index="3">
+<item historyLabel="Werewolf/pom.xml" index="2"/>
+<item historyLabel="HomeController.java" index="1">
 <position info="not_deleted" x="1518" y="0"/>
 </item>
-<item historyLabel="Werewolf/pom.xml" index="6"/>
-<item historyLabel="AbstractApplicationContext.class" index="7">
+<item historyLabel="Werewolf/pom.xml" index="2"/>
+<item historyLabel="AbstractApplicationContext.class" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="Dashboard" index="8"/>
-<item historyLabel="HomeController.java" index="9">
+<item historyLabel="Dashboard" index="4"/>
+<item historyLabel="HomeController.java" index="5">
 <position info="not_deleted" x="1518" y="0"/>
 </item>
-<item historyLabel="GameService.java" index="10">
+<item historyLabel="GameService.java" index="6">
 <position info="not_deleted" x="392" y="0"/>
 </item>
-<item historyLabel="root-context.xml" index="11"/>
-<item historyLabel="HomeController.java" index="12">
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="HomeController.java" index="8">
 <position info="not_deleted" x="1518" y="0"/>
 </item>
-<item historyLabel="Dashboard" index="13"/>
-<item historyLabel="root-context.xml" index="11"/>
-<item historyLabel="HomeController.java" index="12">
+<item historyLabel="Dashboard" index="9"/>
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="HomeController.java" index="8">
 <position info="not_deleted" x="1518" y="0"/>
 </item>
-<item historyLabel="HomeController.java" index="12">
+<item historyLabel="HomeController.java" index="8">
 <position info="not_deleted" x="1096" y="0"/>
 </item>
-<item historyLabel="HomeController.java" index="12">
+<item historyLabel="HomeController.java" index="8">
 <position info="not_deleted" x="1418" y="0"/>
 </item>
-<item historyLabel="root-context.xml" index="11"/>
-<item historyLabel="Werewolf/pom.xml" index="14"/>
-<item historyLabel="root-context.xml" index="11"/>
-<item historyLabel="HomeController.java" index="15">
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="Werewolf/pom.xml" index="10"/>
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="HomeController.java" index="11">
 <position info="not_deleted" x="1418" y="0"/>
 </item>
-<item historyLabel="root-context.xml" index="11"/>
-<item historyLabel="Player.java" index="16">
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="Player.java" index="12">
 <position info="not_deleted" x="1097" y="0"/>
 </item>
-<item historyLabel="HomeController.java" index="15">
+<item historyLabel="HomeController.java" index="11">
 <position info="not_deleted" x="1418" y="0"/>
 </item>
-<item historyLabel="HomeController.java" index="15">
+<item historyLabel="HomeController.java" index="11">
 <position info="not_deleted" x="1602" y="0"/>
 </item>
-<item historyLabel="GameService.java" index="17">
+<item historyLabel="GameService.java" index="13">
 <position info="not_deleted" x="415" y="0"/>
 </item>
-<item historyLabel="GameService.java" index="17">
+<item historyLabel="GameService.java" index="13">
 <position info="not_deleted" x="571" y="0"/>
 </item>
-<item historyLabel="Player.java" index="18">
+<item historyLabel="Player.java" index="14">
 <position info="not_deleted" x="1097" y="0"/>
 </item>
-<item active="true" historyLabel="HomeController.java" index="15">
+<item historyLabel="HomeController.java" index="11">
 <position info="not_deleted" x="1602" y="0"/>
+</item>
+<item historyLabel="Dashboard" index="15"/>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="1776" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1522" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1285" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="2415" y="6"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1214" y="6"/>
+</item>
+<item historyLabel="AbstractApplicationContext.class" index="17">
+<position info="not_deleted" x="3" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1176" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="2986" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1293" y="6"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1176" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="2488" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="16">
+<position info="not_deleted" x="1403" y="6"/>
+</item>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="2488" y="0"/>
+</item>
+<item historyLabel="Dashboard" index="18"/>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="3088" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="2219" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="19">
+<position info="not_deleted" x="1403" y="6"/>
+</item>
+<item historyLabel="GameService.java" index="19">
+<position info="not_deleted" x="1520" y="6"/>
+</item>
+<item active="true" historyLabel="HomeController.java" index="11">
+<position info="not_deleted" x="2271" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
