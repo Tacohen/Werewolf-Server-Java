@@ -2,6 +2,7 @@ package edu.wm.something;
 
 import java.io.IOException;
 import java.io.Writer;
+import java.security.Principal;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
@@ -25,6 +26,7 @@ import org.springframework.web.bind.support.SessionStatus;
 //import werewolf.dao.IPlayerDAO;
 
 import edu.wm.service.GameService;
+import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
 /**
@@ -64,11 +66,18 @@ public class HomeController {
 		return players;
 		
 	}
+	@RequestMapping(value="/location",method=RequestMethod.POST)
+	public @ResponseBody JsonResponse setlocation(@ModelAttribute GPSLocation location,Principal principal)
+	{
+		JsonResponse jsonresponse = new JsonResponse();
+		gameService.updatePosition(principal.getName(),location);
+		return jsonresponse;
+	}
 	
 	
 	@RequestMapping(value="/players/alive/kill/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-    public @ResponseBody Boolean requestPlayerDeath(@PathVariable int ownerId) {
-		Boolean wasKilled = gameService.killPlayerRequest(ownerId);
+    public @ResponseBody Boolean requestPlayerDeath(@ModelAttribute int killerId, int victimId) {
+		Boolean wasKilled = gameService.killPlayerRequest(killerId, victimId);
 		System.out.println("killPlayer");
 		return wasKilled;
     }
@@ -79,8 +88,8 @@ public class HomeController {
 		return playerInfo;
     }
 	@RequestMapping(value="/players/alive/vote/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-	public @ResponseBody Boolean voteOnPlayer(@PathVariable int ownerId) {
-		Boolean voteSuccessful = gameService.voteOnPlayer(ownerId);
+	public @ResponseBody Boolean voteOnPlayer(@ModelAttribute int voterId, int voteId) {
+		Boolean voteSuccessful = gameService.voteOnPlayer(voterId, voteId);
 		System.out.println("voteOnPlayer");
 		return voteSuccessful;
     }

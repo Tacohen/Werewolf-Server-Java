@@ -8,12 +8,18 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import werewolf.dao.IPlayerDAO;
 
+import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
 public class GameService {
 
 		@Autowired private IPlayerDAO playerDao;
 		@Autowired private IPlayerDAO userDao;
+		
+		public void updatePosition(String userName, GPSLocation location){
+			
+			
+		}
 		
 		public List<Player> getAllAlive() {
 			// TODO Auto-generated method stub
@@ -65,7 +71,7 @@ public class GameService {
 			return null;
 		}
 
-		public Boolean killPlayerRequest(int ownerId) {
+		public Boolean killPlayerRequest(int killerId, int victimId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -75,9 +81,13 @@ public class GameService {
 			return null;
 		}
 
-		public Boolean voteOnPlayer(int ownerId) {
+		public Boolean voteOnPlayer(int voterId, int voteId) {
 			// TODO Auto-generated method stub
 			return null;
+		}
+		
+		public Boolean canKill(Player Killer, Player Victim){
+			return true;
 		}
 		
 }

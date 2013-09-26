@@ -3,3 +3,5 @@ INDEX VERSION 1.126
 /Werewolf/src/main/java
 /home/timothy/werewolf-java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/3853458275.index
 /Werewolf/src/main/java
+/home/timothy/werewolf-java/.metadata/.plugins/org.eclipse.jst.jsp.core/jspsearch/1759562880.index
+/Werewolf/src/main/java

@@ -4,6 +4,7 @@ import java.util.List;
 
 import Exceptions.NoPlayerFoundException;
 
+import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
 public interface IPlayerDAO {
@@ -15,4 +16,6 @@ public interface IPlayerDAO {
 	void insertPlayer(Player p);//insert player into database
 	
 	public Player getPlayerById(String id) throws NoPlayerFoundException;
+
+	void setPlayerLocation(String id, GPSLocation loc);
 }

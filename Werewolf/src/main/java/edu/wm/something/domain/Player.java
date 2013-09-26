@@ -8,6 +8,7 @@ public class Player {
 	private double lng;
 	private String userID;
 	private boolean isWereWolf;
+	private String votedAgainst;
 	
 	public Player(String id, boolean isDead, double lat, double lng, String userID, Boolean isWerewolf) {
 		super();

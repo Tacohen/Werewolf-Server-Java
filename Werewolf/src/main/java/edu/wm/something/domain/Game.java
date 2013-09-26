@@ -6,6 +6,9 @@ public class Game {
 	
 	private Date createdDate;
 	private int dayNightFreq;
+	private Boolean isRunning;
+	private long timer;//starts at 0, increases by 1 every minute?
+	
 	public Date getCreatedDate() {
 		return createdDate;
 	}
@@ -23,6 +26,7 @@ public class Game {
 		this.createdDate = createdDate;
 		this.dayNightFreq = dayNightFreq;
 	}
+	
 	
 
 }
