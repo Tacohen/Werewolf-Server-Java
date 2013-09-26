@@ -32,7 +32,7 @@
 				the Spring Tool Suite (STS) and the Groovy/Grails Tool Suite (GGTS), the best Eclipse-powered development environment for building Spring, Groovy and Grails powered enterprise application.</p>
 			<p>Please review the following documents:</p>
 			<li bindent="3"><a href="http://static.springsource.org/sts/nan/v340/NewAndNoteworthy-M1.html">3.4.0.M1 New &amp; Noteworthy</a></li><p></p></form>]]></description>
-            <pubDate>Thu, 12 Sep 2013 12:13:33 +0100</pubDate>
+            <pubDate>Thu, 12 Sep 2013 12:12:33 +0100</pubDate>
 			<category>version=[0,3.4.0.201309102304-CI-B129)</category>
 			<category>severity=important</category>
 			<guid isPermaLink="false">sts-340m1-released</guid>

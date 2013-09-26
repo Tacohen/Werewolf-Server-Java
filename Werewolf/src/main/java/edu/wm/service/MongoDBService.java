@@ -20,7 +20,7 @@ public class MongoDBService {
 
 		mongoOps = new MongoTemplate(new Mongo(), "database");
 	    //String id, boolean isDead, double lat, double lng, String userID, Boolean isWerewolf
-	    mongoOps.insert(new Player("Joe", false, 30, 40, "JOE!", true));
+	    mongoOps.insert(new Player("Joe", false, 30, 40, 123456789, true));
 
 	    //log.info(mongoOps.findOne(new Query(where("name").is("Joe")), Player.class));
 

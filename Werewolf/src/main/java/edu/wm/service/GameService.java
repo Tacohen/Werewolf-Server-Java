@@ -3,8 +3,10 @@ package edu.wm.service;
 import java.util.List;
 
 import java.util.Map;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 
 import werewolf.dao.IPlayerDAO;
 
@@ -15,6 +17,9 @@ public class GameService {
 
 		@Autowired private IPlayerDAO playerDao;
 		@Autowired private IPlayerDAO userDao;
+		
+		static Logger logger = Logger.getLogger(GameService.class.getName());
+
 		
 		public void updatePosition(String userName, GPSLocation location){
 			
@@ -88,6 +93,12 @@ public class GameService {
 		
 		public Boolean canKill(Player Killer, Player Victim){
 			return true;
+		}
+		
+		@Scheduled(fixedDelay=5000)
+		public void checkGameOperation(){
+			//check if all players have checked in recently
+			logger.info("checking game operation...");
 		}
 		
 }

@@ -8,6 +8,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+import javax.servlet.http.HttpServletResponse;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,6 +38,7 @@ import edu.wm.something.domain.Player;
 public class HomeController {
 	
 	int id;
+	JsonResponse jsonResponse = new JsonResponse();;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -69,18 +72,17 @@ public class HomeController {
 	@RequestMapping(value="/location",method=RequestMethod.POST)
 	public @ResponseBody JsonResponse setlocation(@ModelAttribute GPSLocation location,Principal principal)
 	{
-		JsonResponse jsonresponse = new JsonResponse();
 		gameService.updatePosition(principal.getName(),location);
-		return jsonresponse;
+		return jsonResponse;
 	}
 	
+	@RequestMapping(value="/players/alive/kill/{ownerId}" , method=RequestMethod.POST)
+	public @ResponseBody JsonResponse requestPlayerDeath(@ModelAttribute Player killer, Player victim) 
+	{
+		Boolean wasKilled = gameService.killPlayerRequest(killer.getUserID(), victim.getUserID());
+		return jsonResponse;
+	}
 	
-	@RequestMapping(value="/players/alive/kill/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-    public @ResponseBody Boolean requestPlayerDeath(@ModelAttribute int killerId, int victimId) {
-		Boolean wasKilled = gameService.killPlayerRequest(killerId, victimId);
-		System.out.println("killPlayer");
-		return wasKilled;
-    }
 	@RequestMapping(value="/players/alive/info/{ownerId}", method=RequestMethod.GET)
 	public @ResponseBody List<Player> requestPlayerInfo(@PathVariable int ownerId) {
 		List<Player> playerInfo = gameService.playerInfoRequest(ownerId);
@@ -88,10 +90,12 @@ public class HomeController {
 		return playerInfo;
     }
 	@RequestMapping(value="/players/alive/vote/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-	public @ResponseBody Boolean voteOnPlayer(@ModelAttribute int voterId, int voteId) {
+	public @ResponseBody JsonResponse voteOnPlayer(@ModelAttribute int voterId, int voteId) {
 		Boolean voteSuccessful = gameService.voteOnPlayer(voterId, voteId);
 		System.out.println("voteOnPlayer");
-		return voteSuccessful;
+		HttpServletResponse response;
+		//response.
+		return jsonResponse;
     }
 	
 	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)

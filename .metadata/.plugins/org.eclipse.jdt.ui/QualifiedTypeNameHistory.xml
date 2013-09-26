@@ -5,7 +5,6 @@
 <fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
 <fullyQualifiedTypeName name="edu.wm.service.GameService"/>
 <fullyQualifiedTypeName name="werewolf.dao.IPlayerDAO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
@@ -23,8 +22,14 @@
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.config.AbstractMongoConfiguration"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
-<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoOperations"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="com.mongodb.DBCollection"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.GPSLocation"/>
+<fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
+<fullyQualifiedTypeName name="org.apache.commons.logging.LogFactory"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoOperations"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoTemplate"/>
+<fullyQualifiedTypeName name="com.mongodb.Mongo"/>
+<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Query"/>
 </qualifiedTypeNameHistroy>

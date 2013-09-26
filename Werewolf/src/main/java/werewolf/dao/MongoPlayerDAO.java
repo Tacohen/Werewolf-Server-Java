@@ -24,7 +24,7 @@ public class MongoPlayerDAO implements IPlayerDAO{
 		List<Player> players = new ArrayList<>();
 		
 		Player bob = new Player();
-		bob.setUserID("1");
+		bob.setUserID(1);
 		bob.setWerewolf(true);
 		bob.setLat(40.3f);
 		bob.setLng(40.3f);

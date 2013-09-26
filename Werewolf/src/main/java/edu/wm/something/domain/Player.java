@@ -6,17 +6,17 @@ public class Player {
 	private boolean isDead;
 	private double lat;
 	private double lng;
-	private String userID;
+	private int userID;
 	private boolean isWereWolf;
 	private String votedAgainst;
 	
-	public Player(String id, boolean isDead, double lat, double lng, String userID, Boolean isWerewolf) {
+	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf) {
 		super();
 		this.id = id;
 		this.isDead = isDead;
 		this.lat = lat;
 		this.lng = lng;
-		this.userID = userID;
+		this.userID = userId;
 		this.isWereWolf = isWerewolf;
 		
 	}
@@ -49,10 +49,10 @@ public class Player {
 	public void setLng(double lng) {
 		this.lng = lng;
 	}
-	public String getUserID() {
+	public int getUserID() {
 		return userID;
 	}
-	public void setUserID(String userID) {
+	public void setUserID(int userID) {
 		this.userID = userID;
 	}
 
