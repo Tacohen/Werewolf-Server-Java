@@ -21,9 +21,12 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.support.SessionStatus;
+
+import Exceptions.NoPlayerFoundException;
 
 //import werewolf.dao.IPlayerDAO;
 
@@ -76,32 +79,26 @@ public class HomeController {
 		return jsonResponse;
 	}
 	
-	@RequestMapping(value="/players/alive/kill/{ownerId}" , method=RequestMethod.POST)
-	public @ResponseBody JsonResponse requestPlayerDeath(@ModelAttribute Player killer, Player victim) 
+
+	@RequestMapping(value = "/players/kill/{killerId}/{victimId}", method=RequestMethod.POST)
+	public @ResponseBody boolean killPlayerById(@PathVariable("killerId") int killerId, @PathVariable("victimId") int victimId) throws NoPlayerFoundException
 	{
-		Boolean wasKilled = gameService.killPlayerRequest(killer.getUserID(), victim.getUserID());
-		return jsonResponse;
+		logger.info("killerId is:"+killerId);
+		logger.info("victimId is:"+victimId);
+		return false;
 	}
+
 	
-	@RequestMapping(value="/players/alive/info/{ownerId}", method=RequestMethod.GET)
-	public @ResponseBody List<Player> requestPlayerInfo(@PathVariable int ownerId) {
-		List<Player> playerInfo = gameService.playerInfoRequest(ownerId);
-		System.out.println("playerInfo");
-		return playerInfo;
-    }
-	@RequestMapping(value="/players/alive/vote/{ownerId}", method=RequestMethod.POST, headers = "Accept=application/json")
-	public @ResponseBody JsonResponse voteOnPlayer(@ModelAttribute int voterId, int voteId) {
-		Boolean voteSuccessful = gameService.voteOnPlayer(voterId, voteId);
-		System.out.println("voteOnPlayer");
-		HttpServletResponse response;
-		//response.
-		return jsonResponse;
+	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.POST)	
+	public @ResponseBody void voteOnPlayer(@PathVariable("voterId") int voterId, @PathVariable("voteId") int voteId) {
+		logger.info("voter is:"+voterId);
+		logger.info("voted on:"+voteId);
     }
 	
 	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)
-	public  @ResponseBody List<Player> getPlayerById(@PathVariable int ownerId)
+	public  @ResponseBody Player getPlayerById(@PathVariable int ownerId)
 	{
-		List<Player> players = gameService.getPlayerByID(ownerId);
+		Player players = gameService.getPlayerByID(ownerId);
 		return players;
 	}
 	

@@ -66,7 +66,7 @@ public class GameService {
 			return null;
 		}
 
-		public List<Player> getPlayerByID(int ownerId) {
+		public Player getPlayerByID(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
@@ -94,11 +94,11 @@ public class GameService {
 		public Boolean canKill(Player Killer, Player Victim){
 			return true;
 		}
-		
+		/**
 		@Scheduled(fixedDelay=5000)
 		public void checkGameOperation(){
 			//check if all players have checked in recently
 			logger.info("checking game operation...");
-		}
+		}*/
 		
 }
