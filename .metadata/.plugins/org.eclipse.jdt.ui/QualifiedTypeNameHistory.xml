@@ -21,14 +21,12 @@
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-<fullyQualifiedTypeName name="com.mongodb.DBCollection"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.GPSLocation"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.LogFactory"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoOperations"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoTemplate"/>
 <fullyQualifiedTypeName name="com.mongodb.Mongo"/>
-<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Query"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
@@ -36,4 +34,14 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
 <fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
+<fullyQualifiedTypeName name="com.mongodb.DB"/>
+<fullyQualifiedTypeName name="com.mongodb.BasicDBObject"/>
+<fullyQualifiedTypeName name="com.mongodb.DBCollection"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.mongodb.DBCursor"/>
+<fullyQualifiedTypeName name="java.net.UnknownHostException"/>
+<fullyQualifiedTypeName name="com.mongodb.MongoException"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Query"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Criteria"/>
+<fullyQualifiedTypeName name="edu.wm.service.PlayerService"/>
 </qualifiedTypeNameHistroy>

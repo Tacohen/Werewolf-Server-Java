@@ -17,6 +17,7 @@ public class GameService {
 
 		@Autowired private IPlayerDAO playerDao;
 		@Autowired private IPlayerDAO userDao;
+		@Autowired private PlayerService playerService;
 		
 		static Logger logger = Logger.getLogger(GameService.class.getName());
 
@@ -56,29 +57,28 @@ public class GameService {
 		}
 		
 		public List<Player> Kill(Player p) {
-			// TODO Auto-generated method stub
-			return null;
+			playerService.deletePlayer(p);
+			return PlayerService.getAllPlayers();
 		}
 		
 		public List<Player> CreatePlayer(Player p) {
-			// TODO Auto-generated method stub
-			return null;
+			playerService.addplayer(p);
+			return PlayerService.getAllPlayers();
 		}
 
 		public Player getPlayerByID(int ownerId) {
-			// TODO Auto-generated method stub
-			return null;
+			return playerService.getPlayerFromDbByID(ownerId);
 		}
 
 		public List<Player> getPicByID(int ownerId) {
 			// TODO Auto-generated method stub
 			return null;
 		}
-
+		/**
 		public Boolean killPlayerRequest(int killerId, int victimId) {
 			// TODO Auto-generated method stub
 			return null;
-		}
+		}*/
 
 		public List<Player> playerInfoRequest(int ownerId) {
 			// TODO Auto-generated method stub

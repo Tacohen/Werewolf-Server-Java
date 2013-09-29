@@ -8,6 +8,22 @@ public class Player {
 	private double lng;
 	private int userID;
 	private boolean isWereWolf;
+	public boolean isWereWolf() {
+		return isWereWolf;
+	}
+
+	public void setWereWolf(boolean isWereWolf) {
+		this.isWereWolf = isWereWolf;
+	}
+
+	public String getVotedAgainst() {
+		return votedAgainst;
+	}
+
+	public void setVotedAgainst(String votedAgainst) {
+		this.votedAgainst = votedAgainst;
+	}
+
 	private String votedAgainst;
 	
 	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf) {
