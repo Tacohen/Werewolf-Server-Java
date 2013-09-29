@@ -27,8 +27,7 @@ public class GameService {
 		}
 		
 		public List<Player> getAllAlive() {
-			// TODO Auto-generated method stub
-			return null;
+			return PlayerService.getAllPlayers();
 		}
 		
 		public List<Player> getAllWerewolves() {

@@ -31,6 +31,7 @@ import Exceptions.NoPlayerFoundException;
 //import werewolf.dao.IPlayerDAO;
 
 import edu.wm.service.GameService;
+import edu.wm.service.PlayerService;
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
@@ -47,6 +48,7 @@ public class HomeController {
 	
 	//@Autowired private IPlayerDAO playerDao;
 	@Autowired private GameService gameService;
+	//@Autowired private PlayerService playerService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -85,7 +87,15 @@ public class HomeController {
 	{
 		logger.info("killerId is:"+killerId);
 		logger.info("victimId is:"+victimId);
-		return false;
+		Player killer = gameService.getPlayerByID(killerId);
+		Player victim = gameService.getPlayerByID(victimId);
+		if (gameService.canKill(killer,victim)){
+			gameService.Kill(victim);
+			return true;
+		}
+		else{
+			return false;
+		}
 	}
 
 	
@@ -93,6 +103,7 @@ public class HomeController {
 	public @ResponseBody void voteOnPlayer(@PathVariable("voterId") int voterId, @PathVariable("voteId") int voteId) {
 		logger.info("voter is:"+voterId);
 		logger.info("voted on:"+voteId);
+		gameService.voteOnPlayer(voterId, voteId);
     }
 	
 	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)

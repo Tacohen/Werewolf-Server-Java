@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="edu.wm.something.domain.User"/>
-<fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="edu.wm.service.GameService"/>
@@ -30,9 +28,12 @@
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoOperations"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoTemplate"/>
 <fullyQualifiedTypeName name="com.mongodb.Mongo"/>
-<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Query"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="edu.wm.something.domain.User"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
+<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
 </qualifiedTypeNameHistroy>
