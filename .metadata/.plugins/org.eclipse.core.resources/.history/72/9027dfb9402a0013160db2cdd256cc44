@@ -5,11 +5,11 @@ public class GPSLocation {
 	long lat;
 	long lng;
 
-	public long getLat() {
+	public Object getLat() {
 		return this.lat;
 	}
 
-	public long getLng() {
+	public Object getLng() {
 		return this.lng;
 	}
 	

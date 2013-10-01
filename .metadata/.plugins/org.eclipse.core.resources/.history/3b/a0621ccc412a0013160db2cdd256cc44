@@ -90,9 +90,4 @@ public class Player {
 		this.isAdmin = false;
 	}
 
-	public boolean isNear(Player victim) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
 }

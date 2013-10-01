@@ -1,6 +1,5 @@
 package edu.wm.service;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import java.util.Map;
@@ -24,8 +23,8 @@ public class GameService {
 
 		
 		public void updatePosition(Player player, GPSLocation location){
-			player.setLat(location.getLat());
-			player.setLng(location.getLng());
+			
+			
 		}
 		
 		public List<Player> getAllAlive() {
@@ -33,16 +32,8 @@ public class GameService {
 		}
 		
 		public List<Player> getAllWerewolves() {
-			List<Player> playerList = getAllAlive();
-			List<Player> werewolfList = (List<Player>) new ArrayList<Player>();
-			int length = playerList.size();
-			for (int i=0;i<length;i++){
-				Player player = playerList.get(i);
-				if (player.isWereWolf()){
-					werewolfList.add(player);
-				}
-			}
-			return werewolfList;
+			// TODO Auto-generated method stub
+			return null;
 		}
 		
 		public List<Player> getPlayerByAttributes() {
@@ -56,9 +47,8 @@ public class GameService {
 		}
 		
 		public List<Player> Move(Player p, long lat,long lng) {
-			p.setLat(lat);
-			p.setLng(lng);
-			return getAllAlive();
+			// TODO Auto-generated method stub
+			return null;
 		}
 		
 		public List<Player> Update(Player p) {
@@ -84,6 +74,11 @@ public class GameService {
 			// TODO Auto-generated method stub
 			return null;
 		}
+		/**
+		public Boolean killPlayerRequest(int killerId, int victimId) {
+			// TODO Auto-generated method stub
+			return null;
+		}*/
 
 		public List<Player> playerInfoRequest(int ownerId) {
 			// TODO Auto-generated method stub
@@ -95,13 +90,8 @@ public class GameService {
 			return null;
 		}
 		
-		public Boolean canKill(Player killer, Player victim){
-			if ((killer.isWereWolf())&&(killer.isNear(victim))){
-				return true;
-			}
-			else{
-				return false;
-			}
+		public Boolean canKill(Player Killer, Player Victim){
+			return true;
 		}
 		/**
 		@Scheduled(fixedDelay=5000)
