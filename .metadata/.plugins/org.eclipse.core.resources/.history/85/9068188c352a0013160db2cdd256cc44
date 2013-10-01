@@ -8,7 +8,6 @@ public class Player {
 	private double lng;
 	private int userID;
 	private boolean isWereWolf;
-	private boolean isAdmin;
 	public boolean isWereWolf() {
 		return isWereWolf;
 	}
@@ -79,15 +78,7 @@ public class Player {
 	}
 	
 	public boolean isAdmin(Player player){
-		return player.isAdmin;
-	}
-	
-	public void makeAdmin(){
-		this.isAdmin = true;
-	}
-	
-	public void demoteAdmin(){
-		this.isAdmin = false;
+		
 	}
 
 }

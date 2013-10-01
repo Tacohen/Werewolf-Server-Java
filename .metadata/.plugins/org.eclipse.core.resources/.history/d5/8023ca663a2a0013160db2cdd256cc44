@@ -8,7 +8,7 @@
  
 	<!-- HTTP basic authentication in Spring Security -->
 	<http>
-		<intercept-url pattern="/*" access="ROLE_USER" />
+		<intercept-url pattern="*" access="ROLE_USER" />
 		<http-basic />
 	</http>
  

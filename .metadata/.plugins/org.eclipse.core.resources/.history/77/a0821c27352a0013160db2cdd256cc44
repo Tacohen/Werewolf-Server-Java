@@ -47,7 +47,6 @@ public class PlayerService {
         mongoTemplate.insert(player, COLLECTION_NAME);      
     }
     
-    
     public Player getPlayerFromDbByID(Integer ownerId){
     	List<Player> listOfPlayers = mongoTemplate.findAll(Player.class, COLLECTION_NAME);
     	int length = listOfPlayers.size();

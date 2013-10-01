@@ -8,14 +8,14 @@
  
 	<!-- HTTP basic authentication in Spring Security -->
 	<http>
-		<intercept-url pattern="/*" access="ROLE_USER" />
+		<intercept-url pattern="/welcome*" access="ROLE_USER" />
 		<http-basic />
 	</http>
  
 	<authentication-manager>
 	   <authentication-provider>
 	       <user-service>
-		   <user name="tim" password="123" authorities="ROLE_USER" />
+		   <user name="tim" password="123456" authorities="ROLE_USER" />
 	       </user-service>
 	   </authentication-provider>
 	</authentication-manager>
