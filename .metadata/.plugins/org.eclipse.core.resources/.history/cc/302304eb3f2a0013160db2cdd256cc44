@@ -1,0 +1,24 @@
+package edu.wm.something.domain;
+
+public class GPSLocation {
+	
+	long lat;
+	long lng;
+
+	public Object getLat() {
+		return this.lat;
+	}
+
+	public Object getLng() {
+		return this.lng;
+	}
+	
+	public void setLat(long lat){
+		this.lat = lat;
+	}
+	
+	public void setLng(long lng){
+		this.lng = lng;
+	}
+
+}

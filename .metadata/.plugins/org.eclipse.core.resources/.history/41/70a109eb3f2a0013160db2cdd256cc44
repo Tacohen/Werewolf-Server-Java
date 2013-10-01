@@ -1,28 +1,8 @@
-package edu.wm.something.domain;
+package edu.wm.service;
 
-public class GPSLocation {
+public class LatLng {
 	
-	long lat;
-	long lng;
-
-	public Object getLat() {
-		return this.lat;
-	}
-
-	public Object getLng() {
-		return this.lng;
-	}
-	
-	public void setLat(long lat){
-		this.lat = lat;
-	}
-	
-	public void setLng(long lng){
-		this.lng = lng;
-	}
-	
-
-	public double distance(double lat1, double lon1, double lat2, double lon2, char unit) {
+	private double distance(double lat1, double lon1, double lat2, double lon2, char unit) {
 		  double theta = lon1 - lon2;
 		  double dist = Math.sin(deg2rad(lat1)) * Math.sin(deg2rad(lat2)) + Math.cos(deg2rad(lat1)) * Math.cos(deg2rad(lat2)) * Math.cos(deg2rad(theta));
 		  dist = Math.acos(dist);
