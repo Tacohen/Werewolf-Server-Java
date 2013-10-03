@@ -148,7 +148,7 @@
 </editor>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerService.java" partName="PlayerService.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/PlayerService.java" title="PlayerService.java" tooltip="Werewolf/src/main/java/edu/wm/service/PlayerService.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1552" selectionTopPixel="0"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3971" selectionTopPixel="1178"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Player.java" partName="Player.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/Player.java" title="Player.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Player.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
@@ -465,13 +465,8 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/SpringMongoConfig.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
+<editor factoryID="org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
 </editors>
-<item historyLabel="PlayerService.java" index="1">
-<position/>
-</item>
-<item historyLabel="SpringMongoConfig.java" index="2">
-<position info="not_deleted" x="923" y="0"/>
-</item>
 <item historyLabel="NoPlayerFoundException.java" index="4">
 <position info="not_deleted" x="209" y="0"/>
 </item>
@@ -611,8 +606,12 @@
 <item historyLabel="SpringMongoConfig.java" index="13">
 <position info="not_deleted" x="923" y="0"/>
 </item>
-<item active="true" historyLabel="PlayerService.java" index="14">
+<item historyLabel="PlayerService.java" index="14">
 <position info="not_deleted" x="3858" y="0"/>
+</item>
+<item historyLabel="Dashboard" index="16"/>
+<item active="true" historyLabel="PlayerService.java" index="14">
+<position info="not_deleted" x="1552" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
