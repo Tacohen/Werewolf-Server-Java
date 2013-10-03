@@ -44,7 +44,7 @@ public class Player {
 
 	private String votedAgainst;
 	
-	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf,int voteCount) {
+	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf) {
 		super();
 		this.id = id;
 		this.isDead = isDead;
@@ -52,7 +52,7 @@ public class Player {
 		this.lng = lng;
 		this.userID = userId;
 		this.isWereWolf = isWerewolf;
-		this.voteCount = voteCount;
+		
 	}
 	
 	public Player() {

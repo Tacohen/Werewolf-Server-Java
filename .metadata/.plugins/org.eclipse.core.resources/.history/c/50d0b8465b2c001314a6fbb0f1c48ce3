@@ -17,7 +17,6 @@ import org.springframework.data.mongodb.core.query.BasicQuery;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.NearQuery;
 import org.springframework.data.mongodb.core.query.Query;
-import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Repository;
 
 import Exceptions.NoPlayerFoundException;
@@ -112,8 +111,8 @@ public class PlayerService {
 		Query query = new Query();
 		query.addCriteria(Criteria.where("_id").is(p.getId()));
 		int voteCount = (p.getVoteCount()+1);
-		Update update = new Update();
-		update.set("voteCount", voteCount);
+		//Update update = new Update();
+		//update.set("vote", 100);
 		mongoTemplate.findOne(query, Player.class);
 	}
     

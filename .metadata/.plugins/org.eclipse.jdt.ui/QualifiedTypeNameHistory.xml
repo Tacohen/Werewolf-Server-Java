@@ -29,7 +29,6 @@
 <fullyQualifiedTypeName name="java.util.logging.Logger"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.User"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
-<fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
 <fullyQualifiedTypeName name="com.mongodb.DB"/>
 <fullyQualifiedTypeName name="com.mongodb.BasicDBObject"/>
 <fullyQualifiedTypeName name="com.mongodb.DBCollection"/>
@@ -49,4 +48,8 @@
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.MyUser"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
+<fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
+<fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
+<fullyQualifiedTypeName name="Exceptions.NoPlayersException"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Update"/>
 </qualifiedTypeNameHistroy>

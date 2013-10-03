@@ -43,7 +43,7 @@ public class MongoDBService {
 	             new AnnotationConfigApplicationContext(SpringMongoConfig.class);
 		MongoOperations mongoOperation = (MongoOperations) ctx.getBean("mongoTemplate");
 	 //Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf) {
-		Player user = new Player("testid", false, 30, 40,101,true,0);
+		Player user = new Player("testid", false, 30, 40,101,true);
 	 
 		// save
 		mongoOperation.save(user);

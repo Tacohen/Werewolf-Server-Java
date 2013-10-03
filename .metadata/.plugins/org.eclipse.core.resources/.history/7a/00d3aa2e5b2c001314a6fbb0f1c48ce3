@@ -52,7 +52,7 @@ public class Player {
 		this.lng = lng;
 		this.userID = userId;
 		this.isWereWolf = isWerewolf;
-		this.voteCount = voteCount;
+		
 	}
 	
 	public Player() {

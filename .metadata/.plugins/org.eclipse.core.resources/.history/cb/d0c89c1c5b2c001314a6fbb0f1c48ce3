@@ -9,23 +9,6 @@ public class Player {
 	private int userID;
 	private boolean isWereWolf;
 	private boolean isAdmin;
-	private int voteCount;
-	public boolean isAdmin() {
-		return isAdmin;
-	}
-
-	public void setAdmin(boolean isAdmin) {
-		this.isAdmin = isAdmin;
-	}
-
-	public int getVoteCount() {
-		return voteCount;
-	}
-
-	public void setVoteCount(int voteCount) {
-		this.voteCount = voteCount;
-	}
-
 	public boolean isWereWolf() {
 		return isWereWolf;
 	}
@@ -44,7 +27,7 @@ public class Player {
 
 	private String votedAgainst;
 	
-	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf,int voteCount) {
+	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf) {
 		super();
 		this.id = id;
 		this.isDead = isDead;
@@ -52,7 +35,7 @@ public class Player {
 		this.lng = lng;
 		this.userID = userId;
 		this.isWereWolf = isWerewolf;
-		this.voteCount = voteCount;
+		
 	}
 	
 	public Player() {
