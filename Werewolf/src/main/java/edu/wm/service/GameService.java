@@ -9,6 +9,9 @@ import java.util.logging.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 
+import Exceptions.NoPlayerFoundException;
+import Exceptions.NoPlayersException;
+
 import werewolf.dao.IPlayerDAO;
 
 import edu.wm.something.domain.GPSLocation;
@@ -28,11 +31,12 @@ public class GameService {
 			player.setLng(location.getLng());
 		}
 		
-		public List<Player> getAllAlive() {
+		public List<Player> getAllAlive() throws NoPlayersException {
 			return PlayerService.getAllPlayers();
+
 		}
 		
-		public List<Player> getAllWerewolves() {
+		public List<Player> getAllWerewolves() throws NoPlayersException {
 			List<Player> playerList = getAllAlive();
 			List<Player> werewolfList = (List<Player>) new ArrayList<Player>();
 			int length = playerList.size();
@@ -51,11 +55,10 @@ public class GameService {
 		}
 		
 		public List<Player> getAllNear(long lat,long lng) {
-			// TODO Auto-generated method stub
-			return null;
+			return playerService.getAllNear(lat,lng);
 		}
 		
-		public List<Player> Move(Player p, long lat,long lng) {
+		public List<Player> Move(Player p, long lat,long lng) throws NoPlayersException {
 			p.setLat(lat);
 			p.setLng(lng);
 			return getAllAlive();
@@ -66,12 +69,12 @@ public class GameService {
 			return null;
 		}
 		
-		public List<Player> Kill(Player p) {
+		public List<Player> Kill(Player p) throws NoPlayerFoundException, NoPlayersException {
 			playerService.deletePlayer(p);
 			return PlayerService.getAllPlayers();
 		}
 		
-		public List<Player> CreatePlayer(Player p) {
+		public List<Player> CreatePlayer(Player p) throws NoPlayersException {
 			playerService.addplayer(p);
 			return PlayerService.getAllPlayers();
 		}
@@ -109,5 +112,19 @@ public class GameService {
 			//check if all players have checked in recently
 			logger.info("checking game operation...");
 		}*/
+		
+		public void restartGame(){
+			
+			//playerDao.dropAllPlayers();
+			
+			//List<MyUser> users = userDao.getAllUsers();
+			List<Player> players = new ArrayList<>();
+			
+			//for (MyUser u : users){
+				//Player p = ne PLayer();
+				//p.setId(u.getId);
+				//and more
+			//}
+		}
 		
 }

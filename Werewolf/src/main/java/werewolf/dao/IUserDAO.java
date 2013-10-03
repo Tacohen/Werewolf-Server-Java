@@ -1,8 +1,8 @@
 package werewolf.dao;
 
-import edu.wm.something.domain.User;
+import edu.wm.something.domain.MyUser;
 
 public interface IUserDAO {
 	
-	void createUser(User user);
+	void createUser(MyUser user);
 }

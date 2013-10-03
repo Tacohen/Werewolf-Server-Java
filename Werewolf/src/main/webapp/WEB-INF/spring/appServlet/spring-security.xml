@@ -8,16 +8,19 @@
  
 	<!-- HTTP basic authentication in Spring Security -->
 	<http>
-		<intercept-url pattern="/*" access="ROLE_USER" />
+		<intercept-url pattern="/welcome*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/players/*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/location*" access="ROLE_USER,ROLE_ADMIN" />
+		<intercept-url pattern="/admin*" access="ROLE_ADMIN" />
 		<http-basic />
 	</http>
  
 	<authentication-manager>
-	   <authentication-provider>
-	       <user-service>
-		   <user name="tim" password="123" authorities="ROLE_USER" />
-	       </user-service>
+	   <authentication-provider user-service-ref="UserServiceImpl">
+	   <password-encoder ref="encoder"/>
 	   </authentication-provider>
 	</authentication-manager>
+ 
+ <beans:bean id="encoder" class ="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
  
 </beans:beans>

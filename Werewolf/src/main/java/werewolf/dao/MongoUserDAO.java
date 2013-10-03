@@ -11,7 +11,7 @@ import org.springframework.data.mongodb.core.MongoOperations;
 import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
-import edu.wm.something.domain.User;
+import edu.wm.something.domain.MyUser;
 
 public class MongoUserDAO extends AbstractMongoConfiguration implements IUserDAO  {
 	
@@ -21,7 +21,7 @@ public class MongoUserDAO extends AbstractMongoConfiguration implements IUserDAO
 	public String COLLECTION_NAME = "users";
 	
 	@Override
-	public void createUser(User user) {
+	public void createUser(MyUser user) {
 		// For Annotation
 		ApplicationContext ctx = 
 	             new AnnotationConfigApplicationContext();
@@ -40,6 +40,8 @@ public class MongoUserDAO extends AbstractMongoConfiguration implements IUserDAO
 	public Mongo mongo() throws Exception {
 		return new MongoClient("127.0.0.1");
 	}
+
+
 	
 	//@Override
 	//public User getUserByName(String name){

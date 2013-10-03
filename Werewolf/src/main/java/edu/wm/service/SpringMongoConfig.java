@@ -22,7 +22,7 @@ public class SpringMongoConfig {
 	
 	public @Bean
 	MongoDbFactory mongoDbFactory() throws Exception {
-		return new SimpleMongoDbFactory(new MongoClient(), "db");
+		return new SimpleMongoDbFactory(new MongoClient(), "test");
 	}
  
 	public @Bean

@@ -1,0 +1,7 @@
+package edu.wm.service;
+
+import org.springframework.security.core.userdetails.UserDetailsService;
+
+public class IUserImpl implements UserDetailsService, IUserService{
+
+}

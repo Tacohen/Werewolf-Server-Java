@@ -1,32 +1,22 @@
 package edu.wm.something;
 
-import java.io.IOException;
-import java.io.Writer;
-import java.security.Principal;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
-
-import javax.servlet.http.HttpServletResponse;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
-import org.springframework.web.bind.support.SessionStatus;
-
 import Exceptions.NoPlayerFoundException;
+import Exceptions.NoPlayersException;
 
 //import werewolf.dao.IPlayerDAO;
 
@@ -48,7 +38,7 @@ public class HomeController {
 	
 	//@Autowired private IPlayerDAO playerDao;
 	@Autowired private GameService gameService;
-	//@Autowired private PlayerService playerService;
+	@Autowired private PlayerService playerService;
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
@@ -68,7 +58,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
-	public  @ResponseBody List<Player> getAllAlive()
+	public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
 	{
 		List<Player> players = gameService.getAllAlive();
 		return players;
@@ -81,9 +71,17 @@ public class HomeController {
 		return jsonResponse;
 	}
 	
+	@RequestMapping(value="/players/add/{playerName}",method=RequestMethod.POST)
+	public @ResponseBody void addPlayer(@PathVariable("newPlayerId") String newPlayerId) {
+		Player p = new Player();
+		p.setId(newPlayerId);
+		playerService.addplayer(p);
+	}
+	
+	
 
 	@RequestMapping(value = "/players/kill/{killerId}/{victimId}", method=RequestMethod.POST)
-	public @ResponseBody boolean killPlayerById(@PathVariable("killerId") int killerId, @PathVariable("victimId") int victimId) throws NoPlayerFoundException
+	public @ResponseBody boolean killPlayerById(@PathVariable("killerId") int killerId, @PathVariable("victimId") int victimId) throws NoPlayerFoundException, NoPlayersException
 	{
 		logger.info("killerId is:"+killerId);
 		logger.info("victimId is:"+victimId);
@@ -99,11 +97,13 @@ public class HomeController {
 	}
 
 	
-	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.POST)	
-	public @ResponseBody void voteOnPlayer(@PathVariable("voterId") int voterId, @PathVariable("voteId") int voteId) {
+	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.DELETE)	
+	public @ResponseBody void voteOnPlayer(@PathVariable int voterId, @PathVariable int voteId) {
+		JsonResponse response = new JsonResponse();
 		logger.info("voter is:"+voterId);
 		logger.info("voted on:"+voteId);
 		gameService.voteOnPlayer(voterId, voteId);
+		//return response;
     }
 	
 	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)

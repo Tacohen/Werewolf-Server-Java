@@ -14,8 +14,8 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 
 import com.mongodb.Mongo;
 
+import edu.wm.something.domain.MyUser;
 import edu.wm.something.domain.Player;
-import edu.wm.something.domain.User;
 
 public class MongoDBService {
 	
@@ -55,23 +55,23 @@ public class MongoDBService {
 		Query searchUserQuery = new Query(Criteria.where("username").is("mkyong"));
 	 
 		// find the saved user again.
-		User savedUser = mongoOperation.findOne(searchUserQuery, User.class);
+		MyUser savedUser = mongoOperation.findOne(searchUserQuery, MyUser.class);
 		System.out.println("2. find - savedUser : " + savedUser);
 	 
 		// update password
 		mongoOperation.updateFirst(searchUserQuery, 
-	                         Update.update("password", "new password"),User.class);
+	                         Update.update("password", "new password"),MyUser.class);
 	 
 		// find the updated user object
-		User updatedUser = mongoOperation.findOne(searchUserQuery, User.class);
+		MyUser updatedUser = mongoOperation.findOne(searchUserQuery, MyUser.class);
 	 
 		System.out.println("3. updatedUser : " + updatedUser);
 	 
 		// delete
-		mongoOperation.remove(searchUserQuery, User.class);
+		mongoOperation.remove(searchUserQuery, MyUser.class);
 	 
 		// List, it should be empty now.
-		List<User> listUser = mongoOperation.findAll(User.class);
+		List<MyUser> listUser = mongoOperation.findAll(MyUser.class);
 		System.out.println("4. Number of user = " + listUser.size());
 	  }
 

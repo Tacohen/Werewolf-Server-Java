@@ -22,7 +22,7 @@ public class MongoPlayerDAO implements IPlayerDAO{
 	public List<Player> getAllAlive() {
 		
 		List<Player> players = new ArrayList<>();
-		
+		/**
 		Player bob = new Player();
 		bob.setUserID(1);
 		bob.setWerewolf(true);
@@ -30,7 +30,7 @@ public class MongoPlayerDAO implements IPlayerDAO{
 		bob.setLng(40.3f);
 		
 		players.add(bob);
-		
+		*/
 		return players;
 		
 	}
