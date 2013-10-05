@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.util.Date"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="edu.wm.service.GameService"/>
-<fullyQualifiedTypeName name="werewolf.dao.IPlayerDAO"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PathVariable"/>
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
@@ -22,7 +20,6 @@
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.Log"/>
 <fullyQualifiedTypeName name="org.apache.commons.logging.LogFactory"/>
-<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoTemplate"/>
 <fullyQualifiedTypeName name="com.mongodb.Mongo"/>
 <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
 <fullyQualifiedTypeName name="org.springframework.scheduling.annotation.Scheduled"/>
@@ -47,9 +44,13 @@
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.geo.GeoResults"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="edu.wm.something.domain.MyUser"/>
-<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
 <fullyQualifiedTypeName name="org.springframework.security.core.userdetails.UserDetailsService"/>
 <fullyQualifiedTypeName name="Exceptions.NoPlayerFoundException"/>
 <fullyQualifiedTypeName name="Exceptions.NoPlayersException"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Update"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
+<fullyQualifiedTypeName name="werewolf.dao.IUserDAO"/>
+<fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoTemplate"/>
+<fullyQualifiedTypeName name="werewolf.dao.IPlayerDAO"/>
 </qualifiedTypeNameHistroy>

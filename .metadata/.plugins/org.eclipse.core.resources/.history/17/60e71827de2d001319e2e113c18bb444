@@ -1,0 +1,85 @@
+package edu.wm.service;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+ 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.data.mongodb.MongoDbFactory;
+import org.springframework.data.mongodb.core.MongoOperations;
+import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
+import org.springframework.data.mongodb.core.geo.GeoResult;
+import org.springframework.data.mongodb.core.geo.GeoResults;
+import org.springframework.data.mongodb.core.geo.Metrics;
+import org.springframework.data.mongodb.core.query.BasicQuery;
+import org.springframework.data.mongodb.core.query.Criteria;
+import org.springframework.data.mongodb.core.query.NearQuery;
+import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
+import org.springframework.stereotype.Repository;
+
+import werewolf.dao.IPlayerDAO;
+import werewolf.dao.IUserDAO;
+
+import Exceptions.NoPlayerFoundException;
+import Exceptions.NoPlayersException;
+
+import com.mongodb.DB;
+import com.mongodb.MongoClient;
+
+import edu.wm.something.domain.GPSLocation;
+import edu.wm.something.domain.Player;
+ 
+ 
+@Repository
+public class PlayerService {
+     
+    @Autowired
+    private static MongoTemplate mongoTemplate;
+    @Autowired private static IPlayerDAO iPlayerDAO;
+     
+    public static final String COLLECTION_NAME = "Players";  
+    
+
+     
+    public void addplayer(Player player) {
+        iPlayerDAO.createPlayer(player);
+    }
+     
+    public static List<Player> getAllPlayers() throws NoPlayersException{
+        return iPlayerDAO.getAllPlayers();
+    }
+     
+    public void deletePlayer(Player player) throws NoPlayerFoundException {
+        iPlayerDAO.deletePlayer(player);
+    }
+     
+    public void updatePlayer(Player player) throws NoPlayerFoundException {
+        iPlayerDAO.updatePlayer(player);
+    }
+    
+    
+    public Player getPlayerFromDbByID(Integer ownerId) throws NoPlayerFoundException{
+    	return iPlayerDAO.getPlayerById(ownerId);
+    }
+
+	public List<Player> getAllNear(Player p) {
+		return iPlayerDAO.getAllPlayersNear(p);
+		
+	}
+	
+	public void voteOnPlayer(Player p){
+		Query query = new Query();
+		query.addCriteria(Criteria.where("_id").is(p.getId()));
+		int voteCount = (p.getVoteCount()+1);
+		Update update = new Update();
+		update.set("voteCount", voteCount);
+		mongoTemplate.updateFirst(query,update, Player.class);
+	}
+    
+    
+
+    
+}

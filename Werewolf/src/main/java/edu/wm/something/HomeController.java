@@ -32,7 +32,8 @@ import edu.wm.something.domain.Player;
 public class HomeController {
 	
 	int id;
-	JsonResponse jsonResponse = new JsonResponse();;
+	JsonResponse jsonResponse = new JsonResponse();
+	Player genericPlayer;
 	
 	private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
@@ -98,26 +99,25 @@ public class HomeController {
 
 	
 	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.DELETE)	
-	public @ResponseBody void voteOnPlayer(@PathVariable int voterId, @PathVariable int voteId) {
+	public @ResponseBody void voteOnPlayer(@PathVariable int voterId, @PathVariable int voteId) throws NoPlayerFoundException {
 		JsonResponse response = new JsonResponse();
-		logger.info("voter is:"+voterId);
-		logger.info("voted on:"+voteId);
-		gameService.voteOnPlayer(voterId, voteId);
+		logger.info("voter is:"+voterId);;
+		gameService.voteOnPlayer(gameService.getPlayerByID(voteId));
 		//return response;
     }
 	
 	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)
-	public  @ResponseBody Player getPlayerById(@PathVariable int ownerId)
+	public  @ResponseBody Player getPlayerById(@PathVariable int ownerId) throws NoPlayerFoundException
 	{
 		Player players = gameService.getPlayerByID(ownerId);
 		return players;
 	}
 	
 	@RequestMapping(value = "/players/alive/{ownerId}/pic", method = RequestMethod.GET)
-	public  @ResponseBody List<Player> getPicById(@PathVariable int ownerId)
+	public  @ResponseBody Player getPicById(@PathVariable int ownerId) throws NoPlayerFoundException
 	{
-		List<Player> players = gameService.getPicByID(ownerId);
-		return players;
+		Player player = gameService.getPicByID(ownerId);
+		return player;
 		
 	}
 	

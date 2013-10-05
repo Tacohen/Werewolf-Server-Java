@@ -1,0 +1,39 @@
+package werewolf.dao;
+
+import java.util.List;
+
+import Exceptions.NoPlayersException;
+
+import edu.wm.something.domain.MyUser;
+import edu.wm.something.domain.Player;
+
+public interface IUserDAO {
+	
+	void createUser(MyUser user);
+	
+	List<Player> getAllPlayers() throws NoPlayersException;
+	
+	public void deletePlayer(Player p);
+	
+	public void updatePlayer(Player p);
+	
+	public Player getPlayerById(int id);
+	
+	public void voteOnPlayer(Player p);
+	
+	public Player getPlayerPic(int id);
+	
+	public Player getPlayerInfo(int id);
+	
+	public void createPlayer(Player p);
+	
+	public void killPlayer(Player p);
+	
+	public List<Player> getAllPlayersNear(Player p);
+	
+	public void movePlayer(Player p, double lat, double lng);
+	
+	
+	
+	
+}

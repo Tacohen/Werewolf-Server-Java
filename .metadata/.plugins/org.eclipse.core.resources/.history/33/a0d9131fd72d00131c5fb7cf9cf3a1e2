@@ -1,0 +1,25 @@
+package werewolf.dao;
+
+import java.util.List;
+
+import edu.wm.something.domain.MyUser;
+import edu.wm.something.domain.Player;
+
+public interface IUserDAO {
+	
+	void createUser(MyUser user);
+	
+	List<Player> getAllPlayers();
+	
+	public void deletePLayer(Player p);
+	
+	public void updatePlayer(Player p);
+	
+	public Player getPlayerById(int id);
+	
+	public void voteOnPlayer(Player p);
+	
+	public Player getPlayerPic(int id);
+	
+	public Player getPlayerInfro(int id);
+}

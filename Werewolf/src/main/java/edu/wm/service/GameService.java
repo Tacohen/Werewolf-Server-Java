@@ -49,13 +49,9 @@ public class GameService {
 			return werewolfList;
 		}
 		
-		public List<Player> getPlayerByAttributes() {
-			// TODO Auto-generated method stub
-			return null;
-		}
 		
-		public List<Player> getAllNear(long lat,long lng) {
-			return playerService.getAllNear(lat,lng);
+		public List<Player> getAllNear(Player p) {
+			return playerService.getAllNear(p);
 		}
 		
 		public List<Player> Move(Player p, long lat,long lng) throws NoPlayersException {
@@ -64,9 +60,8 @@ public class GameService {
 			return getAllAlive();
 		}
 		
-		public List<Player> Update(Player p) {
-			// TODO Auto-generated method stub
-			return null;
+		public void Update(Player p) throws NoPlayerFoundException {
+			playerDao.updatePlayer(p);
 		}
 		
 		public List<Player> Kill(Player p) throws NoPlayerFoundException, NoPlayersException {
@@ -79,23 +74,20 @@ public class GameService {
 			return PlayerService.getAllPlayers();
 		}
 
-		public Player getPlayerByID(int ownerId) {
+		public Player getPlayerByID(int ownerId) throws NoPlayerFoundException {
 			return playerService.getPlayerFromDbByID(ownerId);
 		}
 
-		public List<Player> getPicByID(int ownerId) {
-			// TODO Auto-generated method stub
-			return null;
+		public Player getPicByID(int ownerId) throws NoPlayerFoundException {
+			return playerDao.getPlayerPic(ownerId);
 		}
 
-		public List<Player> playerInfoRequest(int ownerId) {
-			// TODO Auto-generated method stub
-			return null;
+		public Player playerInfoRequest(int ownerId) throws NoPlayerFoundException {
+			return playerDao.getPlayerInfo(ownerId);
 		}
 
-		public Boolean voteOnPlayer(int voterId, int voteId) {
-			// TODO Auto-generated method stub
-			return null;
+		public void voteOnPlayer(Player p) throws NoPlayerFoundException {
+			playerDao.voteOnPlayer(p);
 		}
 		
 		public Boolean canKill(Player killer, Player victim){
@@ -106,12 +98,12 @@ public class GameService {
 				return false;
 			}
 		}
-		/**
+		
 		@Scheduled(fixedDelay=5000)
 		public void checkGameOperation(){
 			//check if all players have checked in recently
 			logger.info("checking game operation...");
-		}*/
+		}
 		
 		public void restartGame(){
 			
