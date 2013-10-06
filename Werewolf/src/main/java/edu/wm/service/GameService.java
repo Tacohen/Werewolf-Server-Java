@@ -13,14 +13,16 @@ import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
 
 import werewolf.dao.IPlayerDAO;
+import werewolf.dao.MongoPlayerDAO;
+import werewolf.dao.MongoUserDAO;
 
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
 public class GameService {
 
-		@Autowired private IPlayerDAO playerDao;
-		@Autowired private IPlayerDAO userDao;
+		@Autowired private MongoPlayerDAO playerDao;
+		@Autowired private MongoUserDAO userDao;
 		@Autowired private PlayerService playerService;
 		
 		static Logger logger = Logger.getLogger(GameService.class.getName());
@@ -32,6 +34,7 @@ public class GameService {
 		}
 		
 		public List<Player> getAllAlive() throws NoPlayersException {
+			logger.info("In gameSerice.getAllAlive()");
 			return PlayerService.getAllPlayers();
 
 		}

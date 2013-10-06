@@ -53,4 +53,5 @@ public class MongoUserDAO extends AbstractMongoConfiguration implements IUserDAO
 		// TODO Auto-generated method stub
 		
 	}
+
 }

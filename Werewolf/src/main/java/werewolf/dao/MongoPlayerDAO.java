@@ -3,20 +3,26 @@ package werewolf.dao;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.data.mongodb.MongoDbFactory;
 import org.springframework.data.mongodb.core.MongoTemplate;
+import org.springframework.data.mongodb.core.SimpleMongoDbFactory;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.core.query.Update;
 
 import com.mongodb.BasicDBObject;
 import com.mongodb.DBCollection;
+import com.mongodb.Mongo;
 import com.mongodb.MongoClient;
 
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
 
+import edu.wm.service.GameService;
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
@@ -25,11 +31,14 @@ public class MongoPlayerDAO implements IPlayerDAO{
 	@Autowired private MongoClient mongoClient;
 	@Autowired private MongoTemplate mongoTemplate;
 	
+	static Logger logger = Logger.getLogger(MongoPlayerDAO.class.getName());
+	
 	public String DATABSE_NAME = "test";
 	public String COLLECTION_NAME = "Players";
     public static final double maxKillDistance = 0.005;//26.4 feet (1/150th of a mile)
     public static final GPSLocation gpsLocation = new GPSLocation();
-
+    
+    
 	
 	@Override
 	public List<Player> getAllAlive() {
@@ -97,6 +106,8 @@ public class MongoPlayerDAO implements IPlayerDAO{
 
 	@Override
 	public List<Player> getAllPlayers() throws NoPlayersException {
+		logger.info("in MongoPLayerDAO.getAllPlayers()");
+		
 		List<Player> resultsList = mongoTemplate.findAll(Player.class, COLLECTION_NAME);
         if (resultsList.size()== 0){
         	throw new NoPlayersException();
@@ -104,6 +115,7 @@ public class MongoPlayerDAO implements IPlayerDAO{
         else{
         	return resultsList;
         }
+		//return null;
 	}
 
 	@Override

@@ -18,6 +18,9 @@
 	<authentication-manager>
 	   <authentication-provider user-service-ref="UserServiceImpl">
 	   <password-encoder ref="encoder"/>
+	   <user-service>
+		   <user name="admin" password="123" authorities="ROLE_ADMIN" />
+	       </user-service>
 	   </authentication-provider>
 	</authentication-manager>
  

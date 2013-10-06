@@ -49,8 +49,10 @@
 <fullyQualifiedTypeName name="Exceptions.NoPlayersException"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.query.Update"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
 <fullyQualifiedTypeName name="werewolf.dao.IUserDAO"/>
 <fullyQualifiedTypeName name="org.springframework.data.mongodb.core.MongoTemplate"/>
 <fullyQualifiedTypeName name="werewolf.dao.IPlayerDAO"/>
+<fullyQualifiedTypeName name="edu.wm.something.domain.Player"/>
+<fullyQualifiedTypeName name="werewolf.dao.MongoUserDAO"/>
+<fullyQualifiedTypeName name="werewolf.dao.MongoPlayerDAO"/>
 </qualifiedTypeNameHistroy>

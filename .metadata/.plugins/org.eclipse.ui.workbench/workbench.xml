@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="81" version="2.0">
+<workbench progressCount="80" version="2.0">
 <workbenchAdvisor/>
 <window height="744" maximized="true" width="1024" x="65" y="24">
 <fastViewData fastViewLocation="1024">
@@ -21,12 +21,12 @@
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="152" y="30"/>
 <coolItem id="org.eclipse.wst.server.ui.internal.webbrowser.actionSet" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="68" y="30"/>
 <coolItem id="org.eclipse.debug.ui.launch.toolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.debug.ui.main.toolbar" itemType="typeToolBarContribution" x="40" y="30"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jst.jsp.core.jspsource.source" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
@@ -56,44 +56,32 @@
 <part id="7"/>
 <part id="8"/>
 <part id="9"/>
-<part id="10"/>
-<part id="11"/>
-<part id="12"/>
-<part id="13"/>
-<part id="14"/>
-<part id="15"/>
-<part id="16"/>
-<part id="17"/>
-<part id="18"/>
-<part id="19"/>
-<part id="20"/>
-<part id="21"/>
-<part id="22"/>
-<part id="23"/>
-<part id="24"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HomeController.java" partName="HomeController.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/HomeController.java" title="HomeController.java" tooltip="Werewolf/src/main/java/edu/wm/something/HomeController.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="HomeController.java" partName="HomeController.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/HomeController.java" title="HomeController.java" tooltip="Werewolf/src/main/java/edu/wm/something/HomeController.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/HomeController.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3118" selectionTopPixel="1351"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Game.java" partName="Game.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/Game.java" title="Game.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Game.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/Game.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="650" selectionTopPixel="90"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1277" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IPlayerDAO.java" partName="IPlayerDAO.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/werewolf/dao/IPlayerDAO.java" title="IPlayerDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/IPlayerDAO.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/werewolf/dao/IPlayerDAO.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1082" selectionTopPixel="192"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="IUserDAO.java" partName="IUserDAO.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/werewolf/dao/IUserDAO.java" title="IUserDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/IUserDAO.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/werewolf/dao/IUserDAO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="227" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerService.java" partName="PlayerService.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/PlayerService.java" title="PlayerService.java" tooltip="Werewolf/src/main/java/edu/wm/service/PlayerService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="656" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NoPlayerFoundException.java" partName="NoPlayerFoundException.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/Exceptions/NoPlayerFoundException.java" title="NoPlayerFoundException.java" tooltip="Werewolf/src/main/java/Exceptions/NoPlayerFoundException.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/Exceptions/NoPlayerFoundException.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="18" selectionOffset="57" selectionTopPixel="0"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoPlayerDAO.java" partName="MongoPlayerDAO.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java" title="MongoPlayerDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4168" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameService.java" partName="GameService.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/GameService.java" title="GameService.java" tooltip="Werewolf/src/main/java/edu/wm/service/GameService.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2916" selectionTopPixel="1365"/>
+</editor>
+<editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-security.xml" partName="spring-security.xml" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml" title="spring-security.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml"/>
 </editor>
 <editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="root-context.xml" partName="root-context.xml" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml" title="root-context.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml"/>
@@ -101,76 +89,13 @@
 <editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="servlet-context.xml" partName="servlet-context.xml" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" title="servlet-context.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="AbstractApplicationContext.class" partName="AbstractApplicationContext.class" path="/tmp/AbstractApplicationContext.class6896751739015941548.class" title="AbstractApplicationContext.class" tooltip="org.springframework.context.support.AbstractApplicationContext" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=Werewolf/\/home\/timothy\/.m2\/repository\/org\/springframework\/spring-context\/3.1.1.RELEASE\/spring-context-3.1.1.RELEASE.jar&lt;org.springframework.context.support(AbstractApplicationContext.class"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="3" selectionTopPixel="968"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="303.jsp" partName="303.jsp" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/views/players/alive/303.jsp" title="303.jsp" tooltip="Werewolf/src/main/webapp/WEB-INF/views/players/alive/303.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/views/players/alive/303.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="135" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jst.jsp.core.jspsource.source" name="home.jsp" partName="home.jsp" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/views/home.jsp" title="home.jsp" tooltip="Werewolf/src/main/webapp/WEB-INF/views/home.jsp" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/views/home.jsp"/>
-<editorState selectionHorizontalPixel="0" selectionLength="237" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GPSLocation.java" partName="GPSLocation.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/GPSLocation.java" title="GPSLocation.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/GPSLocation.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/GPSLocation.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1203" selectionTopPixel="362"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoDBService.java" partName="MongoDBService.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/MongoDBService.java" title="MongoDBService.java" tooltip="Werewolf/src/main/java/edu/wm/service/MongoDBService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/MongoDBService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1760" selectionTopPixel="634"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="User.java" partName="User.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/User.java" title="User.java" tooltip="Werewolf/src/main/java/User.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/User.java"/>
+<editor id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" partName="web.xml" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/web.xml" title="web.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/web.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/web.xml"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpringMongoConfig.java" partName="SpringMongoConfig.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/SpringMongoConfig.java" title="SpringMongoConfig.java" tooltip="Werewolf/src/main/java/edu/wm/service/SpringMongoConfig.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/SpringMongoConfig.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="923" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonResponse.java" partName="JsonResponse.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/JsonResponse.java" title="JsonResponse.java" tooltip="Werewolf/src/main/java/edu/wm/something/JsonResponse.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/JsonResponse.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="674" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PlayerService.java" partName="PlayerService.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/PlayerService.java" title="PlayerService.java" tooltip="Werewolf/src/main/java/edu/wm/service/PlayerService.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2052" selectionTopPixel="60"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Player.java" partName="Player.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/Player.java" title="Player.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Player.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1107" selectionTopPixel="726"/>
-</editor>
-<editor id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-security.xml" partName="spring-security.xml" path="/home/timothy/werewolf-java/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml" title="spring-security.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserServiceImpl.java" partName="UserServiceImpl.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/UserServiceImpl.java" title="UserServiceImpl.java" tooltip="Werewolf/src/main/java/edu/wm/service/UserServiceImpl.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/UserServiceImpl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="368" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MyUser.java" partName="MyUser.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/MyUser.java" title="MyUser.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/MyUser.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/MyUser.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="188" selectionTopPixel="484"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserImpl.java" partName="UserImpl.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/service/UserImpl.java" title="UserImpl.java" tooltip="Werewolf/src/main/java/edu/wm/service/UserImpl.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/service/UserImpl.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="531" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Vote.java" partName="Vote.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/Vote.java" title="Vote.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Vote.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/Vote.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="239" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NoPlayersException.java" partName="NoPlayersException.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/Exceptions/NoPlayersException.java" title="NoPlayersException.java" tooltip="Werewolf/src/main/java/Exceptions/NoPlayersException.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/Exceptions/NoPlayersException.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="72" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kill.java" partName="Kill.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/edu/wm/something/domain/Kill.java" title="Kill.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Kill.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/edu/wm/something/domain/Kill.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoPlayerDAO.java" partName="MongoPlayerDAO.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java" title="MongoPlayerDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="22" selectionOffset="2870" selectionTopPixel="148"/>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoUserDAO.java" partName="MongoUserDAO.java" path="/home/timothy/werewolf-java/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java" title="MongoUserDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1544" selectionTopPixel="209"/>
 </editor>
 </editors>
 <views>
@@ -444,162 +369,153 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/IUserDAO.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/something/HomeController.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/IPlayerDAO.java"/>
+<editor factoryID="org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" openDashboard="true"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/something/HomeController.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" path="/Werewolf/src/main/webapp/WEB-INF/web.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/edu/wm/service/PlayerService.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/IPlayerDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java"/>
 </editors>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="1860" y="1"/>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2269" y="0"/>
 </item>
-<item historyLabel="IUserDAO.java" index="0">
-<position/>
+<item historyLabel="PlayerService.java" index="1">
+<position info="not_deleted" x="1406" y="1"/>
 </item>
-<item historyLabel="GameService.java" index="1">
-<position info="not_deleted" x="485" y="131"/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="710" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="890" y="0"/>
-</item>
-<item historyLabel="IUserDAO.java" index="0">
-<position/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1198" y="0"/>
-</item>
-<item historyLabel="IUserDAO.java" index="0">
-<position/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="1449" y="0"/>
-</item>
-<item historyLabel="IUserDAO.java" index="0">
-<position/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="1449" y="0"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1198" y="0"/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="710" y="0"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1198" y="0"/>
-</item>
-<item historyLabel="IUserDAO.java" index="0">
-<position info="not_deleted" x="227" y="0"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1195" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="1337" y="0"/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="955" y="80"/>
-</item>
-<item historyLabel="IUserDAO.java" index="0">
-<position info="not_deleted" x="227" y="0"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1195" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="955" y="80"/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="717" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="3762" y="0"/>
-</item>
-<item historyLabel="MongoUserDAO.java" index="2">
-<position info="not_deleted" x="1274" y="0"/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="3762" y="0"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1195" y="0"/>
-</item>
-<item historyLabel="GameService.java" index="1">
-<position info="not_deleted" x="485" y="131"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
-<position info="not_deleted" x="1195" y="0"/>
-</item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="1984" y="1"/>
-</item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="2642" y="0"/>
-</item>
-<item historyLabel="IPlayerDAO.java" index="5">
+<item historyLabel="IPlayerDAO.java" index="4">
 <position info="not_deleted" x="1082" y="0"/>
 </item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="2642" y="0"/>
+<item historyLabel="MongoPlayerDAO.java" index="0">
+<position info="not_deleted" x="4168" y="0"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="1984" y="1"/>
+<item historyLabel="PlayerService.java" index="1">
+<position info="not_deleted" x="608" y="0"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="2016" y="0"/>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2264" y="0"/>
 </item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="2642" y="0"/>
+<item historyLabel="PlayerService.java" index="1">
+<position info="not_deleted" x="608" y="0"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="2016" y="0"/>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2264" y="0"/>
 </item>
-<item historyLabel="IUserDAO.java" index="0">
-<position info="not_deleted" x="227" y="0"/>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2470" y="0"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="2145" y="0"/>
+<item historyLabel="MongoPlayerDAO.java" index="0">
+<position info="not_deleted" x="4168" y="0"/>
 </item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="2870" y="22"/>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2397" y="0"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="2052" y="0"/>
+<item historyLabel="HomeController.java" index="3">
+<position info="not_deleted" x="3910" y="0"/>
 </item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="2870" y="22"/>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2397" y="0"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="2052" y="0"/>
+<item historyLabel="MongoPlayerDAO.java" index="0">
+<position info="not_deleted" x="4168" y="0"/>
 </item>
-<item historyLabel="IUserDAO.java" index="0">
-<position info="not_deleted" x="227" y="0"/>
+<item historyLabel="HomeController.java" index="3">
+<position info="not_deleted" x="3910" y="0"/>
 </item>
-<item historyLabel="MongoPlayerDAO.java" index="4">
-<position info="not_deleted" x="2870" y="22"/>
+<item historyLabel="HomeController.java" index="3">
+<position info="not_deleted" x="3338" y="22"/>
 </item>
-<item historyLabel="PlayerService.java" index="3">
-<position info="not_deleted" x="2052" y="0"/>
+<item historyLabel="IPlayerDAO.java" index="4">
+<position info="not_deleted" x="1082" y="0"/>
 </item>
-<item active="true" historyLabel="IUserDAO.java" index="0">
-<position info="not_deleted" x="227" y="0"/>
+<item historyLabel="MongoPlayerDAO.java" index="0">
+<position info="not_deleted" x="4168" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="1">
+<position info="not_deleted" x="608" y="0"/>
+</item>
+<item historyLabel="GameService.java" index="2">
+<position info="not_deleted" x="2397" y="0"/>
+</item>
+<item historyLabel="Dashboard" index="5"/>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="3374" y="22"/>
+</item>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="3831" y="3"/>
+</item>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="2391" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="2588" y="0"/>
+</item>
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="servlet-context.xml" index="8"/>
+<item historyLabel="spring-security.xml" index="9"/>
+<item historyLabel="web.xml" index="10">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="servlet-context.xml" index="8"/>
+<item historyLabel="spring-security.xml" index="9"/>
+<item historyLabel="root-context.xml" index="7"/>
+<item historyLabel="servlet-context.xml" index="8"/>
+<item historyLabel="spring-security.xml" index="9"/>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="2588" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="2026" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="728" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="906" y="46"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="561" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="906" y="46"/>
+</item>
+<item historyLabel="IPlayerDAO.java" index="12">
+<position info="not_deleted" x="1082" y="0"/>
+</item>
+<item historyLabel="MongoPlayerDAO.java" index="13">
+<position info="not_deleted" x="4168" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="935" y="0"/>
+</item>
+<item historyLabel="MongoPlayerDAO.java" index="13">
+<position info="not_deleted" x="4168" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="935" y="0"/>
+</item>
+<item historyLabel="MongoUserDAO.java" index="14">
+<position info="not_deleted" x="1544" y="0"/>
+</item>
+<item historyLabel="MongoPlayerDAO.java" index="13">
+<position info="not_deleted" x="4168" y="0"/>
+</item>
+<item historyLabel="PlayerService.java" index="11">
+<position info="not_deleted" x="656" y="0"/>
+</item>
+<item historyLabel="HomeController.java" index="6">
+<position info="not_deleted" x="2027" y="51"/>
+</item>
+<item active="true" historyLabel="HomeController.java" index="6">
+<position/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -607,8 +523,14 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
 <trimArea IMemento.internal.id="131072">
 <trimItem IMemento.internal.id="topright"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+<trimItem IMemento.internal.id="spring"/>
+<trimItem IMemento.internal.id="middleright"/>
 </trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
@@ -618,15 +540,34 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="server"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoPlayerDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java">
-<persistable path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoUserDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java">
+<persistable path="/Werewolf/src/main/java/werewolf/dao/MongoUserDAO.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" name="web.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/web.xml">
+<persistable path="/Werewolf/src/main/webapp/WEB-INF/web.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="servlet-context.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml">
+<persistable path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="root-context.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml">
+<persistable path="/Werewolf/src/main/webapp/WEB-INF/spring/root-context.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-security.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml">
+<persistable path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml"/>
 </file>
 <file factoryID="org.springsource.ide.eclipse.dashboard.ui.dashboard.elementFactory" id="com.springsource.sts.internal.ide.ui.editors.MultiPageDashboardEditor" name="Dashboard" tooltip="Dashboard">
 <persistable openDashboard="true"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="GameService.java" tooltip="Werewolf/src/main/java/edu/wm/service/GameService.java">
+<persistable path="/Werewolf/src/main/java/edu/wm/service/GameService.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MongoPlayerDAO.java" tooltip="Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java">
+<persistable path="/Werewolf/src/main/java/werewolf/dao/MongoPlayerDAO.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Kill.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Kill.java">
 <persistable path="/Werewolf/src/main/java/edu/wm/something/domain/Kill.java"/>
@@ -648,24 +589,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="UserServiceImpl.java" tooltip="Werewolf/src/main/java/edu/wm/service/UserServiceImpl.java">
 <persistable path="/Werewolf/src/main/java/edu/wm/service/UserServiceImpl.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.springsource.sts.config.ui.editors.SpringConfigEditor" name="spring-security.xml" tooltip="Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml">
-<persistable path="/Werewolf/src/main/webapp/WEB-INF/spring/appServlet/spring-security.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Player.java" tooltip="Werewolf/src/main/java/edu/wm/something/domain/Player.java">
-<persistable path="/Werewolf/src/main/java/edu/wm/something/domain/Player.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="LatLng.java" tooltip="Werewolf/src/main/java/edu/wm/service/LatLng.java">
-<persistable path="/Werewolf/src/main/java/edu/wm/service/LatLng.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PersonService.java" tooltip="Werewolf/src/main/java/edu/wm/service/PersonService.java">
-<persistable path="/Werewolf/src/main/java/edu/wm/service/PersonService.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="JsonResponse.java" tooltip="Werewolf/src/main/java/edu/wm/something/JsonResponse.java">
-<persistable path="/Werewolf/src/main/java/edu/wm/something/JsonResponse.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SpringMongoConfig.java" tooltip="Werewolf/src/main/java/edu/wm/service/SpringMongoConfig.java">
-<persistable path="/Werewolf/src/main/java/edu/wm/service/SpringMongoConfig.java"/>
 </file>
 </mruList>
 </workbench>
