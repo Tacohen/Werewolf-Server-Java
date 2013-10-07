@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 import werewolf.dao.IPlayerDAO;
 import werewolf.dao.MongoPlayerDAO;
 import werewolf.dao.MongoUserDAO;
+import werewolf.dao.PostgresPlayerDAO;
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
 
@@ -22,6 +23,7 @@ public class PlayerService {
     @Autowired private static MongoTemplate mongoTemplate;
     //private static IPlayerDAO iPlayerDAO;
     @Autowired private static MongoPlayerDAO mongoPlayerDAO;
+    private static PostgresPlayerDAO postgresDao = new PostgresPlayerDAO();
      
     public static final String COLLECTION_NAME = "Players";  
     static Logger logger = Logger.getLogger(PlayerService.class.getName());
@@ -33,8 +35,9 @@ public class PlayerService {
      
     public static List<Player> getAllPlayers() throws NoPlayersException{
     	logger.info("In PlayerService.getAllPlayers()");
-        return mongoPlayerDAO.getAllPlayers();
-    	//return null;
+        //return mongoPlayerDAO.getAllPlayers();
+    	postgresDao.implementDatabase();
+    	return null;
     }
      
     public void deletePlayer(Player player) throws NoPlayerFoundException {
