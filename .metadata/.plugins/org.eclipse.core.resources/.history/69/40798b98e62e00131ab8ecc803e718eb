@@ -38,14 +38,14 @@ public class MongoPlayerDAO implements IPlayerDAO{
     public static final double maxKillDistance = 0.005;//26.4 feet (1/150th of a mile)
     public static final GPSLocation gpsLocation = new GPSLocation();
     
-   // MongoPlayerDAO(){
-   // 	super();
-   // }
+    MongoPlayerDAO(){
+    	super();
+    }
     
-   // @Autowired MongoPlayerDAO(MongoClient mongoClient, MongoTemplate mongoTemplate){
-   // 	this.mongoClient = mongoClient;
-   // 	this.mongoTemplate = mongoTemplate;
-   // }
+    @Autowired MongoPlayerDAO(MongoClient mongoClient, MongoTemplate mongoTemplate){
+    	this.mongoClient = mongoClient;
+    	this.mongoTemplate = mongoTemplate;
+    }
 	
 	@Override
 	public List<Player> getAllAlive() {

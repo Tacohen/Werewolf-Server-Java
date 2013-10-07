@@ -42,10 +42,10 @@ public class MongoPlayerDAO implements IPlayerDAO{
    // 	super();
    // }
     
-   // @Autowired MongoPlayerDAO(MongoClient mongoClient, MongoTemplate mongoTemplate){
-   // 	this.mongoClient = mongoClient;
-   // 	this.mongoTemplate = mongoTemplate;
-   // }
+    @Autowired MongoPlayerDAO(MongoClient mongoClient, MongoTemplate mongoTemplate){
+    	this.mongoClient = mongoClient;
+    	this.mongoTemplate = mongoTemplate;
+    }
 	
 	@Override
 	public List<Player> getAllAlive() {
