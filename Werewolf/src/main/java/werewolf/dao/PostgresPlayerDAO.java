@@ -5,20 +5,33 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
+import java.util.logging.Logger;
+
+import org.springframework.beans.factory.annotation.Autowired;
 
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
+import edu.wm.service.PlayerService;
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
 
 public class PostgresPlayerDAO implements IPlayerDAO{
 	
-	public boolean databaseBuilt = false;
-
+	private static PostgresDAO postgresDao = new PostgresDAO();
+	static Logger logger = Logger.getLogger(PostgresPlayerDAO.class.getName());
+	
 	@Override
 	public List<Player> getAllAlive() {
-		// TODO Auto-generated method stub
+		logger.info("In PostgresPLayerDAO");
+		Connection connection = postgresDao.getPostgresConnection();
+		try {
+			String results = connection.nativeSQL("select * from werewolf");
+			logger.info("executed sql! results were: "+results);
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return null;
 	}
 
@@ -113,46 +126,6 @@ public class PostgresPlayerDAO implements IPlayerDAO{
 	}
 	
 	
-	public void implementDatabase(){
-		databaseBuilt = true;
-
-		try {
-
-			Class.forName("org.postgresql.Driver");
-
-		} catch (ClassNotFoundException e) {
-
-			System.out.println("Where is your PostgreSQL JDBC Driver? "
-					+ "Include in your library path!");
-			e.printStackTrace();
-			return;
-
-		}
-
-		System.out.println("PostgreSQL JDBC Driver Registered!");
-
-		Connection connection = null;
-
-		try {
-
-			connection = DriverManager.getConnection(
-					"jdbc:postgresql://127.0.0.1:5432/testing", "postgres",
-					"letmeindb");
-
-		} catch (SQLException e) {
-
-			System.out.println("Connection Failed! Check output console");
-			e.printStackTrace();
-			return;
-
-		}
-
-		if (connection != null) {
-			System.out.println("You made it, take control your database now!");
-		} else {
-			System.out.println("Failed to make connection!");
-		}
-
-	}
+	
 
 }

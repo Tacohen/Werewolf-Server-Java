@@ -35,7 +35,7 @@ public class GameService {
 		
 		public List<Player> getAllAlive() throws NoPlayersException {
 			logger.info("In gameSerice.getAllAlive()");
-			return PlayerService.getAllPlayers();
+			return PlayerService.getAllAlive();
 
 		}
 		
@@ -69,12 +69,12 @@ public class GameService {
 		
 		public List<Player> Kill(Player p) throws NoPlayerFoundException, NoPlayersException {
 			playerService.deletePlayer(p);
-			return PlayerService.getAllPlayers();
+			return PlayerService.getAllAlive();
 		}
 		
 		public List<Player> CreatePlayer(Player p) throws NoPlayersException {
 			playerService.addplayer(p);
-			return PlayerService.getAllPlayers();
+			return PlayerService.getAllAlive();
 		}
 
 		public Player getPlayerByID(int ownerId) throws NoPlayerFoundException {

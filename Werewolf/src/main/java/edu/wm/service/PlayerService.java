@@ -33,11 +33,12 @@ public class PlayerService {
         mongoPlayerDAO.createPlayer(player);
     }
      
-    public static List<Player> getAllPlayers() throws NoPlayersException{
+    public static List<Player> getAllAlive() throws NoPlayersException{
     	logger.info("In PlayerService.getAllPlayers()");
         //return mongoPlayerDAO.getAllPlayers();
-    	postgresDao.implementDatabase();
-    	return null;
+    	//postgresDao.implementDatabase();
+    	//return null;
+    	return postgresDao.getAllAlive();
     }
      
     public void deletePlayer(Player player) throws NoPlayerFoundException {
