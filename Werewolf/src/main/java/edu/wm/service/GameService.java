@@ -105,7 +105,7 @@ public class GameService {
 		@Scheduled(fixedDelay=5000)
 		public void checkGameOperation(){
 			//check if all players have checked in recently
-			logger.info("checking game operation...");
+			//logger.info("checking game operation...");
 		}
 		
 		public void restartGame(){

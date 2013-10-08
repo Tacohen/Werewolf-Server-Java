@@ -32,6 +32,7 @@
 			<artifactId>spring-webmvc</artifactId>
 			<version>${org.springframework-version}</version>
 		</dependency>
+		
 				
 		<!-- AspectJ -->
 		<dependency>
@@ -144,10 +145,18 @@
 </dependency>
 
 <dependency>
-    <groupId>postgresql</groupId>
-    <artifactId>postgresql</artifactId>
-    <version>9.1-901.jdbc4</version>
+	<groupId>org.springframework</groupId>
+	<artifactId>spring-jdbc</artifactId>
+	<version>2.0.6</version>
 </dependency>
+
+<dependency>
+    <groupId>org.postgresql</groupId>
+    <artifactId>postgresql</artifactId>
+    <version>9.2-1002-jdbc4</version>
+</dependency>
+            
+
             
 	</dependencies>
     <build>

@@ -3112,3 +3112,404 @@
 2013-10-07 21:33:54,992 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
 2013-10-07 21:33:54,994 [Worker-14] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2013-10-07 21:33:54,995 [Worker-14] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:46:42,458 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:46:42,460 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:46:42,462 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:46:42,463 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:48:08,464 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:48:08,663 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,851 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-context/${spring.version}/spring-context-${spring.version}.pom
+2013-10-07 22:48:08,874 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,876 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/${spring.version}/spring-webmvc-${spring.version}.pom
+2013-10-07 22:48:08,889 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,891 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/org.springframework.context/${spring.version}/org.springframework.context-${spring.version}.pom
+2013-10-07 22:48:08,894 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,903 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-web/${spring.version}/spring-web-${spring.version}.pom
+2013-10-07 22:48:08,907 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,910 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/org.springframework.orm/${spring.version}/org.springframework.orm-${spring.version}.pom
+2013-10-07 22:48:08,928 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,931 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-orm/${spring.version}/spring-orm-${spring.version}.pom
+2013-10-07 22:48:08,935 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,938 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/org.springframework.oxm/${spring.version}/org.springframework.oxm-${spring.version}.pom
+2013-10-07 22:48:08,941 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,943 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/org.springframework.web.servlet/${spring.version}/org.springframework.web.servlet-${spring.version}.pom
+2013-10-07 22:48:08,950 [Worker-26] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:48:08,952 [Worker-26] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/org.springframework.aspects/${spring.version}/org.springframework.aspects-${spring.version}.pom
+2013-10-07 22:48:09,289 [Worker-26] WARN  o.e.m.w.WebProjectConfiguratorDelegate - Renamed dependencies will be copied under target
+2013-10-07 22:48:11,625 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:11,626 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:48:11,628 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:11,628 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:48:11,629 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 22:48:11,630 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 22:48:11,638 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:29,018 [Worker-26] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:48:29,643 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:29,644 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:48:29,647 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:29,647 [Worker-26] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:48:29,648 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 22:48:29,648 [Worker-26] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 22:48:29,657 [Worker-26] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:32,164 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:32,166 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:48:32,170 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:48:32,171 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 22:49:17,047 [Worker-29] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:49:17,265 [Worker-29] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:49:17,662 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:49:17,697 [Worker-29] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:49:17,738 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:49:17,806 [Worker-29] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:49:18,280 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:49:18,282 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:49:18,438 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:49:18,439 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:49:18,441 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:49:18,441 [Worker-29] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:49:18,442 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 22:49:18,442 [Worker-29] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 22:49:18,447 [Worker-29] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:49:20,616 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:49:20,619 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:49:20,623 [Worker-32] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:49:20,624 [Worker-32] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 22:50:43,156 [Worker-33] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-10-07 22:50:43,231 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:50:43,402 [Worker-33] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:50:43,505 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:50:43,509 [Worker-33] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:50:43,552 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:50:43,579 [Worker-33] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:50:43,803 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:50:43,804 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:50:43,933 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/main/java
+2013-10-07 22:50:43,934 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/main/resources overlaps with sources folder /Werewolf/src/main/resources
+2013-10-07 22:50:43,936 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/test/java
+2013-10-07 22:50:43,937 [Worker-33] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/test/resources overlaps with sources folder /Werewolf/src/test/resources
+2013-10-07 22:50:44,368 [Worker-33] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Werewolf
+2013-10-07 22:50:44,391 [Worker-33] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 1 sec
+2013-10-07 22:50:47,600 [Worker-33] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:50:47,788 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:50:47,790 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:50:48,039 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:50:48,040 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:50:48,143 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:50:48,145 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:50:48,149 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:50:48,150 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 22:51:09,145 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:51:09,283 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:51:09,284 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:51:09,430 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:51:09,432 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:51:09,534 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:09,534 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:51:09,536 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:09,537 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:51:09,537 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 22:51:09,537 [Worker-37] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 22:51:09,549 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:17,550 [Worker-31] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-10-07 22:51:17,652 [Worker-31] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:51:17,857 [Worker-31] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:51:17,936 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:51:17,937 [Worker-31] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:51:17,976 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:51:17,997 [Worker-31] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:51:18,187 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:51:18,189 [Worker-31] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:51:18,316 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/main/java
+2013-10-07 22:51:18,317 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/main/resources overlaps with sources folder /Werewolf/src/main/resources
+2013-10-07 22:51:18,317 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/test/java
+2013-10-07 22:51:18,317 [Worker-31] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/test/resources overlaps with sources folder /Werewolf/src/test/resources
+2013-10-07 22:51:18,530 [Worker-31] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Werewolf
+2013-10-07 22:51:18,539 [Worker-31] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2013-10-07 22:51:21,130 [Worker-37] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:51:21,371 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:51:21,373 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:51:21,558 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.dbcp:jar:1.2.2.osgi is missing, no dependency information available
+2013-10-07 22:51:21,560 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.apache.commons:com.springsource.org.apache.commons.pool:jar:1.5.3 is missing, no dependency information available
+2013-10-07 22:51:21,678 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:21,680 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:51:21,685 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:21,686 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 22:51:43,503 [Worker-35] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:51:43,866 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:43,867 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:51:43,871 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:43,871 [Worker-35] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:51:43,871 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 22:51:43,871 [Worker-35] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 22:51:43,876 [Worker-35] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:45,617 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:45,618 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:51:45,623 [Worker-33] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:51:45,624 [Worker-33] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 22:52:13,134 [Worker-34] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 22:52:13,286 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,330 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/2.0.6/spring-jdbc-2.0.6.pom
+2013-10-07 22:52:13,334 [New I/O client worker #19-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/2.0.6/spring-jdbc-2.0.6.pom
+2013-10-07 22:52:13,376 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,411 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1/commons-logging-1.1.pom
+2013-10-07 22:52:13,412 [New I/O client worker #20-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1/commons-logging-1.1.pom
+2013-10-07 22:52:13,440 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,473 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom
+2013-10-07 22:52:13,474 [New I/O client worker #21-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/log4j/log4j/1.2.12/log4j-1.2.12.pom
+2013-10-07 22:52:13,501 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,538 [New I/O client worker #22-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/logkit/logkit/1.0.1/logkit-1.0.1.pom
+2013-10-07 22:52:13,539 [New I/O client worker #22-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/logkit/logkit/1.0.1/logkit-1.0.1.pom
+2013-10-07 22:52:13,564 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,599 [New I/O client worker #23-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom
+2013-10-07 22:52:13,600 [New I/O client worker #23-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/avalon-framework/avalon-framework/4.1.3/avalon-framework-4.1.3.pom
+2013-10-07 22:52:13,635 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,672 [New I/O client worker #24-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
+2013-10-07 22:52:13,673 [New I/O client worker #24-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/javax/servlet/servlet-api/2.3/servlet-api-2.3.pom
+2013-10-07 22:52:13,701 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,738 [New I/O client worker #25-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-beans/2.0.6/spring-beans-2.0.6.pom
+2013-10-07 22:52:13,739 [New I/O client worker #25-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-beans/2.0.6/spring-beans-2.0.6.pom
+2013-10-07 22:52:13,765 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,801 [New I/O client worker #26-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-core/2.0.6/spring-core-2.0.6.pom
+2013-10-07 22:52:13,802 [New I/O client worker #26-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-core/2.0.6/spring-core-2.0.6.pom
+2013-10-07 22:52:13,827 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,867 [New I/O client worker #27-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-context/2.0.6/spring-context-2.0.6.pom
+2013-10-07 22:52:13,867 [New I/O client worker #27-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-context/2.0.6/spring-context-2.0.6.pom
+2013-10-07 22:52:13,892 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:13,987 [New I/O client worker #28-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-dao/2.0.6/spring-dao-2.0.6.pom
+2013-10-07 22:52:13,988 [New I/O client worker #28-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-dao/2.0.6/spring-dao-2.0.6.pom
+2013-10-07 22:52:14,031 [Worker-34] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 22:52:14,071 [New I/O client worker #29-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/2.0.6/spring-jdbc-2.0.6.jar
+2013-10-07 22:52:14,072 [New I/O client worker #29-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/springframework/spring-dao/2.0.6/spring-dao-2.0.6.jar
+2013-10-07 22:52:14,124 [New I/O client worker #29-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-dao/2.0.6/spring-dao-2.0.6.jar
+2013-10-07 22:52:14,141 [New I/O client worker #29-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/2.0.6/spring-jdbc-2.0.6.jar
+2013-10-07 22:52:14,824 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:52:14,824 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:52:14,826 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:52:14,827 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:52:14,827 [Worker-34] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 22:52:14,827 [Worker-34] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 22:52:14,831 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:52:16,474 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:52:16,475 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:52:16,478 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:52:16,479 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 22:54:12,882 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:54:12,883 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:54:12,886 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:54:12,886 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:57:44,071 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:57:44,072 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:57:44,074 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:57:44,075 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:58:39,332 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:58:39,333 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:58:39,337 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:58:39,338 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 22:58:59,419 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:58:59,420 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 22:58:59,422 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 22:58:59,423 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:00:30,547 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:00:30,548 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:00:30,550 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:00:30,551 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:01:59,671 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:01:59,673 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:01:59,676 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:01:59,677 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:02:09,564 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:02:09,565 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:02:09,567 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:02:09,567 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:02:38,668 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:02:38,669 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:02:38,671 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:02:38,672 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:04:44,094 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:04:44,095 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:04:44,097 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:04:44,098 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:05:05,333 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:05:05,335 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:05:05,337 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:05:05,338 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:05:54,502 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:05:54,503 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:05:54,505 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:05:54,506 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:08:05,289 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:08:05,291 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:08:05,293 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:08:05,293 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:08:20,011 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:08:20,012 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:08:20,015 [Worker-41] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:08:20,015 [Worker-41] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:08:57,249 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:08:57,250 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:08:57,252 [Worker-40] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:08:57,253 [Worker-40] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:10:21,370 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:10:21,371 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:10:21,374 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:10:21,375 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:11:46,098 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:11:46,100 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:11:46,102 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:11:46,102 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:11:57,354 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:11:57,355 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:11:57,357 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:11:57,357 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:12:46,653 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:12:46,654 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:12:46,657 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:12:46,657 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:14:07,017 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:14:07,018 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:14:07,020 [Worker-38] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:14:07,021 [Worker-38] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:16:44,067 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:16:44,068 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:16:44,070 [Worker-34] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:16:44,070 [Worker-34] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:17:21,773 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:17:21,774 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:17:21,776 [Worker-43] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:17:21,776 [Worker-43] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:18:24,255 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:18:24,256 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:18:24,258 [Worker-46] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:18:24,259 [Worker-46] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:20:23,345 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:20:23,346 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:20:23,348 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:20:23,349 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:21:12,715 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:21:12,716 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:21:12,718 [Worker-45] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:21:12,718 [Worker-45] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:21:52,438 [Worker-45] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-10-07 23:21:52,499 [Worker-45] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 23:21:52,857 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/main/java
+2013-10-07 23:21:52,857 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/main/resources overlaps with sources folder /Werewolf/src/main/resources
+2013-10-07 23:21:52,858 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/test/java
+2013-10-07 23:21:52,858 [Worker-45] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/test/resources overlaps with sources folder /Werewolf/src/test/resources
+2013-10-07 23:21:53,034 [Worker-45] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Werewolf
+2013-10-07 23:21:53,044 [Worker-45] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2013-10-07 23:21:55,231 [Worker-49] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 23:21:55,605 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:21:55,606 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:21:55,609 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:21:55,609 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 23:23:31,933 [Worker-49] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 23:23:32,083 [Worker-49] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 23:23:32,225 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.pom
+2013-10-07 23:23:32,227 [New I/O client worker #30-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.pom
+2013-10-07 23:23:32,260 [Worker-49] INFO  c.n.h.c.p.n.NettyAsyncHttpProvider - Number of application's worked threads is 8
+2013-10-07 23:23:32,297 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading http://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.jar
+2013-10-07 23:23:32,406 [New I/O client worker #31-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded http://repo.maven.apache.org/maven2/org/postgresql/postgresql/9.2-1002-jdbc4/postgresql-9.2-1002-jdbc4.jar
+2013-10-07 23:23:32,893 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:32,894 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:23:32,895 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:32,896 [Worker-49] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:23:32,896 [Worker-49] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-07 23:23:32,896 [Worker-49] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-07 23:23:32,901 [Worker-49] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:34,635 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:34,636 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:23:34,640 [Worker-37] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:34,641 [Worker-37] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 23:23:40,961 [Worker-44] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2013-10-07 23:23:41,021 [Worker-44] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 23:23:41,415 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/main/java
+2013-10-07 23:23:41,416 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/main/resources overlaps with sources folder /Werewolf/src/main/resources
+2013-10-07 23:23:41,416 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /Werewolf/src/test/java
+2013-10-07 23:23:41,416 [Worker-44] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Resources folder /Werewolf/src/test/resources overlaps with sources folder /Werewolf/src/test/resources
+2013-10-07 23:23:41,600 [Worker-44] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for Werewolf
+2013-10-07 23:23:41,606 [Worker-44] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 0 sec
+2013-10-07 23:23:43,900 [Worker-55] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-07 23:23:44,514 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:44,515 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:23:44,522 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:23:44,523 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 23:24:45,991 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:24:45,992 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:24:45,994 [Worker-55] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:24:45,994 [Worker-55] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:28:02,574 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:28:02,576 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:28:02,577 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:28:02,578 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:31:16,204 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:31:16,206 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:31:16,208 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:31:16,209 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:32:48,628 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:32:48,629 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:32:48,631 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:32:48,632 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:33:33,389 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:33:33,390 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:33:33,392 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:33:33,392 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:34:07,504 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:34:07,505 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:34:07,508 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:34:07,508 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:37:43,940 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:37:43,942 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:37:43,945 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:37:43,946 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:38:46,883 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:38:46,884 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:38:46,886 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:38:46,887 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:39:28,789 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:39:28,791 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:39:28,793 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:39:28,793 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:40:06,905 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:40:06,906 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2013-10-07 23:40:06,909 [Worker-56] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:40:06,909 [Worker-56] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:41:21,976 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:41:21,977 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:41:21,979 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:41:21,980 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:44:34,347 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:44:34,348 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:44:34,350 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:44:34,351 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:47:03,545 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:47:03,546 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:47:03,549 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:47:03,550 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:48:13,591 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:48:13,593 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:48:13,595 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:48:13,595 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:49:34,298 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:49:34,300 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:49:34,302 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:49:34,303 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:50:35,407 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:50:35,409 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:50:35,411 [Worker-60] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:50:35,411 [Worker-60] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:50:42,576 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:50:42,577 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:50:42,580 [Worker-69] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:50:42,580 [Worker-69] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:51:00,088 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:51:00,089 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:51:00,091 [Worker-68] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:51:00,091 [Worker-68] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:52:15,039 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:52:15,040 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:52:15,042 [Worker-71] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:52:15,043 [Worker-71] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-07 23:52:27,618 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:52:27,620 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2013-10-07 23:52:27,654 [Worker-67] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-07 23:52:27,660 [Worker-67] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

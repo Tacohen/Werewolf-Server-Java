@@ -15,23 +15,39 @@ import edu.wm.service.PlayerService;
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
+import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
 
-public class PostgresPlayerDAO implements IPlayerDAO{
+
+public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDAO{
 	
 	private static PostgresDAO postgresDao = new PostgresDAO();
 	static Logger logger = Logger.getLogger(PostgresPlayerDAO.class.getName());
+	private static JdbcTemplate jdbcTemplate;
 	
 	@Override
 	public List<Player> getAllAlive() {
 		logger.info("In PostgresPLayerDAO");
-		Connection connection = postgresDao.getPostgresConnection();
+		//Connection connection = postgresDao.getPostgresConnection();
+		String insertTableSQL = "INSERT INTO WEREWOLF"
+				+ "(PLAYER_ID, PLAYER_NAME, LAT) " + "VALUES"
+				+ "(1,'tim',40)";
+		/**
 		try {
-			String results = connection.nativeSQL("select * from werewolf");
-			logger.info("executed sql! results were: "+results);
+			java.sql.Statement statement = connection.createStatement();
+			// execute insert SQL stetement
+			statement.executeUpdate(insertTableSQL);
+			System.out.println("Record is inserted into WEREWOLF table!");
+			statement.close();
+			//connection.close();
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
+		}*/
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate.execute(insertTableSQL);
+
+	
 		return null;
 	}
 
