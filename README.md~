@@ -2,3 +2,5 @@ Werewolf-Server-Java
 ====================
 
 A serever-side implementation of the mafia-style game Werewolf. This is written in Spring Framework, with database storage being handled by PostgreSQL.
+
+This is licensed under a BSD license, so code can be used by anyone as long as due credit is given. 
