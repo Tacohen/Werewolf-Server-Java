@@ -74,8 +74,7 @@ public class PostgresDAO {
         
         /**
          * Note to Timothy: find some way to check if table 'Werewolf" has 
-         * already been created, and create iff it has not. Right now, it simply
-         * assumes the table has been created. And that's terrible
+         * already been created, and create iff it has not
          */
         
         

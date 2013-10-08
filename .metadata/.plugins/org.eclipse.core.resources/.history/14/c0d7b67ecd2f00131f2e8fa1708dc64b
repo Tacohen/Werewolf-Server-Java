@@ -72,13 +72,6 @@ public class PostgresDAO {
         String sqlStr = loadContents(f);
         System.out.println(sqlStr);
         
-        /**
-         * Note to Timothy: find some way to check if table 'Werewolf" has 
-         * already been created, and create iff it has not. Right now, it simply
-         * assumes the table has been created. And that's terrible
-         */
-        
-        
         //DatabaseMetaData md = connection.getMetaData();
         //ResultSet rs = md.getTables(null, null, "WEREWOLF", null);
         /**
