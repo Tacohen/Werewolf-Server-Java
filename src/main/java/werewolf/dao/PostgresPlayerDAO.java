@@ -53,7 +53,11 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public void setDead(Player p) {
-		// TODO Auto-generated method stub
+		String setDeadSQL = "UPDATE WEREWOLF"
+					+"SET IS_DEAD = TRUE "
+					+"WHERE PLAYER_ID = "+ p.getUserID() +";";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate.execute(setDeadSQL);
 		
 	}
 
@@ -70,8 +74,10 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public Player getPlayerById(String id) throws NoPlayerFoundException {
-		// TODO Auto-generated method stub
-		return null;
+		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_ID = "+id;
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, Player.class);
+		return p;
 	}
 
 	@Override
@@ -106,7 +112,12 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public void voteOnPlayer(Player p) throws NoPlayerFoundException {
-		// TODO Auto-generated method stub
+		String votePlayerSQL = "UPDATE WEREWOLF "
+				+"SET NUM_VOTES_AGAINST = NUM_VOTES + 1 "
+				+"WHERE PLAYER_ID = "+ p.getUserID() +";";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate.execute(votePlayerSQL);
 		
 	}
 
