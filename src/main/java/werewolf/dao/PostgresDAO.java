@@ -15,9 +15,11 @@ import javax.sql.DataSource;
 
 //import javax.activation.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.simple.SimpleJdbcTemplate;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 public class PostgresDAO {
@@ -95,6 +97,7 @@ public class PostgresDAO {
 		
 	}
 	
+	@Autowired
 	public void setDataSource(DataSource dataSource) {
         this.jdbcTemplate = new JdbcTemplate(dataSource);
     }
@@ -112,5 +115,6 @@ public class PostgresDAO {
 	 
 	    return contents.toString();
 	  }
+	
 
 }

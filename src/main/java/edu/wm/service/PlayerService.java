@@ -8,8 +8,6 @@ import org.springframework.data.mongodb.core.MongoTemplate;
 import org.springframework.stereotype.Repository;
 
 import werewolf.dao.IPlayerDAO;
-import werewolf.dao.MongoPlayerDAO;
-import werewolf.dao.MongoUserDAO;
 import werewolf.dao.PostgresPlayerDAO;
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
@@ -22,15 +20,15 @@ public class PlayerService {
      
     @Autowired private static MongoTemplate mongoTemplate;
     //private static IPlayerDAO iPlayerDAO;
-    @Autowired private static MongoPlayerDAO mongoPlayerDAO;
-    private static PostgresPlayerDAO postgresDao = new PostgresPlayerDAO();
+    //@Autowired private static MongoPlayerDAO mongoPlayerDAO;
+    private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
      
     public static final String COLLECTION_NAME = "Players";  
     static Logger logger = Logger.getLogger(PlayerService.class.getName());
 
      
     public void addplayer(Player player) {
-        mongoPlayerDAO.createPlayer(player);
+    	postgresPlayerDao.createPlayer(player);
     }
      
     public static List<Player> getAllAlive() throws NoPlayersException{
@@ -38,29 +36,29 @@ public class PlayerService {
         //return mongoPlayerDAO.getAllPlayers();
     	//postgresDao.implementDatabase();
     	//return null;
-    	return postgresDao.getAllAlive();
+    	return postgresPlayerDao.getAllAlive();
     }
      
     public void deletePlayer(Player player) throws NoPlayerFoundException {
-        mongoPlayerDAO.deletePlayer(player);
+    	postgresPlayerDao.deletePlayer(player);
     }
      
     public void updatePlayer(Player player) throws NoPlayerFoundException {
-        mongoPlayerDAO.updatePlayer(player);
+    	postgresPlayerDao.updatePlayer(player);
     }
     
     
     public Player getPlayerFromDbByID(Integer ownerId) throws NoPlayerFoundException{
-    	return mongoPlayerDAO.getPlayerById(ownerId);
+    	return postgresPlayerDao.getPlayerById(ownerId);
     }
 
 	public List<Player> getAllNear(Player p) {
-		return mongoPlayerDAO.getAllPlayersNear(p);
+		return postgresPlayerDao.getAllPlayersNear(p);
 		
 	}
 	
 	public void voteOnPlayer(Player p) throws NoPlayerFoundException{
-		mongoPlayerDAO.voteOnPlayer(p);
+		postgresPlayerDao.voteOnPlayer(p);
 	}
     
     

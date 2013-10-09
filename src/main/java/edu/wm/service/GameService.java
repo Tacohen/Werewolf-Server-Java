@@ -13,17 +13,17 @@ import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
 
 import werewolf.dao.IPlayerDAO;
-import werewolf.dao.MongoPlayerDAO;
-import werewolf.dao.MongoUserDAO;
+import werewolf.dao.PostgresPlayerDAO;
 
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
 public class GameService {
 
-		@Autowired private MongoPlayerDAO playerDao;
-		@Autowired private MongoUserDAO userDao;
+		//@Autowired private MongoPlayerDAO playerDao;
+		//@Autowired private MongoUserDAO userDao;
 		@Autowired private PlayerService playerService;
+		@Autowired private PostgresPlayerDAO postgresPlayerDao;
 		
 		static Logger logger = Logger.getLogger(GameService.class.getName());
 
@@ -64,7 +64,7 @@ public class GameService {
 		}
 		
 		public void Update(Player p) throws NoPlayerFoundException {
-			playerDao.updatePlayer(p);
+			postgresPlayerDao.updatePlayer(p);
 		}
 		
 		public List<Player> Kill(Player p) throws NoPlayerFoundException, NoPlayersException {
@@ -82,15 +82,15 @@ public class GameService {
 		}
 
 		public Player getPicByID(int ownerId) throws NoPlayerFoundException {
-			return playerDao.getPlayerPic(ownerId);
+			return postgresPlayerDao.getPlayerPic(ownerId);
 		}
 
 		public Player playerInfoRequest(int ownerId) throws NoPlayerFoundException {
-			return playerDao.getPlayerInfo(ownerId);
+			return postgresPlayerDao.getPlayerInfo(ownerId);
 		}
 
 		public void voteOnPlayer(Player p) throws NoPlayerFoundException {
-			playerDao.voteOnPlayer(p);
+			postgresPlayerDao.voteOnPlayer(p);
 		}
 		
 		public Boolean canKill(Player killer, Player victim){
