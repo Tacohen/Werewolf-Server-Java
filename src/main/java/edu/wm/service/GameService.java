@@ -113,7 +113,7 @@ public class GameService {
 			//playerDao.dropAllPlayers();
 			
 			//List<MyUser> users = userDao.getAllUsers();
-			List<Player> players = new ArrayList<>();
+			List<Player> players = new ArrayList<Player>();
 			
 			//for (MyUser u : users){
 				//Player p = ne PLayer();
