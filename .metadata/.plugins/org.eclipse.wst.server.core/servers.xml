@@ -4,10 +4,4 @@
     <list key="removeExtraVmArgs"/>
     <list key="addExtraVmArgs" value0="-Dinsight.enabled=false"/>
   </server>
-  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v7.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v7.0 Server at localhost" name="Tomcat v7.0 Server at localhost" runtime-id="Apache Tomcat v7.0" server-type="org.eclipse.jst.server.tomcat.70" server-type-id="org.eclipse.jst.server.tomcat.70" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="1">
-    <list key="modules" value0="Werewolf::org.eclipse.jst.jee.server:Werewolf::jst.web::2.5"/>
-  </server>
-  <server accountId="26f89429-e91c-414c-86fa-2933e9d7d0d7" applicationDescription="" applicationName="werewolf" auto-publish-setting="1" environmentDescription="" environmentName="environment1" environmentType="Load Balanced" hostname="AWS Elastic Beanstalk - US East (Virginia)" iamRoleName="aws-elasticbeanstalk-ec2-role" id="environment1 at AWS Elastic Beanstalk - US East (Virginia)" incrementalDeployment="true" name="environment1 at AWS Elastic Beanstalk - US East (Virginia)" regionId="us-east-1" runtime-id="Apache Tomcat v7.0 in AWS Elastic Beanstalk" server-type="com.amazonaws.eclipse.elasticbeanstalk.servers.tomcat7" server-type-id="com.amazonaws.eclipse.elasticbeanstalk.servers.tomcat7" solutionStack="64bit Amazon Linux running Tomcat 7" start-timeout="600" stop-timeout="800" timestamp="62">
-    <list key="modules" value0="Werewolf::org.eclipse.jst.jee.server:Werewolf::jst.web::2.5"/>
-  </server>
 </servers>
