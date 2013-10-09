@@ -292,3 +292,36 @@ Binding(CTRL+R,
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:33:10.007
 !MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.531
+!MESSAGE The POM for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.532
+!MESSAGE Failed to retrieve plugin descriptor for org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT: Plugin org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.534
+!MESSAGE The POM for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.534
+!MESSAGE Failed to retrieve plugin descriptor for org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT: Plugin org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.865
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.868
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.872
+!MESSAGE The POM for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.872
+!MESSAGE Failed to retrieve plugin descriptor for org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT: Plugin org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.873
+!MESSAGE The POM for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT is missing, no dependency information available
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.874
+!MESSAGE Failed to retrieve plugin descriptor for org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT: Plugin org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2013-10-08 20:36:23.878
+!MESSAGE Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
