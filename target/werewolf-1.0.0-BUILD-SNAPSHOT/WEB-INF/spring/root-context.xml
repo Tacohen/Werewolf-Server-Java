@@ -21,10 +21,7 @@
 	<task:scheduler id="myScheduler" pool-size="10"/>
 	
 	<context:component-scan base-package="werewolf.dao" />-->
-	<bean id="playerDAO" class="werewolf.dao.MongoPlayerDAO" />
-	<bean id="userDAO" class="werewolf.dao.MongoUserDAO" />
-	<bean id="IPlayerDAO" class="werewolf.dao.MongoPlayerDAO" />
-	<bean id="IUserDAO" class="werewolf.dao.MongoUserDAO" />
+	<bean id="playerDAO" class="werewolf.dao.PostgresDAO" />
 	<bean id="gameService" class ="edu.wm.service.GameService"/>
 	<bean id="UserServiceImpl" class ="edu.wm.service.UserServiceImpl"/>
 	<bean id="playerService" class ="edu.wm.service.PlayerService"/>
