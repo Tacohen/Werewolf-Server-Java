@@ -29,9 +29,9 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public List<Player> getAllAlive() {
 		logger.info("In PostgresPLayerDAO");
 		//Connection connection = postgresDao.getPostgresConnection();
-		String insertTableSQL = "INSERT INTO WEREWOLF"
-				+ "(PLAYER_ID, PLAYER_NAME, LAT) " + "VALUES"
-				+ "(1,'tim',40)";
+		//String insertTableSQL = "INSERT INTO WEREWOLF"
+		//		+ "(PLAYER_ID, PLAYER_NAME, LAT) " + "VALUES"
+		//		+ "(1,'tim',40)";
 		/**
 		try {
 			java.sql.Statement statement = connection.createStatement();
@@ -44,8 +44,8 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}*/
-		jdbcTemplate = postgresDao.getJdbcTemplate();
-		jdbcTemplate.execute(insertTableSQL);
+		//jdbcTemplate = postgresDao.getJdbcTemplate();
+		//jdbcTemplate.execute(insertTableSQL);
 
 	
 		return null;
@@ -59,7 +59,12 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public void insertPlayer(Player p) {
-		// TODO Auto-generated method stub
+		String insertPlayerSQL = "INSERT INTO WEREWOLF"
+				+ "(PLAYER_ID, PLAYER_NAME, LAT, LNG, IS_DEAD, IS_WEREWOLF, NUM_VOTES_AGAINST, PLAYER_PIC) " + "VALUES"
+				+ "("+p.getUserID()+","+ p.getId() +","+ p.getLat()+","+p.getLng()+","+p.isDead()+","+p.isWereWolf()
+				+ ","+p.getVoteCount()+","+"picture_url"+")";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate.execute(insertPlayerSQL);
 		
 	}
 
