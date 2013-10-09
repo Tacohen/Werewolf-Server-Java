@@ -3587,3 +3587,11 @@
 2013-10-08 20:36:23,873 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT is missing, no dependency information available
 2013-10-08 20:36:23,874 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Failed to retrieve plugin descriptor for org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT: Plugin org.mortbay.jetty:jetty-maven-plugin:1.0.0-BUILD-SNAPSHOT or one of its dependencies could not be resolved: Failed to read artifact descriptor for org.mortbay.jetty:jetty-maven-plugin:jar:1.0.0-BUILD-SNAPSHOT
 2013-10-08 20:36:23,877 [Worker-9] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-08 20:47:08,014 [Worker-30] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: edu.wm:werewolf:1.0.0-BUILD-SNAPSHOT @ /home/timothy/werewolf-java/Werewolf/pom.xml.
+2013-10-08 20:47:08,482 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-08 20:47:08,483 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-08 20:47:08,485 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2013-10-08 20:47:08,485 [Worker-30] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2013-10-08 20:47:08,486 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of Werewolf
+2013-10-08 20:47:08,486 [Worker-30] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for Werewolf
+2013-10-08 20:47:08,491 [Worker-30] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
