@@ -7,7 +7,7 @@ username = "admin"
 password = "123"
 
 #url = 'http://powerful-depths-2851.herokuapp.com/players/add/nadia'
-url = 'http://localhost:8080/werewolf/players/add/nadia'
+url = 'http://localhost:8080/werewolf/players/add/elaine'
 
 headers = {'Content-type': 'application/json'}
 

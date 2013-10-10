@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Locale;
+import java.util.Random;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -79,11 +80,20 @@ public class HomeController {
 		return jsonResponse;
 	}
 	
-	@RequestMapping(value="/players/add/{playerName}",method=RequestMethod.POST)
-	public @ResponseBody void addPlayer(@PathVariable("newPlayerId") String newPlayerId) {
+	@RequestMapping(value="/players/add/{playerName}",method=RequestMethod.PUT)
+	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId) {
+		Random random = new Random();
 		Player p = new Player();
 		p.setId(newPlayerId);
+		p.setDead(false);
+		p.setWerewolf(false);
+		p.setLat(0);
+		p.setLng(0);
+		p.setUserID(random.nextInt());
+		p.setPicture("none");
+		logger.info("Started to add player, in home controller now");
 		playerService.addplayer(p);
+		
 	}
 	
 	

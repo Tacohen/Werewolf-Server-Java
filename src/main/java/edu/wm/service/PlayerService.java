@@ -28,6 +28,7 @@ public class PlayerService {
 
      
     public void addplayer(Player player) {
+    	logger.info("Started to add player, in playerservice now");
     	postgresPlayerDao.createPlayer(player);
     }
      

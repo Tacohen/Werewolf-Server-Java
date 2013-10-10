@@ -23,22 +23,23 @@ public class PostgresDAO {
 	static Logger logger = Logger.getLogger(PostgresDAO.class.getName());
 	
 	/**
-	 * Db settings when run on localhost
-	 * static String host ="127.0.0.1";
+	 * Db settings when run on localhost*/
+	 	static String host ="127.0.0.1";
 		static String port  = "5432";
 		static String dbName = "testing";
 		static String username = "postgres";
 		static String password = "letmeindb";
-	 */
+	
 	/**
 	 * Db settings on Heroku
 	 */
+		/**
 	static String host ="ec2-50-19-228-92.compute-1.amazonaws.com";
 	static String port  = "5432";
 	static String dbName = "d93sjhhsidb08s";
 	static String username = "ngqmjlahecmnwa";
 	static String password = "5RciJ5xWzvVx4oIJtEw3jreH8R";
-	 
+	 */
 	
 	public JdbcTemplate getJdbcTemplate() {
 		return jdbcTemplate;
