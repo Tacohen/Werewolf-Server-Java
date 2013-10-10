@@ -26,6 +26,7 @@ public class MyUser extends User{
 	public String getFirstName() {
 		return firstName;
 	}
+	@SuppressWarnings("deprecation")
 	public MyUser(String firstName, String lastName, String imageURL,
 			String hashedPassword, Boolean isWerewolf) {
 		super(username,password,true,true,true,true,authorities);
