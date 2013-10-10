@@ -80,9 +80,9 @@ public class GameService {
 			return PlayerService.getAllAlive();
 		}
 
-		public Player getPlayerByID(int ownerId) throws NoPlayerFoundException {
+		public Player getPlayerByID(double killerId) throws NoPlayerFoundException {
 			//return playerService.getPlayerFromDbByID(ownerId);
-			return postgresPlayerDao.getPlayerById(ownerId);
+			return postgresPlayerDao.getPlayerById(killerId);
 		}
 
 		public Player getPicByID(int ownerId) throws NoPlayerFoundException {

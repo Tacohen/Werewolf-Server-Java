@@ -26,13 +26,13 @@ public interface IPlayerDAO {
 	
 	public void updatePlayer(Player p) throws NoPlayerFoundException;
 	
-	public Player getPlayerById(int id) throws NoPlayerFoundException;
+	public Player getPlayerById(double id) throws NoPlayerFoundException;
 	
 	public void voteOnPlayer(Player p) throws NoPlayerFoundException;
 	
-	public Player getPlayerPic(int id) throws NoPlayerFoundException;
+	public Player getPlayerPic(double id) throws NoPlayerFoundException;
 	
-	public Player getPlayerInfo(int id) throws NoPlayerFoundException;
+	public Player getPlayerInfo(double id) throws NoPlayerFoundException;
 	
 	public void createPlayer(Player p);
 	

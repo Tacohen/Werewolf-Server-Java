@@ -43,6 +43,10 @@ public class PlayerService {
     public void deletePlayer(Player player) throws NoPlayerFoundException {
     	postgresPlayerDao.deletePlayer(player);
     }
+    
+    public void killPlayer(Player player) throws NoPlayerFoundException {
+    	postgresPlayerDao.killPlayer(player);
+    }
      
     public void updatePlayer(Player player) throws NoPlayerFoundException {
     	postgresPlayerDao.updatePlayer(player);
