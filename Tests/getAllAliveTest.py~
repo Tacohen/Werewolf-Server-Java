@@ -4,7 +4,7 @@ from requests.auth import HTTPBasicAuth
 username = "admin"
 password = "123"
 
-r = requests.get('http://localhost:8080/werewolf/players/alive',auth=HTTPBasicAuth(username, password))
+r = requests.get('http://powerful-depths-2851.herokuapp.com/players/alive',auth=HTTPBasicAuth(username, password))
 
 
 print(r.text)
