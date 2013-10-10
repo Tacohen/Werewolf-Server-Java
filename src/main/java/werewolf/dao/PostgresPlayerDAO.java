@@ -1,6 +1,7 @@
 package werewolf.dao;
 
 import java.util.List;
+import java.util.Map;
 import java.util.logging.Logger;
 
 import Exceptions.NoPlayerFoundException;
@@ -19,6 +20,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	private static PostgresDAO postgresDao = new PostgresDAO();
 	static Logger logger = Logger.getLogger(PostgresPlayerDAO.class.getName());
 	private static JdbcTemplate jdbcTemplate;
+	private PlayerRowMapper playerRowMapper = new PlayerRowMapper();
 	
 
 	@Override
@@ -27,9 +29,10 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		
 		String getPlayers = "SELECT * FROM WEREWOLF WHERE IS_DEAD=FALSE;";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		List<Player> p = jdbcTemplate.queryForObject(getPlayers, new BeanPropertyRowMapper(Player.class));
-				
-		return p;
+		//List<Player> p = jdbcTemplate.queryForObject(getPlayers, new PlayerRowMapper());
+		 //List list = jdbcTemplate.queryForList(getPlayers);
+		 List<Player> result = jdbcTemplate.query(getPlayers, new PlayerRowMapper());
+		 return result;
 	}
 
 	@Override

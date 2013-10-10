@@ -9,7 +9,7 @@ import edu.wm.something.domain.Player;
 
 public class PlayerRowMapper implements RowMapper
 {
-	public Object mapRow(ResultSet rs, int rowNum) throws SQLException {
+	public Object mapRow(ResultSet rs, int rownumber) throws SQLException {
 		Player p = new Player();
 		p.setUserID(rs.getInt("PLAYER_ID"));
 		p.setId(rs.getString("PLAYER_NAME"));
