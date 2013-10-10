@@ -83,6 +83,15 @@ public class PostgresDAO {
         String sqlStr = loadContents(f);
         System.out.println(sqlStr);
         
+        try{
+        	//create the werewolf table
+        	jdbcTemplate.execute(sqlStr);
+        	logger.info("werewolf being created");
+        } catch (Exception e){
+        	//Do nothing
+        	logger.info("werewolf already created");
+        }
+        
         /**
          * Note to Timothy: find some way to check if table 'Werewolf" has 
          * already been created, and create iff it has not. Right now, it simply
