@@ -85,7 +85,9 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public void deletePlayer(Player p) throws NoPlayerFoundException {
-		// TODO Auto-generated method stub
+		String delete = "DELETE FROM WEREWOLF WHERE PLAYER_ID = "+p.getUserID()+";";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate.execute(delete);
 		
 	}
 
