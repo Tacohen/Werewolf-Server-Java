@@ -3,7 +3,6 @@ package edu.wm.service;
 import java.util.ArrayList;
 import java.util.List;
 
-import java.util.Map;
 import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,8 +10,6 @@ import org.springframework.scheduling.annotation.Scheduled;
 
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
-
-import werewolf.dao.IPlayerDAO;
 import werewolf.dao.PostgresPlayerDAO;
 
 import edu.wm.something.domain.GPSLocation;
@@ -20,10 +17,7 @@ import edu.wm.something.domain.Player;
 
 public class GameService {
 
-		//@Autowired private MongoPlayerDAO playerDao;
-		//@Autowired private MongoUserDAO userDao;
 		@Autowired private PlayerService playerService;
-		//@Autowired private PostgresPlayerDAO postgresPlayerDao;
 		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
 		
 		static Logger logger = Logger.getLogger(GameService.class.getName());
