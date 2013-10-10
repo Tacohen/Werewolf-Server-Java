@@ -14,7 +14,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
-@SuppressWarnings("deprecation")
+@SuppressWarnings({"unused", "unchecked"})
 public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDAO{
 	
 	private static PostgresDAO postgresDao = new PostgresDAO();
@@ -31,7 +31,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		//List<Player> p = jdbcTemplate.queryForObject(getPlayers, new PlayerRowMapper());
 		 //List list = jdbcTemplate.queryForList(getPlayers);
-		 List<Player> result = jdbcTemplate.query(getPlayers, new PlayerRowMapper());
+		List<Player> result = jdbcTemplate.query(getPlayers, new PlayerRowMapper());
 		 return result;
 	}
 
@@ -81,7 +81,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public List<Player> getAllPlayers() throws NoPlayersException {
 		String getPlayers = "SELECT * FROM WEREWOLF;";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		BeanPropertyRowMapper b =new BeanPropertyRowMapper(Player.class);
+		BeanPropertyRowMapper<Player> b =new BeanPropertyRowMapper<Player>(Player.class);
 		List<Player> p = (List<Player>) jdbcTemplate.queryForObject(getPlayers, b);
 		return p;
 	}
@@ -166,7 +166,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		String getClosePlayers = "SELECT * FROM WEREWOLF WHERE ((LAT < "+maxLat+" AND LAT > "+
 		minLat+") AND (LNG < "+maxLng+" AND LNG > "+minLng+"));";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		BeanPropertyRowMapper b =new BeanPropertyRowMapper(Player.class);
+		BeanPropertyRowMapper<Player> b =new BeanPropertyRowMapper<Player>(Player.class);
 		List<Player> players = (List<Player>) jdbcTemplate.queryForObject(getClosePlayers, b);
 		return players;
 	}
