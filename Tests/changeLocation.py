@@ -1,12 +1,18 @@
-import requests
 import json
+import requests
+from requests.auth import HTTPBasicAuth
 
-auth = ("admin","123")
 
-url='http://localhost:8080/werewolf/players/123/location'
+username = "admin"
+password = "123"
 
-params = {"lat":35,"lng":20}
+url = 'http://powerful-depths-2851.herokuapp.com/players/add/nadia'
 
-r = requests.post(url,data=params,auth=auth)
+#url='http://localhost:8080/werewolf/players/372199381/location/-35.2,35'
 
-print(r.text)
+
+headers = {'Content-type': 'application/json'}
+
+data = json.dumps({"lat":-35.2,"lng":35})
+
+r = requests.put(url, auth=HTTPBasicAuth(username, password),data=data, headers=headers)

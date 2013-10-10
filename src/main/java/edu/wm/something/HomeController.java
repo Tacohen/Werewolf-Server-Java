@@ -67,10 +67,13 @@ public class HomeController {
 		return players;
 		
 	}
-	@RequestMapping(value="players/{playerId}/location",method=RequestMethod.POST)
-	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") int playerId, @ModelAttribute GPSLocation location)
+	@RequestMapping(value="players/{playerId}/location/{newLat}/{newLng}",method=RequestMethod.PUT)
+	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") int playerId,@PathVariable("newLat") long newLat,@PathVariable("newLng") long newLng)
 	{
-		Player p = new Player();
+
+		GPSLocation location = new GPSLocation();
+		location.setLat(newLat);
+		location.setLng(newLng);
 		try {
 			gameService.updatePosition(gameService.getPlayerByID(playerId),location);
 		} catch (NoPlayerFoundException e) {
