@@ -175,6 +175,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public void movePlayer(Player p, double lat, double lng) {
 		String movePlayerSQL = "UPDATE WEREWOLF SET (LAT,LNG) = ("
 		+lat+","+lng+") WHERE PLAYER_ID = "+p.getUserID()+";";
+		logger.info("moving player, sql query is: "+movePlayerSQL);
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(movePlayerSQL);
 		
