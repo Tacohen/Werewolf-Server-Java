@@ -60,8 +60,8 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	}
 
 	@Override
-	public Player getPlayerById(double killerId) throws NoPlayerFoundException {
-		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_ID = "+killerId+";";
+	public Player getPlayerById(String id) throws NoPlayerFoundException {
+		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_ID = "+id+";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
 		return p;
@@ -102,7 +102,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	}
 
 	@Override
-	public Player getPlayerById(String id) throws NoPlayerFoundException {
+	public Player getPlayerById(double id) throws NoPlayerFoundException {
 		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_ID = "+id+";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
@@ -148,7 +148,6 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		String killPlayerSQL = "UPDATE WEREWOLF "
 				+"SET IS_DEAD = TRUE "
 				+"WHERE PLAYER_ID = "+ p.getUserID() +";";
-		logger.info("Kill player, SQL query is: "+killPlayerSQL);
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(killPlayerSQL);
 		

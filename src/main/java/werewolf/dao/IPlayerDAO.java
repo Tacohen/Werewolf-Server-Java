@@ -17,6 +17,8 @@ public interface IPlayerDAO {
 	void insertPlayer(Player p);//insert player into database
 	
 	public Player getPlayerById(String id) throws NoPlayerFoundException;
+	
+	public Player getPlayerById(double id) throws NoPlayerFoundException;
 
 	void setPlayerLocation(String id, GPSLocation loc);
 	
@@ -25,8 +27,6 @@ public interface IPlayerDAO {
 	public void deletePlayer(Player p) throws NoPlayerFoundException;
 	
 	public void updatePlayer(Player p) throws NoPlayerFoundException;
-	
-	public Player getPlayerById(double id) throws NoPlayerFoundException;
 	
 	public void voteOnPlayer(Player p) throws NoPlayerFoundException;
 	
