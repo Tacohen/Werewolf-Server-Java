@@ -23,7 +23,8 @@ public class GameService {
 		//@Autowired private MongoPlayerDAO playerDao;
 		//@Autowired private MongoUserDAO userDao;
 		@Autowired private PlayerService playerService;
-		@Autowired private PostgresPlayerDAO postgresPlayerDao;
+		//@Autowired private PostgresPlayerDAO postgresPlayerDao;
+		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
 		
 		static Logger logger = Logger.getLogger(GameService.class.getName());
 
@@ -78,7 +79,8 @@ public class GameService {
 		}
 
 		public Player getPlayerByID(int ownerId) throws NoPlayerFoundException {
-			return playerService.getPlayerFromDbByID(ownerId);
+			//return playerService.getPlayerFromDbByID(ownerId);
+			return postgresPlayerDao.getPlayerById(ownerId);
 		}
 
 		public Player getPicByID(int ownerId) throws NoPlayerFoundException {

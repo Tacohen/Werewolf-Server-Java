@@ -10,6 +10,15 @@ public class Player {
 	private boolean isWereWolf;
 	private boolean isAdmin;
 	private int voteCount;
+	private String picture;
+	public String getPicture() {
+		return picture;
+	}
+
+	public void setPicture(String picture) {
+		this.picture = picture;
+	}
+
 	public boolean isAdmin() {
 		return isAdmin;
 	}
