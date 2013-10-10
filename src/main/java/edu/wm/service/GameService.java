@@ -32,6 +32,7 @@ public class GameService {
 		public void updatePosition(Player player, GPSLocation location){
 			player.setLat(location.getLat());
 			player.setLng(location.getLng());
+			logger.info("moving player, in game service");
 			postgresPlayerDao.movePlayer(player, location.getLat(), location.getLng());
 		}
 		

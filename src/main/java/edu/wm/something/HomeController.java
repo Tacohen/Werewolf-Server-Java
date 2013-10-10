@@ -74,6 +74,7 @@ public class HomeController {
 		GPSLocation location = new GPSLocation();
 		location.setLat(newLat);
 		location.setLng(newLng);
+		logger.info("moving player, in home controller");
 		try {
 			gameService.updatePosition(gameService.getPlayerByID(playerId),location);
 		} catch (NoPlayerFoundException e) {
