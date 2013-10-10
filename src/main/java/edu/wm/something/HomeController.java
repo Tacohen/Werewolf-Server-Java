@@ -67,7 +67,7 @@ public class HomeController {
 		return players;
 		
 	}
-	@RequestMapping(value="/players/location/{playerId}/{newLat}/{newLng}",method=RequestMethod.PUT)
+	@RequestMapping(value="/players/location/{playerId}/{newLat}/{newLng}",method=RequestMethod.POST)
 	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") int playerId,@PathVariable("newLat") long newLat,@PathVariable("newLng") long newLng)
 	{
 		GPSLocation location = new GPSLocation();
