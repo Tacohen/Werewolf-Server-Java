@@ -82,15 +82,16 @@ public class HomeController {
 		return jsonResponse;
 	}
 	
-	@RequestMapping(value="/players/add/{playerName}",method=RequestMethod.POST)
-	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId) {
+	@RequestMapping(value="/players/add/{playerName}/{isWerewolf}/{lat}/{lng}",method=RequestMethod.POST)
+	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId,
+			@PathVariable("isWerewolf") Boolean isWerewolf,@PathVariable("lat") double lat,@PathVariable("lng") double lng) {
 		Random random = new Random();
 		Player p = new Player();
 		p.setId(newPlayerId);
 		p.setDead(false);
-		p.setWerewolf(false);
-		p.setLat(0);
-		p.setLng(0);
+		p.setWerewolf(isWerewolf);
+		p.setLat(lat);
+		p.setLng(lng);
 		p.setUserID(random.nextInt());
 		p.setPicture("none");
 		logger.info("Started to add player, in home controller now");
