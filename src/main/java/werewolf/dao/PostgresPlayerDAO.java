@@ -16,7 +16,7 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
-
+@SuppressWarnings("unchecked")
 @SuppressWarnings("deprecation")
 public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDAO{
 	
@@ -25,6 +25,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	static Logger logger = Logger.getLogger(PostgresPlayerDAO.class.getName());
 	private static JdbcTemplate jdbcTemplate;
 	
+
 	@Override
 	public List<Player> getAllAlive() {
 		logger.info("In PostgresPLayerDAO");
@@ -91,7 +92,8 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public List<Player> getAllPlayers() throws NoPlayersException {
 		String getPlayers = "SELECT * FROM WEREWOLF;";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		List<Player> p = (List<Player>) jdbcTemplate.queryForObject(getPlayers, new BeanPropertyRowMapper(Player.class));
+		BeanPropertyRowMapper b =new BeanPropertyRowMapper(Player.class);
+		List<Player> p = (List<Player>) jdbcTemplate.queryForObject(getPlayers, b);
 		return p;
 	}
 
