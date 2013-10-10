@@ -32,6 +32,7 @@ public class GameService {
 		public void updatePosition(Player player, GPSLocation location){
 			player.setLat(location.getLat());
 			player.setLng(location.getLng());
+			postgresPlayerDao.movePlayer(player, location.getLat(), location.getLng());
 		}
 		
 		public List<Player> getAllAlive() throws NoPlayersException {

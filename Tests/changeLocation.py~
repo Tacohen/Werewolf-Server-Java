@@ -6,9 +6,9 @@ from requests.auth import HTTPBasicAuth
 username = "admin"
 password = "123"
 
-#url = 'http://powerful-depths-2851.herokuapp.com/players/add/nadia'
+url = 'http://powerful-depths-2851.herokuapp.com/players/372199381/location/-35.2,35'
 
-url='http://localhost:8080/werewolf/players/372199381/location/-35.2,35'
+#url='http://localhost:8080/werewolf/players/372199381/location/-35.2,35'
 
 
 headers = {'Content-type': 'application/json'}
