@@ -13,6 +13,6 @@ url = 'http://powerful-depths-2851.herokuapp.com/players/location/372199381/36/3
 
 headers = {'Content-type': 'application/json'}
 
-data = json.dumps({"lat":-35.2,"lng":35})
+data = json.dumps({"lat":39.2,"lng":25})
 
 r = requests.post(url, auth=HTTPBasicAuth(username, password),data=data, headers=headers)

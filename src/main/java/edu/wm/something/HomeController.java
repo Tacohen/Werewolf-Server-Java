@@ -82,7 +82,7 @@ public class HomeController {
 		return jsonResponse;
 	}
 	
-	@RequestMapping(value="/players/add/{playerName}",method=RequestMethod.PUT)
+	@RequestMapping(value="/players/add/{playerName}",method=RequestMethod.POST)
 	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId) {
 		Random random = new Random();
 		Player p = new Player();
@@ -117,7 +117,7 @@ public class HomeController {
 	}
 
 	
-	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.DELETE)	
+	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.POST)	
 	public @ResponseBody void voteOnPlayer(@PathVariable int voterId, @PathVariable int voteId) throws NoPlayerFoundException {
 		JsonResponse response = new JsonResponse();
 		logger.info("voter is:"+voterId);;
