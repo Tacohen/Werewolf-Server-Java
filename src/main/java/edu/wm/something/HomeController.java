@@ -66,10 +66,16 @@ public class HomeController {
 		return players;
 		
 	}
-	@RequestMapping(value="/location",method=RequestMethod.POST)
-	public @ResponseBody JsonResponse setlocation(@ModelAttribute GPSLocation location,Player player)
+	@RequestMapping(value="players/{playerId}/location",method=RequestMethod.POST)
+	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") int playerId, @ModelAttribute GPSLocation location)
 	{
-		gameService.updatePosition(player,location);
+		Player p = new Player();
+		try {
+			gameService.updatePosition(gameService.getPlayerByID(playerId),location);
+		} catch (NoPlayerFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		return jsonResponse;
 	}
 	

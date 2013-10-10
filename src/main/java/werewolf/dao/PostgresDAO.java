@@ -21,7 +21,23 @@ public class PostgresDAO {
 	//private Connection connection;
 	private JdbcTemplate jdbcTemplate;
 	static Logger logger = Logger.getLogger(PostgresDAO.class.getName());
-
+	
+	/**
+	 * Db settings when run on localhost
+	 * static String host ="127.0.0.1";
+		static String port  = "5432";
+		static String dbName = "testing";
+		static String username = "postgres";
+		static String password = "letmeindb";
+	 */
+	/**
+	 * Db settings on Heroku
+	 */
+	static String host ="ec2-50-19-228-92.compute-1.amazonaws.com";
+	static String port  = "5432";
+	static String dbName = "d93sjhhsidb08s";
+	static String username = "ngqmjlahecmnwa";
+	static String password = "5RciJ5xWzvVx4oIJtEw3jreH8R";
 	 
 	
 	public JdbcTemplate getJdbcTemplate() {
@@ -58,9 +74,9 @@ public class PostgresDAO {
 		
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("org.postgresql.Driver");
-		dataSource.setUrl("jdbc:postgresql://127.0.0.1:5432/testing");
-		dataSource.setUsername("postgres");
-		dataSource.setPassword("letmeindb");
+		dataSource.setUrl("jdbc:postgresql://"+host+":"+port+"/"+dbName);
+		dataSource.setUsername(username);
+		dataSource.setPassword(password);
 		setDataSource(dataSource);
 		
 		File f = new File(getClass().getResource("/werewolf.sql").getFile());
