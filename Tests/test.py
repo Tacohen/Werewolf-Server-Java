@@ -26,3 +26,4 @@ r = requests.post(restartGameUrl, auth=HTTPBasicAuth(username, password),data=da
 print("Let's check the game's database again: \n")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
+print("That's much better. Now let's add some players!\n")

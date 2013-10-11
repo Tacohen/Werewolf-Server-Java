@@ -1,5 +1,6 @@
 package edu.wm.service;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -108,7 +109,7 @@ public class GameService {
 			//logger.info("checking game operation...");
 		}
 		
-		public void restartGame(){
+		public void restartGame() throws IOException{
 			postgresUserDao.restartGame();
 		}
 		

@@ -1,5 +1,6 @@
 package edu.wm.something;
 
+import java.io.IOException;
 import java.text.DateFormat;
 import java.util.Date;
 import java.util.List;
@@ -142,7 +143,12 @@ public class HomeController {
 	
 	@RequestMapping(value ="/admin/restartGame", method =RequestMethod.POST)
 	public @ResponseBody void restartGame(){
-		gameService.restartGame();
+		try {
+			gameService.restartGame();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 	
 }
