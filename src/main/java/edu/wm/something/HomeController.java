@@ -151,4 +151,14 @@ public class HomeController {
 		}
 	}
 	
+	@RequestMapping(value ="/players/isnight", method =RequestMethod.GET)
+	public @ResponseBody boolean isNight(){
+		if (gameService.isNight()){
+			return true;
+		}
+		else{
+			return false;
+		}
+	}
+	
 }

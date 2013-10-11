@@ -22,7 +22,16 @@ public class GameService {
 		@Autowired private PlayerService playerService;
 		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
 		private static PostgresUserDAO postgresUserDao = new PostgresUserDAO();
+		private boolean isNight;
 		
+		public boolean isNight() {
+			return isNight;
+		}
+
+		public void setNight(boolean isNight) {
+			this.isNight = isNight;
+		}
+
 		static Logger logger = Logger.getLogger(GameService.class.getName());
 
 		
@@ -95,7 +104,8 @@ public class GameService {
 		}
 		
 		public Boolean canKill(Player killer, Player victim){
-			if ((killer.isWereWolf())&&(killer.isNear(victim))){
+			if ((killer.isWereWolf())&&(postgresPlayerDao.getAllPlayersNear(killer).contains(victim))){
+				logger.info("Not set dead");
 				return true;
 			}
 			else{

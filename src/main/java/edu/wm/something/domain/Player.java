@@ -117,8 +117,7 @@ public class Player {
 	}
 
 	public boolean isNear(Player victim) {
-		// TODO Auto-generated method stub
-		return false;
+		return this.isNear(victim);
 	}
 
 }

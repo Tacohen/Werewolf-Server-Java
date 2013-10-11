@@ -6,8 +6,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.logging.Logger;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 
+import edu.wm.service.GameService;
 import edu.wm.something.PlayerRowMapper;
 import edu.wm.something.domain.MyUser;
 
@@ -17,6 +19,7 @@ public class PostgresUserDAO implements IUserDAO {
 	static Logger logger = Logger.getLogger(PostgresUserDAO.class.getName());
 	private static JdbcTemplate jdbcTemplate;
 	private PlayerRowMapper playerRowMapper = new PlayerRowMapper();
+	@Autowired private GameService gameService;
 
 	@Override
 	public void createUser(MyUser user) {
@@ -44,6 +47,9 @@ public class PostgresUserDAO implements IUserDAO {
        //create the werewolf table, now empty
         jdbcTemplate.execute(sqlStr);
         logger.info("werewolf being created");
+        
+        //set as day to start the new game
+        gameService.setNight(false);
 	}
 	
 	private String loadContents(File resource) throws IOException {
