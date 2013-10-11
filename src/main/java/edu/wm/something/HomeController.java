@@ -140,4 +140,9 @@ public class HomeController {
 		
 	}
 	
+	@RequestMapping(value ="/admin/restartGame", method =RequestMethod.POST)
+	public @ResponseBody void restartGame(){
+		gameService.restartGame();
+	}
+	
 }

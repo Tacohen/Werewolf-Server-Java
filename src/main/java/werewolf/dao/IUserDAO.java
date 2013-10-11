@@ -1,5 +1,6 @@
 package werewolf.dao;
 
+import java.io.IOException;
 import java.util.List;
 
 import Exceptions.NoPlayersException;
@@ -12,6 +13,8 @@ public interface IUserDAO {
 	void createUser(MyUser user);
 	
 	void deleteUser(MyUser user);	
+	
+	void restartGame() throws IOException;
 	
 	
 }

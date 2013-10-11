@@ -11,6 +11,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
 import werewolf.dao.PostgresPlayerDAO;
+import werewolf.dao.PostgresUserDAO;
 
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
@@ -19,6 +20,7 @@ public class GameService {
 
 		@Autowired private PlayerService playerService;
 		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
+		private static PostgresUserDAO postgresUserDao = new PostgresUserDAO();
 		
 		static Logger logger = Logger.getLogger(GameService.class.getName());
 
@@ -107,17 +109,7 @@ public class GameService {
 		}
 		
 		public void restartGame(){
-			
-			//playerDao.dropAllPlayers();
-			
-			//List<MyUser> users = userDao.getAllUsers();
-			List<Player> players = new ArrayList<>();
-			
-			//for (MyUser u : users){
-				//Player p = ne PLayer();
-				//p.setId(u.getId);
-				//and more
-			//}
+			postgresUserDao.restartGame();
 		}
 		
 }

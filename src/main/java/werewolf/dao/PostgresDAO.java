@@ -46,14 +46,6 @@ public class PostgresDAO {
 	public JdbcTemplate getJdbcTemplate() {
 		return jdbcTemplate;
 	}
-	/**
-	public Connection getPostgresConnection(){
-		return connection;		
-	}
-
-	public boolean isDatabaseBuilt() {
-		return databaseBuilt;
-	}*/
 
 	public PostgresDAO(){
 		super();
@@ -94,26 +86,6 @@ public class PostgresDAO {
         	//Do nothing
         	logger.info("werewolf already created");
         }
-        
-        /**
-         * Note to Timothy: find some way to check if table 'Werewolf" has 
-         * already been created, and create iff it has not. Right now, it simply
-         * assumes the table has been created. And that's terrible
-         */
-        
-        
-        //DatabaseMetaData md = connection.getMetaData();
-        //ResultSet rs = md.getTables(null, null, "WEREWOLF", null);
-        /**
-        if (rs.next()) {
-          //Table Exists, so no need to set it up
-        	logger.info("werewolf table not created");
-        }
-        else{
-        	//create the werewolf table
-        	jdbcTemplate.execute(sqlStr);
-        	logger.info("werewolf table not created");
-        }*/
         
 		
 	}
