@@ -161,4 +161,14 @@ public class HomeController {
 		}
 	}
 	
+	@RequestMapping(value ="/admin/setnight", method =RequestMethod.POST)
+	public @ResponseBody void setNight(){
+		gameService.setNight(true);
+	}
+	
+	@RequestMapping(value ="/admin/setday", method =RequestMethod.POST)
+	public @ResponseBody void setDay(){
+		gameService.setNight(false);
+	}
+	
 }

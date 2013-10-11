@@ -14,6 +14,7 @@ checkAllAliveUrl = 'http://powerful-depths-2851.herokuapp.com/players/alive'
 restartGameUrl = 'http://powerful-depths-2851.herokuapp.com/admin/restartGame'
 killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/nadia'
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
+setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 
 headers = {'Content-type': 'application/json'}
 
@@ -42,6 +43,10 @@ print("Despite being close, she shouldn't have suceeded since it is day. Let's f
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
-print("Verification that it is daytime \n")
+print("Verification that it is not nightime- when we ask is it is night, we get \n")
 print(r.text)
+print("That's no fun. Let's set the game to night! \n")
+r = requests.post(setNightUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+print("Now when we ask if it is night, we should get true \n")
+
 
