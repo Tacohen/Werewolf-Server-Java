@@ -57,4 +57,7 @@ r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("Let's have ELaine try again. She should succeed this time \n")
 r = requests.post(killNadiaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
+print("This is unfinished, please come back later...")
 
