@@ -120,7 +120,8 @@ public class GameService {
 		}
 		
 		public void restartGame() throws IOException{
-			postgresUserDao.restartGame();
+			PostgresUserDAO postgresUserDao2 = new PostgresUserDAO();
+			postgresUserDao2.restartGame();
 		}
 		
 }
