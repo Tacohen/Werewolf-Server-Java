@@ -19,7 +19,8 @@ import edu.wm.something.domain.Player;
 
 public class GameService {
 
-		private PlayerService playerService = new PlayerService();
+		//private PlayerService playerService;
+		@Autowired private PlayerService playerService;
 		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
 		private static PostgresUserDAO postgresUserDao = new PostgresUserDAO();
 		private boolean isNight;

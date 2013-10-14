@@ -14,8 +14,10 @@ addJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/add/joshua/tru
 checkAllAliveUrl = 'http://powerful-depths-2851.herokuapp.com/players/alive'
 restartGameUrl = 'http://powerful-depths-2851.herokuapp.com/admin/restartGame'
 killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/nadia'
+killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jake'
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
+moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/31/45'
 
 
 addNadiaUrlLocal = 'http://localhost:8080/werewolf/players/add/nadia/false/31/45'
@@ -83,6 +85,13 @@ print("Let's have Elaine try again. She should succeed this time \n")
 r = requests.post(killNadiaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("As you can see, Nadia is no longer on the list of living players, since Elaine killed her. Now let's move Jake right next to Elaine so she can kill him")
+print("As you can see, Nadia is no longer on the list of living players, since Elaine killed her. Now let's move Jake right next to Elaine (31,45) so she can kill him")
+r = requests.post(moveJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
+print("And now for the kill...")
+r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
 print("This is unfinished, please come back later...")
 
