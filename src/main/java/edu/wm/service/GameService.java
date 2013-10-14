@@ -32,7 +32,7 @@ public class GameService {
 			this.isNight = isNight;
 		}
 
-		static Logger logger = Logger.getLogger(PlayerService.class.getName());
+		static Logger logger = Logger.getLogger(GameService.class.getName());
 
 		
 		public void updatePosition(Player player, GPSLocation location){

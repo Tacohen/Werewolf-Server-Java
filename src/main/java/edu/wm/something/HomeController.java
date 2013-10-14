@@ -84,7 +84,8 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value="/players/add/{playerName}/{isWerewolf}/{lat}/{lng}",method=RequestMethod.POST)
-	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId, @PathVariable("isWerewolf") Boolean isWerewolf,@PathVariable("lat") long lat,@PathVariable("lng") long lng) {
+	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId, @PathVariable("isWerewolf") Boolean isWerewolf,@PathVariable("lat") long lat,@PathVariable("lng") long lng) 
+	{
 		Random random = new Random();
 		Player p = new Player();
 		p.setId(newPlayerId);
