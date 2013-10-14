@@ -61,7 +61,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public Player getPlayerById(String id) throws NoPlayerFoundException {
-		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_ID = "+id+";";
+		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_NAME = '"+id+"';";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
 		return p;

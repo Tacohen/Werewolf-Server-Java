@@ -19,7 +19,7 @@ import edu.wm.something.domain.Player;
 
 public class GameService {
 
-		@Autowired private PlayerService playerService;
+		private PlayerService playerService = new PlayerService();
 		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
 		private static PostgresUserDAO postgresUserDao = new PostgresUserDAO();
 		private boolean isNight;
@@ -86,9 +86,15 @@ public class GameService {
 			return PlayerService.getAllAlive();
 		}
 
-		public Player getPlayerByID(double killerId) throws NoPlayerFoundException {
+		public Player getPlayerByID(double playerId) throws NoPlayerFoundException {
 			//return playerService.getPlayerFromDbByID(ownerId);
-			return postgresPlayerDao.getPlayerById(killerId);
+			return postgresPlayerDao.getPlayerById(playerId);
+		}
+		
+		public Player getPlayerByIDStr(String playerIdStr) throws NoPlayerFoundException {
+			//return playerService.getPlayerFromDbByID(ownerId);
+			//return postgresPlayerDao.getPlayerById(playerId);
+			return postgresPlayerDao.getPlayerById(playerIdStr);
 		}
 
 		public Player getPicByID(int ownerId) throws NoPlayerFoundException {
@@ -104,7 +110,7 @@ public class GameService {
 		}
 		
 		public Boolean canKill(Player killer, Player victim){
-			if ((isNight == false) && (killer.isWereWolf())&&(postgresPlayerDao.getAllPlayersNear(killer).contains(victim))){
+			if ((isNight == false) && (killer.isWereWolf())&&((victim.getLat()==killer.getLat()))){
 				logger.info("Prepare to set dead");
 				return true;
 			}
@@ -112,7 +118,7 @@ public class GameService {
 				logger.info("Not set dead");
 				logger.info("Nightime status: isNight = "+isNight);
 				logger.info("is killer werewolf?"+killer.isWereWolf());
-				logger.info("is victim near? "+postgresPlayerDao.getAllPlayersNear(killer).contains(victim));
+				logger.info("is victim near? "+((victim.getLat()==killer.getLat())));
 				return false;
 			}
 		}

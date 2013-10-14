@@ -103,12 +103,14 @@ public class HomeController {
 	
 
 	@RequestMapping(value = "/players/kill/{killerId}/{victimId}", method=RequestMethod.POST)
-	public @ResponseBody boolean killPlayerById(@PathVariable("killerId") double killerId, @PathVariable("victimId") double victimId) throws NoPlayerFoundException, NoPlayersException
+	public @ResponseBody boolean killPlayerById(@PathVariable("killerId") String killerIdStr, @PathVariable("victimId") String victimIdStr) throws NoPlayerFoundException, NoPlayersException
 	{
-		logger.info("killerId is:"+killerId);
-		logger.info("victimId is:"+victimId);
-		Player killer = gameService.getPlayerByID(killerId);
-		Player victim = gameService.getPlayerByID(victimId);
+		Player p = new Player();
+		System.out.println("About to kill!");
+		logger.info("killerId is:"+killerIdStr);
+		logger.info("victimId is:"+victimIdStr);
+		Player killer = gameService.getPlayerByIDStr(killerIdStr);
+		Player victim = gameService.getPlayerByIDStr(victimIdStr);
 		if (gameService.canKill(killer,victim)){
 			gameService.Kill(victim);
 			return true;
