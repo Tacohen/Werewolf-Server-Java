@@ -77,7 +77,7 @@ public class GameService {
 		}
 		
 		public List<Player> Kill(Player p) throws NoPlayerFoundException, NoPlayersException {
-			playerService.deletePlayer(p);
+			playerService.killPlayer(p);
 			return PlayerService.getAllAlive();
 		}
 		
