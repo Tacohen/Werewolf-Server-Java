@@ -21,8 +21,9 @@ public class GameService {
 
 		//private PlayerService playerService;
 		@Autowired private PlayerService playerService;
-		private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
-		private static PostgresUserDAO postgresUserDao = new PostgresUserDAO();
+		//private static PostgresPlayerDAO postgresPlayerDao = new PostgresPlayerDAO();
+		@Autowired private PostgresPlayerDAO postgresPlayerDao;
+		//private static PostgresUserDAO postgresUserDao = new PostgresUserDAO();
 		private boolean isNight;
 		
 		public boolean isNight() {
