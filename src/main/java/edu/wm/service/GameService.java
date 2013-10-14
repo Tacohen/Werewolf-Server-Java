@@ -105,10 +105,14 @@ public class GameService {
 		
 		public Boolean canKill(Player killer, Player victim){
 			if ((isNight == false) && (killer.isWereWolf())&&(postgresPlayerDao.getAllPlayersNear(killer).contains(victim))){
-				logger.info("Not set dead");
+				logger.info("Prepare to set dead");
 				return true;
 			}
 			else{
+				logger.info("Not set dead");
+				logger.info("Nightime status: isNight = "+isNight);
+				logger.info("is killer werewolf?"+killer.isWereWolf());
+				logger.info("is victim near? "+postgresPlayerDao.getAllPlayersNear(killer).contains(victim));
 				return false;
 			}
 		}
