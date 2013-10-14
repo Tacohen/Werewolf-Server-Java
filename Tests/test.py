@@ -1,5 +1,6 @@
 import json
 import requests
+import time
 from requests.auth import HTTPBasicAuth
 
 
@@ -26,23 +27,30 @@ print("Heroku might take 60 seconds or so to start up please be patient... \n")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print(" \n")
+time.sleep(1)
 print("Well that just won't do. Let's clear everything and start a new game \n")
 r = requests.post(restartGameUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+time.sleep(1)
 print("Let's check the game's database again: \n")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("That's much better. Now let's add some players!\n")
+time.sleep(1)
 r = requests.post(addNadiaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 print(".")
+time.sleep(1)
 r = requests.post(addElaineUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+time.sleep(1)
 print(".")
 r = requests.post(addJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+time.sleep(1)
 print(".")
-r = requests.post(addJoshuaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
-print(".")
+#r = requests.post(addJoshuaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+#time.sleep(2)
+#print(".")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("The key points in that are: Elaine and Joshua are werewolves, Nadia is very close to Elaine, and Jake is far away from all of them. \n")
+print("The key points in that are: Elaine is a werewolf, Nadia is very close to Elaine, and Jake is far away from all of them. \n")
 
 print("Notice that is is daytime. The game automatically starts as day to prevent too many easy kills. To verify, we ask if it is nighttime. It should return false \n")
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
