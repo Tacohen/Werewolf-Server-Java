@@ -19,7 +19,7 @@ public class PostgresUserDAO implements IUserDAO {
 	static Logger logger = Logger.getLogger(PostgresUserDAO.class.getName());
 	private static JdbcTemplate jdbcTemplate;
 	private PlayerRowMapper playerRowMapper = new PlayerRowMapper();
-	@Autowired private GameService gameService;
+	private GameService gameService = new GameService();
 
 	@Override
 	public void createUser(MyUser user) {
