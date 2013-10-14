@@ -17,7 +17,7 @@ killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/na
 killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jake'
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
-moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/31/45'
+moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
 
 
 addNadiaUrlLocal = 'http://localhost:8080/werewolf/players/add/nadia/false/31/45'
@@ -93,5 +93,5 @@ print("And now for the kill...")
 r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("This is unfinished, please come back later...")
+print("Note that Jake is indeed dead")
 
