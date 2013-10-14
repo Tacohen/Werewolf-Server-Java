@@ -148,6 +148,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		String killPlayerSQL = "UPDATE WEREWOLF "
 				+"SET IS_DEAD = TRUE "
 				+"WHERE PLAYER_ID = "+ p.getUserID() +";";
+		logger.info("Killed player "+p.getId());
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(killPlayerSQL);
 		
