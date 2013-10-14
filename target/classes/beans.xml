@@ -40,6 +40,12 @@
         class="com.tacohen.werewolf.dao.IPlayerDAO">
         <property name="dataSource" ref="dataSource" />
     </bean>
+    
+    <bean id="gameService"
+        class="edu.wm.service.GameService">
+        <property name="dataSource" ref="dataSource" />
+    </bean>
+    
 
     <bean id="playerDAOPostgresImpl"
         class="com.tacohen.werewolf.dao.PostgresPlayerDAO">
