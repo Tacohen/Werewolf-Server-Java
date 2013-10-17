@@ -19,8 +19,8 @@ isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
-voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/jake'
-voteJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/jake/elaine'
+voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
+voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
 
 
 addNadiaUrlLocal = 'http://localhost:8080/werewolf/players/add/nadia/false/31/45'
@@ -63,11 +63,11 @@ time.sleep(1)
 print("Adding Jake...")
 r = requests.post(addJoshuaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 time.sleep(1)
-print("Adding Joshua")
+print("Adding Joshua...")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("The key points in that are: Elaine is a werewolf, Nadia is very close to Elaine, and Jake and Joshua far away from all of them. \n")
-
+time.sleep(1)
 print("Notice that is is daytime. The game automatically starts as day to prevent too many easy kills. To verify, we ask if it is nighttime. It should return false \n")
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
@@ -76,6 +76,7 @@ r = requests.post(killNadiaUrl, auth=HTTPBasicAuth(username, password),data=data
 print("Despite being close, she shouldn't have suceeded since it is day. Let's fetch the list of all alive players to check \n")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
+time.sleep(1)
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print("Verification that it is not nightime- when we ask if it is night, we get \n")
 print(r.text)
@@ -84,27 +85,41 @@ r = requests.post(setNightUrl, auth=HTTPBasicAuth(username, password),data=data,
 print("Now when we ask if it is night, we should get true \n")
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
+time.sleep(1)
 print("Let's have Elaine try again. She should succeed this time \n")
 r = requests.post(killNadiaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("As you can see, Nadia is no longer on the list of living players, since Elaine killed her. Now let's move Jake right next to Elaine (31,45) so she can kill him")
+time.sleep(1)
 r = requests.post(moveJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
+time.sleep(1)
 print("And now for the kill...")
 r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("Note that Jake is indeed dead \n")
+time.sleep(1)
 print("Now, let's make it day again, for voting, and verify that it is night \n")
 r = requests.post(setDayUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
-print("Is it night?")
+print("Is it night? We should get false.")
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("Now that it is day, let's have voting begin! Jake obviously votes for Elaine the werewolf, and Elaine votes for Jake. \n")
-r = requests.post(voteJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
-r = requests.post(voteJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+time.sleep(1)
+print("Now that it is day, let's have voting begin! Jake obviously votes for Elaine as the werewolf... \n")
+r = requests.post(voteElaineUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
+print("Notice Elaine now has one vote against her, while Joshua has 0. \n")
+time.sleep(1)
+print("Now Elaine votes for Joshua.. \n")
+r = requests.post(voteJoshuaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
+print("And now see Joshua has a vote against him as well. \n")
+time.sleep(1)
+print("This concludes the demonstration of the werewolf program. Hope you enjoyed it!")
 
 
