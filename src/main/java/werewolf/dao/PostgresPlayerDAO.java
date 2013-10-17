@@ -112,7 +112,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	@Override
 	public void voteOnPlayer(Player p) throws NoPlayerFoundException {
 		String votePlayerSQL = "UPDATE WEREWOLF "
-				+"SET NUM_VOTES_AGAINST = NUM_VOTES + 1 "
+				+"SET NUM_VOTES_AGAINST = NUM_VOTES_AGAINST + 1 "
 				+"WHERE PLAYER_ID = "+ p.getUserID() +";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(votePlayerSQL);

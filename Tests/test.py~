@@ -18,6 +18,9 @@ killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jak
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
+setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
+voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/jake'
+voteJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/jake/elaine'
 
 
 addNadiaUrlLocal = 'http://localhost:8080/werewolf/players/add/nadia/false/31/45'
@@ -58,12 +61,12 @@ print("Adding Elaine...")
 r = requests.post(addJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 time.sleep(1)
 print("Adding Jake...")
-#r = requests.post(addJoshuaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
-#time.sleep(2)
-#print(".")
+r = requests.post(addJoshuaUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+time.sleep(1)
+print("Adding Joshua")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("The key points in that are: Elaine is a werewolf, Nadia is very close to Elaine, and Jake is far away from all of them. \n")
+print("The key points in that are: Elaine is a werewolf, Nadia is very close to Elaine, and Jake and Joshua far away from all of them. \n")
 
 print("Notice that is is daytime. The game automatically starts as day to prevent too many easy kills. To verify, we ask if it is nighttime. It should return false \n")
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
@@ -93,5 +96,15 @@ print("And now for the kill...")
 r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("Note that Jake is indeed dead")
+print("Note that Jake is indeed dead \n")
+print("Now, let's make it day again, for voting, and verify that it is night \n")
+r = requests.post(setDayUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+print("Is it night?")
+r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
+print("Now that it is day, let's have voting begin! Jake obviously votes for Elaine the werewolf, and Elaine votes for Jake. \n")
+r = requests.post(voteJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+r = requests.post(voteJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
+r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+
 
