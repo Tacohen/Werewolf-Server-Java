@@ -9,6 +9,24 @@ public class Player {
 	private int userID;
 	private boolean isWereWolf;
 	private boolean isAdmin;
+	private boolean isVigilante;
+	public boolean isVigilante() {
+		return isVigilante;
+	}
+
+	public void setVigilante(boolean isVigilante) {
+		this.isVigilante = isVigilante;
+	}
+
+	public boolean isDoctor() {
+		return isDoctor;
+	}
+
+	public void setDoctor(boolean isDoctor) {
+		this.isDoctor = isDoctor;
+	}
+
+	private boolean isDoctor;
 	private int voteCount;
 	private String picture;
 	public String getPicture() {

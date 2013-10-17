@@ -6,7 +6,6 @@ import java.util.List;
 
 import java.util.logging.Logger;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.scheduling.annotation.Scheduled;
 
 import Exceptions.NoPlayerFoundException;
@@ -112,7 +111,7 @@ public class GameService {
 		}
 		
 		public Boolean canKill(Player killer, Player victim){
-			if ((isNight == true) && (killer.isWereWolf()) && ((victim.getLat()==killer.getLat())) && ((victim.getLng()==killer.getLng()))){
+			if ((isNight == true) && ((killer.isWereWolf()) | (killer.isVigilante())) && ((victim.getLat()==killer.getLat())) && ((victim.getLng()==killer.getLng()))){
 				logger.info("Prepare to set dead");
 				return true;
 			}
