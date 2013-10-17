@@ -122,10 +122,10 @@ public class HomeController {
 
 	
 	@RequestMapping(value = "/players/vote/{voterId}/{voteId}", method=RequestMethod.POST)	
-	public @ResponseBody void voteOnPlayer(@PathVariable int voterId, @PathVariable int voteId) throws NoPlayerFoundException {
+	public @ResponseBody void voteOnPlayer(@PathVariable String voterId, @PathVariable String voteId) throws NoPlayerFoundException {
 		JsonResponse response = new JsonResponse();
 		logger.info("voter is:"+voterId);;
-		gameService.voteOnPlayer(gameService.getPlayerByID(voteId));
+		gameService.voteOnPlayer(gameService.getPlayerByIDStr(voteId));
 		//return response;
     }
 	

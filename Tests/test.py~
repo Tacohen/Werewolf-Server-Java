@@ -93,5 +93,5 @@ print("And now for the kill...")
 r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
-print("This is unfinished, please come back later...")
+print("Note that Jake is indeed dead")
 
