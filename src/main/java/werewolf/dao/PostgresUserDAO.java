@@ -8,6 +8,7 @@ import java.util.logging.Logger;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.security.authentication.encoding.PasswordEncoder;
 
 import edu.wm.service.GameService;
 import edu.wm.something.PlayerRowMapper;
@@ -18,18 +19,42 @@ public class PostgresUserDAO implements IUserDAO {
 	private static PostgresDAO postgresDao = new PostgresDAO();
 	static Logger logger = Logger.getLogger(PostgresUserDAO.class.getName());
 	private static JdbcTemplate jdbcTemplate;
-	private PlayerRowMapper playerRowMapper = new PlayerRowMapper();
 	private GameService gameService = new GameService();
+	@Autowired
+	PasswordEncoder passwordEncoder;
 
 	@Override
-	public void createUser(MyUser user) {
-		// TODO Auto-generated method stub
+	public void createUser(MyUser user) throws IOException {
+		File f = new File(getClass().getResource("/users.sql").getFile());
+        String sqlStr = loadContents(f);
+        System.out.println(sqlStr);
+		String hashedPass = passwordEncoder.encodePassword(user.getPassword(), "INREOUHG984N5V9V98N54W8");
+		user.setHashedPassword(hashedPass);
+		user.setKills(0);
+		user.setScore(0);
+		user.setGamesPlayed(0);
+        
+        try{
+        	//create the werewolf table
+        	jdbcTemplate.execute(sqlStr);
+        	logger.info("users table being created");
+        } catch (Exception e){
+        	//Do nothing
+        	logger.info("users table already created");
+        }
+        
+        jdbcTemplate.execute("INSERT INTO USERS"
+				+ "(USERNAME, HASHED_PASSWORD, KILLS, GAMES_PLAYED, SCORE) " + "VALUES"
+				+ "("+user.getUsername()+",'"+user.getHashedPassword() +"',"+0+","+0+","+0+");");
 		
 	}
 
 	@Override
 	public void deleteUser(MyUser user) {
-		// TODO Auto-generated method stub
+			String username = user.getUsername();
+        	jdbcTemplate.execute("DELETE FROM USERS WHERE USERNAME = "+username+";");
+        	logger.info("Deleted user "+username);
+
 		
 	}
 
@@ -65,6 +90,12 @@ public class PostgresUserDAO implements IUserDAO {
 	 
 	    return contents.toString();
 	  }
+
+	@Override
+	public void login(String username, String password) {
+		// TODO Auto-generated method stub
+		
+	}
 		
 	
 

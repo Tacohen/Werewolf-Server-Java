@@ -18,7 +18,6 @@ import org.springframework.jdbc.datasource.DriverManagerDataSource;
 public class PostgresDAO {
 	
 	private boolean databaseBuilt;
-	//private Connection connection;
 	private JdbcTemplate jdbcTemplate;
 	static Logger logger = Logger.getLogger(PostgresDAO.class.getName());
 	

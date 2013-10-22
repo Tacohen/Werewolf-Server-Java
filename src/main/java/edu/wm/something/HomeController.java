@@ -169,6 +169,11 @@ public class HomeController {
 		gameService.setNight(true);
 	}
 	
+	@RequestMapping(value ="/users/login", method =RequestMethod.POST)
+	public @ResponseBody void logint(){
+		
+	}
+	
 	@RequestMapping(value ="/admin/setday", method =RequestMethod.POST)
 	public @ResponseBody void setDay(){
 		gameService.setNight(false);

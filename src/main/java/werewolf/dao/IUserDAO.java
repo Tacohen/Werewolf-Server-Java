@@ -10,11 +10,12 @@ import edu.wm.something.domain.Player;
 
 public interface IUserDAO {
 	
-	void createUser(MyUser user);
+	void createUser(MyUser user) throws IOException;
 	
 	void deleteUser(MyUser user);	
 	
 	void restartGame() throws IOException;
 	
+	void login(String username, String password);
 	
 }

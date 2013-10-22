@@ -9,11 +9,38 @@ public class MyUser extends User{
 	private static GrantedAuthority[] authorities;
 	private static String password;
 	private static String username;
+	public String getUsername() {
+		return username;
+	}
+	public static void setUsername(String username) {
+		MyUser.username = username;
+	}
 	private String firstName;
 	private String lastName;
 	private String imageURL;
 	private String hashedPassword;
 	private Boolean isWerewolf;
+	private int kills;
+	public int getKills() {
+		return kills;
+	}
+	public void setKills(int kills) {
+		this.kills = kills;
+	}
+	public int getGamesPlayed() {
+		return gamesPlayed;
+	}
+	public void setGamesPlayed(int gamesPlayed) {
+		this.gamesPlayed = gamesPlayed;
+	}
+	public int getScore() {
+		return score;
+	}
+	public void setScore(int score) {
+		this.score = score;
+	}
+	private int gamesPlayed;
+	private int score;
 	
 	public Boolean getIsWerewolf() {
 		return isWerewolf;
@@ -27,11 +54,9 @@ public class MyUser extends User{
 		return firstName;
 	}
 	@SuppressWarnings("deprecation")
-	public MyUser(String firstName, String lastName, String imageURL,
+	public MyUser(String username, String imageURL,
 			String hashedPassword, Boolean isWerewolf) {
 		super(username,password,true,true,true,true,authorities);
-		this.firstName = firstName;
-		this.lastName = lastName;
 		this.imageURL = imageURL;
 		this.hashedPassword = hashedPassword;
 		this.isWerewolf = isWerewolf;
