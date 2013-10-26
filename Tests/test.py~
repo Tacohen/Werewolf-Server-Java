@@ -21,6 +21,7 @@ moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/3
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
 voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
 voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
+loginTimUrl = "http://powerful-depths-2851.herokuapp.com/users/login"
 
 
 addNadiaUrlLocal = 'http://localhost:8080/werewolf/players/add/nadia/false/31/45'
@@ -36,6 +37,7 @@ setNightUrlLocal = 'http://localhost:8080/werewolf//admin/setnight'
 headers = {'Content-type': 'application/json'}
 
 data = json.dumps({"lat":35,"lng":45})
+loginData = json.dumps({"username":"Tim","password":"12345"})
 
 print("Welcome to the testing script for the Werewolf game! \n")
 print("There is probably some old data left over from the last game. Let's check: \n")
@@ -121,5 +123,6 @@ print(r.text)
 print("And now see Joshua has a vote against him as well. \n")
 time.sleep(1)
 print("This concludes the demonstration of the werewolf program. Hope you enjoyed it!")
+r = requests.post(voteJoshuaUrl, auth=HTTPBasicAuth(username, password),data=loginData, headers=headers)
 
 
