@@ -31,6 +31,7 @@ import edu.wm.something.domain.Player;
  * Handles requests for the application home page.
  */
 @Controller
+@RequestMapping(value = "/json")
 public class HomeController {
 	
 	int id;
@@ -77,7 +78,6 @@ public class HomeController {
 		try {
 			gameService.updatePosition(gameService.getPlayerByIDStr(playerId),location);
 		} catch (NoPlayerFoundException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		return jsonResponse;

@@ -123,6 +123,6 @@ print(r.text)
 print("And now see Joshua has a vote against him as well. \n")
 time.sleep(1)
 print("This concludes the demonstration of the werewolf program. Hope you enjoyed it!")
-r = requests.post(voteJoshuaUrl, auth=HTTPBasicAuth(username, password),data=loginData, headers=headers)
+r = requests.post(loginTimUrl, auth=HTTPBasicAuth(username, password),data=loginData, headers=headers)
 
 
