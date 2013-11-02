@@ -33,10 +33,7 @@ public class PlayerService {
     }
      
     public static List<Player> getAllAlive() throws NoPlayersException{
-    	logger.info("In PlayerService.getAllPlayers()");
-        //return mongoPlayerDAO.getAllPlayers();
-    	//postgresDao.implementDatabase();
-    	//return null;
+    	logger.info("In PlayerService.getAllAlive");
     	return postgresPlayerDao.getAllAlive();
     }
      
