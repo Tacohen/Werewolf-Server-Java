@@ -14,6 +14,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -170,13 +171,35 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value ="/users/login", method =RequestMethod.POST)
-	public @ResponseBody void logint(){
-		
+	public @ResponseBody Boolean logint(@RequestBody String username,@RequestBody String Password,@RequestBody double lat, double lng){
+		Player p;
+		Random random = new Random();
+		Random randomWerewolf = new Random(4);
+		boolean isWerewolf = false;
+		int isWerewolfSource = randomWerewolf.nextInt();
+		if (isWerewolfSource == 3){
+			isWerewolf = true;
+		}
+		try {
+			p = gameService.getPlayerByIDStr(username);
+			return false;//Already logged in
+		} catch (NoPlayerFoundException e) {
+			p = new Player(username, false, lat, lng, random.nextInt(), isWerewolf,0);
+			logger.info("Started to add player, in home controller now");
+			playerService.addplayer(p);
+			return true;//added player sucessfully
+		}
+
 	}
 	
 	@RequestMapping(value ="/admin/setday", method =RequestMethod.POST)
 	public @ResponseBody void setDay(){
 		gameService.setNight(false);
+	}
+	
+	@RequestMapping(value ="/users/register", method =RequestMethod.POST)
+	public @ResponseBody void register(){
+		//TODO: Add a method for adding a user!
 	}
 	
 }

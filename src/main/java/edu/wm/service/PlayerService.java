@@ -65,6 +65,10 @@ public class PlayerService {
 	public void voteOnPlayer(Player p) throws NoPlayerFoundException{
 		postgresPlayerDao.voteOnPlayer(p);
 	}
+
+	public static List<Player> getAllPlayers() throws NoPlayersException {
+		return postgresPlayerDao.getAllPlayers();
+	}
     
     
 

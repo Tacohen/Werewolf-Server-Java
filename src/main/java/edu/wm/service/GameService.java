@@ -49,6 +49,12 @@ public class GameService {
 
 		}
 		
+		public List<Player> getAllPlayers() throws NoPlayersException {
+			logger.info("In gameSerice.getAllPlayers()");
+			return PlayerService.getAllPlayers();
+
+		}
+		
 		public List<Player> getAllWerewolves() throws NoPlayersException {
 			List<Player> playerList = getAllAlive();
 			List<Player> werewolfList = (List<Player>) new ArrayList<Player>();
