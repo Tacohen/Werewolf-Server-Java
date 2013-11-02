@@ -30,9 +30,9 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		String getPlayers = "SELECT * FROM WEREWOLF WHERE IS_DEAD=FALSE;";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		//List<Player> p = jdbcTemplate.queryForObject(getPlayers, new PlayerRowMapper());
-		List<Player> list = jdbcTemplate.queryForList(getPlayers,Player.class);
-		//List<Player> result = jdbcTemplate.query(getPlayers, new PlayerRowMapper());
-		 return list;
+		//List<Player> list = jdbcTemplate.queryForList(getPlayers,Player.class);
+		 List<Player> result = jdbcTemplate.query(getPlayers, new PlayerRowMapper());
+		 return result;
 	}
 
 	@Override
