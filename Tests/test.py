@@ -98,6 +98,7 @@ time.sleep(1)
 r = requests.post(moveJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
+'''
 time.sleep(1)
 print("And now for the kill...")
 r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),data=data, headers=headers)
@@ -125,5 +126,5 @@ print("And now see Joshua has a vote against him as well. \n")
 time.sleep(1)
 print("This concludes the demonstration of the werewolf program. Hope you enjoyed it!")
 #r = requests.post(loginTimUrl, auth=HTTPBasicAuth(username, password),data=loginData, headers=headers)
-
+'''
 

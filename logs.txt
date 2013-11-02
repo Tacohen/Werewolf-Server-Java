@@ -1,0 +1,101 @@
+2013-11-02T23:40:16.096824+00:00 heroku[router]: at=info method=POST path=/players/vote/elaine/joshua host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=2ms service=206ms status=200 bytes=0
+2013-11-02T23:40:06.393110+00:00 heroku[router]: at=info method=POST path=/players/kill/elaine/nadia host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=14ms service=207ms status=200 bytes=5
+2013-11-02T23:41:46.427102+00:00 heroku[router]: at=info method=GET path=/players/alive host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=1ms service=71ms status=200 bytes=577
+2013-11-02T23:41:46.355445+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:41:46.355986+00:00 app[web.1]: Nov 02, 2013 11:41:46 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:41:46.355986+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:41:46.354848+00:00 app[web.1]: Nov 02, 2013 11:41:46 PM edu.wm.service.GameService getAllAlive
+2013-11-02T23:41:46.354243+00:00 app[web.1]: INFO : edu.wm.something.HomeController - In players/alive!
+2013-11-02T23:41:46.355445+00:00 app[web.1]: Nov 02, 2013 11:41:46 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:41:46.354848+00:00 app[web.1]: INFO: In gameSerice.getAllAlive()
+2013-11-02T23:41:47.693823+00:00 app[web.1]: CREATE TABLE WEREWOLF(	PLAYER_ID			DECIMAL(15)			NOT NULL,	PLAYER_NAME			VARCHAR(20)			NOT NULL,	LAT					DECIMAL(15)			NOT NULL,	LNG					DECIMAL(15)			NOT NULL,	IS_DEAD				BOOLEAN				NOT NULL,	IS_WEREWOLF			BOOLEAN				NOT NULL,	NUM_VOTES_AGAINST	DECIMAL(15)	,	PLAYER_PIC			VARCHAR(15)	,		PRIMARY KEY (PLAYER_ID)		);
+2013-11-02T23:41:47.776643+00:00 app[web.1]: Nov 02, 2013 11:41:47 PM werewolf.dao.PostgresUserDAO restartGame
+2013-11-02T23:41:47.776643+00:00 app[web.1]: INFO: werewolf being created
+2013-11-02T23:41:48.882918+00:00 app[web.1]: INFO : edu.wm.something.HomeController - In players/alive!
+2013-11-02T23:41:48.884028+00:00 app[web.1]: Nov 02, 2013 11:41:48 PM edu.wm.service.GameService getAllAlive
+2013-11-02T23:41:48.884028+00:00 app[web.1]: INFO: In gameSerice.getAllAlive()
+2013-11-02T23:41:48.884818+00:00 app[web.1]: Nov 02, 2013 11:41:48 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:41:48.884818+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:41:48.885398+00:00 app[web.1]: Nov 02, 2013 11:41:48 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:41:48.885398+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:41:50.321071+00:00 app[web.1]: INFO: Started to add player, in playerservice now
+2013-11-02T23:41:50.320340+00:00 app[web.1]: INFO : edu.wm.something.HomeController - Started to add player, in home controller now
+2013-11-02T23:41:50.321071+00:00 app[web.1]: Nov 02, 2013 11:41:50 PM edu.wm.service.PlayerService addplayer
+2013-11-02T23:41:50.403665+00:00 heroku[router]: at=info method=POST path=/players/add/nadia/false/31/45 host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=27ms service=80ms status=200 bytes=0
+2013-11-02T23:41:48.968290+00:00 heroku[router]: at=info method=GET path=/players/alive host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=13ms service=68ms status=200 bytes=2
+2013-11-02T23:41:51.523209+00:00 app[web.1]: INFO : edu.wm.something.HomeController - Started to add player, in home controller now
+2013-11-02T23:41:51.617869+00:00 heroku[router]: at=info method=POST path=/players/add/elaine/true/31/45 host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=2ms service=121ms status=200 bytes=0
+2013-11-02T23:41:51.559756+00:00 app[web.1]: Nov 02, 2013 11:41:51 PM edu.wm.service.PlayerService addplayer
+2013-11-02T23:41:51.559756+00:00 app[web.1]: INFO: Started to add player, in playerservice now
+2013-11-02T23:41:52.731259+00:00 app[web.1]: INFO : edu.wm.something.HomeController - Started to add player, in home controller now
+2013-11-02T23:41:52.731259+00:00 app[web.1]: Nov 02, 2013 11:41:52 PM edu.wm.service.PlayerService addplayer
+2013-11-02T23:41:52.731259+00:00 app[web.1]: INFO: Started to add player, in playerservice now
+2013-11-02T23:41:52.786192+00:00 heroku[router]: at=info method=POST path=/players/add/jake/false/29/29 host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=1ms service=84ms status=200 bytes=0
+2013-11-02T23:41:53.952564+00:00 heroku[router]: at=info method=POST path=/players/add/joshua/true/31/29 host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=2ms service=71ms status=200 bytes=0
+2013-11-02T23:41:53.893548+00:00 app[web.1]: Nov 02, 2013 11:41:53 PM edu.wm.service.PlayerService addplayer
+2013-11-02T23:41:53.893548+00:00 app[web.1]: INFO: Started to add player, in playerservice now
+2013-11-02T23:41:53.888270+00:00 app[web.1]: INFO : edu.wm.something.HomeController - Started to add player, in home controller now
+2013-11-02T23:41:55.142650+00:00 heroku[router]: at=info method=GET path=/players/alive host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=5ms service=63ms status=200 bytes=762
+2013-11-02T23:41:55.083318+00:00 app[web.1]: INFO : edu.wm.something.HomeController - In players/alive!
+2013-11-02T23:41:55.083845+00:00 app[web.1]: INFO: In gameSerice.getAllAlive()
+2013-11-02T23:41:55.084408+00:00 app[web.1]: Nov 02, 2013 11:41:55 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:41:55.083845+00:00 app[web.1]: Nov 02, 2013 11:41:55 PM edu.wm.service.GameService getAllAlive
+2013-11-02T23:41:55.084408+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:41:55.084924+00:00 app[web.1]: Nov 02, 2013 11:41:55 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:41:55.084924+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:40:07.798027+00:00 heroku[router]: at=info method=POST path=/admin/setnight host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=27ms service=21ms status=200 bytes=0
+2013-11-02T23:41:56.396889+00:00 app[web.1]: About to kill!
+2013-11-02T23:41:56.396889+00:00 app[web.1]: INFO : edu.wm.something.HomeController - killerId is:elaine
+2013-11-02T23:41:56.396889+00:00 app[web.1]: INFO : edu.wm.something.HomeController - victimId is:nadia
+2013-11-02T23:41:56.488889+00:00 app[web.1]: INFO: Not set dead
+2013-11-02T23:41:56.489385+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM edu.wm.service.GameService canKill
+2013-11-02T23:41:56.489879+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM edu.wm.service.GameService canKill
+2013-11-02T23:41:56.489879+00:00 app[web.1]: INFO: is killer werewolf?true
+2013-11-02T23:41:56.521380+00:00 heroku[router]: at=info method=POST path=/players/kill/elaine/nadia host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=4ms service=103ms status=200 bytes=5
+2013-11-02T23:41:56.488889+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM edu.wm.service.GameService canKill
+2013-11-02T23:41:56.489385+00:00 app[web.1]: INFO: Nightime status: isNight = false
+2013-11-02T23:41:56.490452+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM edu.wm.service.GameService canKill
+2013-11-02T23:41:56.490452+00:00 app[web.1]: INFO: is victim near? true
+2013-11-02T23:41:56.593051+00:00 app[web.1]: INFO : edu.wm.something.HomeController - In players/alive!
+2013-11-02T23:41:56.593714+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM edu.wm.service.GameService getAllAlive
+2013-11-02T23:41:56.593714+00:00 app[web.1]: INFO: In gameSerice.getAllAlive()
+2013-11-02T23:41:56.594243+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:41:56.594774+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:41:56.594243+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:41:56.594774+00:00 app[web.1]: Nov 02, 2013 11:41:56 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:41:56.668747+00:00 heroku[router]: at=info method=GET path=/players/alive host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=4ms service=56ms status=200 bytes=762
+2013-11-02T23:41:57.809222+00:00 heroku[router]: at=info method=GET path=/players/isnight host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=7ms service=9ms status=200 bytes=5
+2013-11-02T23:41:58.105004+00:00 heroku[router]: at=info method=GET path=/players/isnight host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=3ms service=10ms status=200 bytes=4
+2013-11-02T23:41:57.983189+00:00 heroku[router]: at=info method=POST path=/admin/setnight host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=14ms service=15ms status=200 bytes=0
+2013-11-02T23:41:59.205396+00:00 app[web.1]: About to kill!
+2013-11-02T23:41:59.205396+00:00 app[web.1]: INFO : edu.wm.something.HomeController - killerId is:elaine
+2013-11-02T23:41:59.205396+00:00 app[web.1]: INFO : edu.wm.something.HomeController - victimId is:nadia
+2013-11-02T23:41:59.353860+00:00 app[web.1]: INFO: Prepare to set dead
+2013-11-02T23:41:59.353860+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM edu.wm.service.GameService canKill
+2013-11-02T23:41:59.360282+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM werewolf.dao.PostgresPlayerDAO killPlayer
+2013-11-02T23:41:59.360282+00:00 app[web.1]: INFO: Killed player nadia
+2013-11-02T23:41:59.429634+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:41:59.429634+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:41:59.430100+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:41:59.430100+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:41:59.497988+00:00 heroku[router]: at=info method=POST path=/players/kill/elaine/nadia host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=2ms service=279ms status=200 bytes=4
+2013-11-02T23:41:59.581202+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM edu.wm.service.GameService getAllAlive
+2013-11-02T23:41:59.580527+00:00 app[web.1]: INFO : edu.wm.something.HomeController - In players/alive!
+2013-11-02T23:41:59.581202+00:00 app[web.1]: INFO: In gameSerice.getAllAlive()
+2013-11-02T23:41:59.581721+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:41:59.581721+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:41:59.582305+00:00 app[web.1]: Nov 02, 2013 11:41:59 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:41:59.582305+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:42:01.047395+00:00 heroku[router]: at=info method=GET path=/players/alive host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=24ms service=67ms status=200 bytes=571
+2013-11-02T23:42:00.986676+00:00 app[web.1]: Nov 02, 2013 11:42:00 PM edu.wm.service.PlayerService getAllAlive
+2013-11-02T23:42:00.986676+00:00 app[web.1]: INFO: In PlayerService.getAllAlive
+2013-11-02T23:42:00.985181+00:00 app[web.1]: INFO : edu.wm.something.HomeController - In players/alive!
+2013-11-02T23:42:00.986049+00:00 app[web.1]: Nov 02, 2013 11:42:00 PM edu.wm.service.GameService getAllAlive
+2013-11-02T23:42:00.986049+00:00 app[web.1]: INFO: In gameSerice.getAllAlive()
+2013-11-02T23:42:00.987355+00:00 app[web.1]: INFO: In PostgresPLayerDAO
+2013-11-02T23:42:00.987355+00:00 app[web.1]: Nov 02, 2013 11:42:00 PM werewolf.dao.PostgresPlayerDAO getAllAlive
+2013-11-02T23:42:00.865998+00:00 heroku[router]: at=info method=POST path=/players/location/jake host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=1ms service=11ms status=400 bytes=1390
+2013-11-02T23:40:07.942522+00:00 heroku[router]: at=info method=GET path=/players/isnight host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=32ms service=23ms status=200 bytes=4
+2013-11-02T23:40:09.480603+00:00 heroku[router]: at=info method=GET path=/players/alive host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=2ms service=68ms status=200 bytes=577
+2013-11-02T23:41:56.298125+00:00 heroku[router]: at=info method=GET path=/players/isnight host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=8ms service=13ms status=200 bytes=5
+2013-11-02T23:41:47.783474+00:00 heroku[router]: at=info method=POST path=/admin/restartGame host=powerful-depths-2851.herokuapp.com fwd="128.239.43.64" dyno=web.1 connect=2ms service=273ms status=200 bytes=0

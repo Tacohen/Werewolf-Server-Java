@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import Exceptions.NoPlayerFoundException;
 import Exceptions.NoPlayersException;
@@ -70,7 +71,7 @@ public class HomeController {
 		return players;
 	}
 	@RequestMapping(value="/players/location/{playerId}",method=RequestMethod.POST)
-	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") String playerId,@RequestBody long lat,@RequestBody long lng)
+	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") String playerId,@RequestParam long lat,@RequestParam long lng)
 	{
 		GPSLocation location = new GPSLocation();
 		location.setLat(lat);
