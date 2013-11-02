@@ -76,6 +76,8 @@ public class HomeController {
 		location.setLat(lat);
 		location.setLng(lng);
 		logger.info("moving player, in home controller");
+		logger.info("lat for moving player is: "+lat);
+		logger.info("lng for moving player is: "+lng);
 		try {
 			gameService.updatePosition(gameService.getPlayerByIDStr(playerId),location);
 		} catch (NoPlayerFoundException e) {
