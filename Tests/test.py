@@ -17,7 +17,8 @@ killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/na
 killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jake'
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
-moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
+#moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
+moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake'
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
 voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
 voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
@@ -36,7 +37,7 @@ setNightUrlLocal = 'http://localhost:8080/werewolf/admin/setnight'
 
 headers = {'Content-type': 'application/json'}
 
-data = json.dumps({"lat":35,"lng":45})
+data = json.dumps({"lat":31,"lng":45})
 loginData = json.dumps({"username":"Tim","password":"12345"})
 
 print("Welcome to the testing script for the Werewolf game! \n")

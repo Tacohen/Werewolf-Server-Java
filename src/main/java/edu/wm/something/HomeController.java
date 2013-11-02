@@ -69,12 +69,12 @@ public class HomeController {
 		List<Player> players = gameService.getAllAlive();
 		return players;
 	}
-	@RequestMapping(value="/players/location/{playerId}/{newLat}/{newLng}",method=RequestMethod.POST)
-	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") String playerId,@PathVariable("newLat") long newLat,@PathVariable("newLng") long newLng)
+	@RequestMapping(value="/players/location/{playerId}",method=RequestMethod.POST)
+	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") String playerId,@RequestBody long lat,@RequestBody long lng)
 	{
 		GPSLocation location = new GPSLocation();
-		location.setLat(newLat);
-		location.setLng(newLng);
+		location.setLat(lat);
+		location.setLng(lng);
 		logger.info("moving player, in home controller");
 		try {
 			gameService.updatePosition(gameService.getPlayerByIDStr(playerId),location);
