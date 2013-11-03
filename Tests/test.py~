@@ -14,8 +14,9 @@ password = "123"
 addPlayerUrl = 'http://powerful-depths-2851.herokuapp.com/players/add'
 checkAllAliveUrl = 'http://powerful-depths-2851.herokuapp.com/players/alive'
 restartGameUrl = 'http://powerful-depths-2851.herokuapp.com/admin/restartGame'
-killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/nadia'
-killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jake'
+#killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/nadia'
+#killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jake'
+killUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill'
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 #moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
@@ -45,6 +46,8 @@ moveJakeParams = {"playerId":"jake","lat":31,"lng":45}
 addNadiaParams = {"playerId":"nadia","lat":31,"lng":45,"isWerewolf":"false"}
 addElaineParams = {"playerId":"elaine","lat":31,"lng":45,"isWerewolf":"true"}
 addJoshuaParams = {"playerId":"joshua","lat":30,"lng":29,"isWerewolf":"true"}
+killNadiaParams = {"killerId":"elaine","victimId":"nadia"}
+killJakeParams = {"killerId":"elaine","victimId":"jake"}
 addJakeParams = {"playerId":"jake","lat":29,"lng":29,"isWerewolf":"false"}
 loginData = json.dumps({"username":"Tim","password":"12345"})
 
@@ -63,16 +66,16 @@ r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("That's much better. Now let's add some players!\n")
 time.sleep(1)
-r = requests.post(addNadiaUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addNadiaParams, headers=headers)
 print("Adding Nadia...")
 time.sleep(1)
-r = requests.post(addElaineUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addElaineParams, headers=headers)
 time.sleep(1)
 print("Adding Elaine...")
-r = requests.post(addJakeUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addJakeParams, headers=headers)
 time.sleep(1)
 print("Adding Jake...")
-r = requests.post(addJoshuaUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addJoshuaParams, headers=headers)
 time.sleep(1)
 print("Adding Joshua...")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))

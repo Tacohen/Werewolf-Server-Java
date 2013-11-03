@@ -106,10 +106,9 @@ public class HomeController {
 	
 	
 
-	@RequestMapping(value = "/players/kill/{killerId}/{victimId}", method=RequestMethod.POST)
-	public @ResponseBody boolean killPlayerById(@PathVariable("killerId") String killerIdStr, @PathVariable("victimId") String victimIdStr) throws NoPlayerFoundException, NoPlayersException
+	@RequestMapping(value = "/players/kill", method=RequestMethod.POST)
+	public @ResponseBody boolean killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
 	{
-		Player p = new Player();
 		System.out.println("About to kill!");
 		logger.info("killerId is:"+killerIdStr);
 		logger.info("victimId is:"+victimIdStr);
