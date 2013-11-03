@@ -87,12 +87,12 @@ public class HomeController {
 		return jsonResponse;
 	}
 	
-	@RequestMapping(value="/players/add/{playerName}/{isWerewolf}/{lat}/{lng}",method=RequestMethod.POST)
-	public @ResponseBody void addPlayer(@PathVariable("playerName") String newPlayerId, @PathVariable("isWerewolf") Boolean isWerewolf,@PathVariable("lat") long lat,@PathVariable("lng") long lng) 
+	@RequestMapping(value="/players/add",method=RequestMethod.POST)
+	public @ResponseBody void addPlayer(@RequestParam(value="playerId",required=true) String playerId,@RequestParam(value="lat",required=true) Long lat,@RequestParam(value="lng",required=true) Long lng,@RequestParam(value="isWerewolf",required=true) boolean isWerewolf)
 	{
 		Random random = new Random();
 		Player p = new Player();
-		p.setId(newPlayerId);
+		p.setId(playerId);
 		p.setDead(false);
 		p.setWerewolf(isWerewolf);
 		p.setLat(lat);
