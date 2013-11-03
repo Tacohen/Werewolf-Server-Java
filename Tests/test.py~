@@ -23,8 +23,9 @@ setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 #moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake'
 moveUrl = 'http://powerful-depths-2851.herokuapp.com/players/location'
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
-voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
-voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
+#voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
+#voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
+voteUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote'
 loginTimUrl = "http://powerful-depths-2851.herokuapp.com/users/login"
 
 
@@ -49,6 +50,10 @@ addJoshuaParams = {"playerId":"joshua","lat":30,"lng":29,"isWerewolf":"true"}
 killNadiaParams = {"killerId":"elaine","victimId":"nadia"}
 killJakeParams = {"killerId":"elaine","victimId":"jake"}
 addJakeParams = {"playerId":"jake","lat":29,"lng":29,"isWerewolf":"false"}
+voteJoshuaParams = {"voterId":"elaine","voteId":"joshua"}
+voteElaineParams = {"voterId":"joshua","voteId":"elaine"}
+
+
 loginData = json.dumps({"username":"Tim","password":"12345"})
 
 print("Welcome to the testing script for the Werewolf game! \n")
@@ -86,7 +91,7 @@ print("Notice that is is daytime. The game automatically starts as day to preven
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("Now let's have Elaine try to kill Nadia.")
-r = requests.post(killNadiaUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(killUrl, auth=HTTPBasicAuth(username, password),params=killNadiaParams, headers=headers)
 print("Despite being close, she shouldn't have suceeded since it is day. Let's fetch the list of all alive players to check \n")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
@@ -101,7 +106,7 @@ r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 time.sleep(1)
 print("Let's have Elaine try again. She should succeed this time \n")
-r = requests.post(killNadiaUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(killUrl, auth=HTTPBasicAuth(username, password),params=killNadiaParams, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("As you can see, Nadia is no longer on the list of living players, since Elaine killed her. Now let's move Jake right next to Elaine (31,45) so she can kill him")
@@ -112,7 +117,7 @@ print(r.text)
 
 time.sleep(1)
 print("And now for the kill...")
-r = requests.post(killJakeUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(killUrl, auth=HTTPBasicAuth(username, password),params=killJakeParams, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("Note that Jake is indeed dead \n")

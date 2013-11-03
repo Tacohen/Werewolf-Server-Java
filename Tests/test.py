@@ -23,8 +23,9 @@ setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 #moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake'
 moveUrl = 'http://powerful-depths-2851.herokuapp.com/players/location'
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
-voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
-voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
+#voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
+#voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
+voteUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote'
 loginTimUrl = "http://powerful-depths-2851.herokuapp.com/users/login"
 
 
@@ -49,6 +50,10 @@ addJoshuaParams = {"playerId":"joshua","lat":30,"lng":29,"isWerewolf":"true"}
 killNadiaParams = {"killerId":"elaine","victimId":"nadia"}
 killJakeParams = {"killerId":"elaine","victimId":"jake"}
 addJakeParams = {"playerId":"jake","lat":29,"lng":29,"isWerewolf":"false"}
+voteJoshuaParams = {"voterId":"elaine","voteId":"joshua"}
+voteElaineParams = {"voterId":"joshua","voteId":"elaine"}
+
+
 loginData = json.dumps({"username":"Tim","password":"12345"})
 
 print("Welcome to the testing script for the Werewolf game! \n")
@@ -124,13 +129,13 @@ r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 time.sleep(1)
 print("Now that it is day, let's have voting begin! Jake obviously votes for Elaine as the werewolf... \n")
-r = requests.post(voteElaineUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(voteUrl, auth=HTTPBasicAuth(username, password),params=voteElaineParams, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("Notice Elaine now has one vote against her, while Joshua has 0. \n")
 time.sleep(1)
 print("Now Elaine votes for Joshua.. \n")
-r = requests.post(voteJoshuaUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(voteUrl, auth=HTTPBasicAuth(username, password),params=voteJoshuaParams, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("And now see Joshua has a vote against him as well. \n")
