@@ -18,7 +18,8 @@ killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jak
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
 #moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
-moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake'
+#moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake'
+moveUrl = 'http://powerful-depths-2851.herokuapp.com/players/location'
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
 voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
 voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
@@ -38,7 +39,7 @@ setNightUrlLocal = 'http://localhost:8080/werewolf/admin/setnight'
 headers = {'Content-type': 'application/json'}
 
 #data = json.dumps({"lat":31,"lng":45})
-params = {"lat":31,"lng":45}
+moveJakeParams = {"playerId":"jake","lat":31,"lng":45}
 loginData = json.dumps({"username":"Tim","password":"12345"})
 
 print("Welcome to the testing script for the Werewolf game! \n")
@@ -96,7 +97,7 @@ r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("As you can see, Nadia is no longer on the list of living players, since Elaine killed her. Now let's move Jake right next to Elaine (31,45) so she can kill him")
 time.sleep(1)
-r = requests.post(moveJakeUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+r = requests.post(moveUrl, auth=HTTPBasicAuth(username, password),params=moveJakeParams, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 

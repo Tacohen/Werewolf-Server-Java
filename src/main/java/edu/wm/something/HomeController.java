@@ -70,8 +70,8 @@ public class HomeController {
 		List<Player> players = gameService.getAllAlive();
 		return players;
 	}
-	@RequestMapping(value="/players/location/{playerId}",method=RequestMethod.POST)
-	public @ResponseBody JsonResponse setlocation(@PathVariable("playerId") String playerId,@RequestParam(value="lat",required=true) Long lat,@RequestParam(value="lng",required=true) Long lng)
+	@RequestMapping(value="/players/location",method=RequestMethod.POST)
+	public @ResponseBody JsonResponse setlocation(@RequestParam(value="playerId",required=true) String playerId,@RequestParam(value="lat",required=true) Long lat,@RequestParam(value="lng",required=true) Long lng)
 	{
 		GPSLocation location = new GPSLocation();
 		location.setLat(lat);
