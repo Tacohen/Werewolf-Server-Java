@@ -110,7 +110,7 @@ public class HomeController {
 	
 
 	@RequestMapping(value = "/players/kill", method=RequestMethod.POST)
-	public @ResponseBody boolean killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
+	public @ResponseBody JSONObject killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
 	{
 		System.out.println("About to kill!");
 		logger.info("killerId is:"+killerIdStr);
@@ -122,14 +122,15 @@ public class HomeController {
 			gameService.Kill(victim);
 			JSONObject json = new JSONObject();
 			json.put("isDead", true);
-			//return json;
-			return true;
+			return json;
+			//return true;
 		}
 		else{
 			gameService.Kill(victim);
 			JSONObject json = new JSONObject();
-			//json.put("isDead", false);
-			return false;
+			json.put("isDead", false);
+			return json;
+			//return false;
 		}
 	}
 
