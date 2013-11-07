@@ -51,7 +51,7 @@ public class HomeController {
 	
 	/**
 	 * Simply selects the home view to render by returning its name.
-	 *//**
+	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		logger.info("Welcome home! The client locale is {}.", locale);
@@ -64,7 +64,7 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "home";
-	}*/
+	}
 	
 	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
 	public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
@@ -141,13 +141,13 @@ public class HomeController {
 		gameService.voteOnPlayer(gameService.getPlayerByIDStr(voteId));
 		//return response;
     }
-	
+	/**
 	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
 	public  @ResponseBody Player getPlayerById(@RequestParam(value="ownerId",required=true)String ownerId) throws NoPlayerFoundException
 	{
 		Player players = gameService.getPlayerByIDStr(ownerId);
 		return players;
-	}
+	}*/
 	
 	@RequestMapping(value = "/players/alive/{ownerId}/pic", method = RequestMethod.GET)
 	public  @ResponseBody Player getPicById(@PathVariable int ownerId) throws NoPlayerFoundException
