@@ -36,7 +36,7 @@ import edu.wm.something.domain.Player;
  * Handles requests for the application home page.
  */
 @Controller
-@RequestMapping(value = "/")
+//@RequestMapping(value = "/json")
 public class HomeController {
 	
 	int id;
