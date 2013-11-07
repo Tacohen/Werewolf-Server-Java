@@ -7,6 +7,9 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Random;
 
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.map.util.JSONPObject;
+import org.json.simple.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -107,19 +110,25 @@ public class HomeController {
 	
 
 	@RequestMapping(value = "/players/kill", method=RequestMethod.POST)
-	public @ResponseBody boolean killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
+	public @ResponseBody JSONObject killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
 	{
 		System.out.println("About to kill!");
 		logger.info("killerId is:"+killerIdStr);
 		logger.info("victimId is:"+victimIdStr);
 		Player killer = gameService.getPlayerByIDStr(killerIdStr);
 		Player victim = gameService.getPlayerByIDStr(victimIdStr);
+	
 		if (gameService.canKill(killer,victim)){
 			gameService.Kill(victim);
-			return true;
+			JSONObject json = new JSONObject();
+			json.put("isDead", true);
+			return json;
 		}
 		else{
-			return false;
+			gameService.Kill(victim);
+			JSONObject json = new JSONObject();
+			json.put("isDead", false);
+			return json;
 		}
 	}
 
@@ -132,10 +141,10 @@ public class HomeController {
 		//return response;
     }
 	
-	@RequestMapping(value = "/players/alive/{ownerId}", method = RequestMethod.GET)
-	public  @ResponseBody Player getPlayerById(@PathVariable int ownerId) throws NoPlayerFoundException
+	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
+	public  @ResponseBody Player getPlayerById(@RequestParam(value="ownerId",required=true)String ownerId) throws NoPlayerFoundException
 	{
-		Player players = gameService.getPlayerByID(ownerId);
+		Player players = gameService.getPlayerByIDStr(ownerId);
 		return players;
 	}
 	
