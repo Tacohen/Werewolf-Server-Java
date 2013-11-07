@@ -141,13 +141,13 @@ public class HomeController {
 		gameService.voteOnPlayer(gameService.getPlayerByIDStr(voteId));
 		//return response;
     }
-	/**
-	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
+	
+	@RequestMapping(value = "/players/id", method = RequestMethod.GET)
 	public  @ResponseBody Player getPlayerById(@RequestParam(value="ownerId",required=true)String ownerId) throws NoPlayerFoundException
 	{
 		Player players = gameService.getPlayerByIDStr(ownerId);
 		return players;
-	}*/
+	}
 	
 	@RequestMapping(value = "/players/alive/{ownerId}/pic", method = RequestMethod.GET)
 	public  @ResponseBody Player getPicById(@PathVariable int ownerId) throws NoPlayerFoundException
