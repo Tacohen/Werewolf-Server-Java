@@ -169,12 +169,16 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value ="/players/isnight", method =RequestMethod.GET)
-	public @ResponseBody boolean isNight(){
+	public @ResponseBody JSONObject isNight(){
 		if (gameService.isNight()){
-			return true;
+			JSONObject json = new JSONObject();
+			json.put("isNight", true);
+			return json;
 		}
 		else{
-			return false;
+			JSONObject json = new JSONObject();
+			json.put("isNight", false);
+			return json;
 		}
 	}
 	
