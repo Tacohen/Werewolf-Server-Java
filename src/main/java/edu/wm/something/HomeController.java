@@ -36,7 +36,6 @@ import edu.wm.something.domain.Player;
  * Handles requests for the application home page.
  */
 @Controller
-//@RequestMapping(value = "/json")
 public class HomeController {
 	
 	int id;
@@ -123,14 +122,12 @@ public class HomeController {
 			JSONObject json = new JSONObject();
 			json.put("isDead", true);
 			return json;
-			//return true;
 		}
 		else{
 			gameService.Kill(victim);
 			JSONObject json = new JSONObject();
 			json.put("isDead", false);
 			return json;
-			//return false;
 		}
 	}
 
