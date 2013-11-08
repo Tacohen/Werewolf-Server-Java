@@ -184,8 +184,8 @@ public class HomeController {
 		gameService.setNight(true);
 	}
 	
-	@RequestMapping(value ="/users/login", method =RequestMethod.POST)
-	public @ResponseBody Boolean logint(@RequestBody String username,@RequestBody String Password,@RequestBody double lat, double lng){
+	@RequestMapping(value ="/users/login",produces = "application/json", method =RequestMethod.POST)
+	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String Password,@RequestBody double lat, double lng){
 		Player p;
 		Random random = new Random();
 		Random randomWerewolf = new Random(4);
@@ -196,12 +196,16 @@ public class HomeController {
 		}
 		try {
 			p = gameService.getPlayerByIDStr(username);
-			return false;//Already logged in
+			JSONObject json = new JSONObject();
+			json.put("addedUser", false);
+			return json;//Already logged in
 		} catch (NoPlayerFoundException e) {
 			p = new Player(username, false, lat, lng, random.nextInt(), isWerewolf,0);
 			logger.info("Started to add player, in home controller now");
 			playerService.addplayer(p);
-			return true;//added player sucessfully
+			JSONObject json = new JSONObject();
+			json.put("addedUser", true);
+			return json;//added player sucessfully
 		}
 
 	}
