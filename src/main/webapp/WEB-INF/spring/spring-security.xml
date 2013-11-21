@@ -18,7 +18,6 @@
  
 	<authentication-manager>
 	   <authentication-provider>
-	   <password-encoder ref="encoder"/>
 	   <user-service>
 		   <user name="admin" password="123" authorities="ROLE_ADMIN" />
 	       </user-service>
