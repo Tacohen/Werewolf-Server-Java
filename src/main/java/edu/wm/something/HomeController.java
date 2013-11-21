@@ -108,6 +108,7 @@ public class HomeController {
 	
 	
 
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/players/kill", method=RequestMethod.POST)
 	public @ResponseBody JSONObject killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
 	{
@@ -165,6 +166,7 @@ public class HomeController {
 		}
 	}
 	
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value ="/players/isnight", method =RequestMethod.GET)
 	public @ResponseBody JSONObject isNight(){
 		if (gameService.isNight()){
@@ -184,6 +186,7 @@ public class HomeController {
 		gameService.setNight(true);
 	}
 	
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value ="/users/login",produces = "application/json", method =RequestMethod.POST)
 	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String password,@RequestBody double lat, double lng){
 		Player p;
