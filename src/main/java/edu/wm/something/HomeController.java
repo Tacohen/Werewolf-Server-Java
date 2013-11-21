@@ -185,7 +185,7 @@ public class HomeController {
 	}
 	
 	@RequestMapping(value ="/users/login",produces = "application/json", method =RequestMethod.POST)
-	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String Password,@RequestBody double lat, double lng){
+	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String password,@RequestBody double lat, double lng){
 		Player p;
 		Random random = new Random();
 		Random randomWerewolf = new Random(4);
