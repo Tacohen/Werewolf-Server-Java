@@ -25,6 +25,7 @@
 	<bean id="gameService" class ="edu.wm.service.GameService"/>
 	<bean id="UserServiceImpl" class ="edu.wm.service.UserServiceImpl"/>
 	<bean id="playerService" class ="edu.wm.service.PlayerService"/>
+	
 
 	
 	

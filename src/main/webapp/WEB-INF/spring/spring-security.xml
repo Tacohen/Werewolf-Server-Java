@@ -7,12 +7,13 @@
 	http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
  
 	<!-- HTTP basic authentication in Spring Security -->
-	<http auto-config="true" >
+	<http use-expressions="true">
 		<intercept-url pattern="/welcome*" access="ROLE_USER,ROLE_ADMIN" />
 		<intercept-url pattern="/players/*" access="ROLE_USER,ROLE_ADMIN" />
 		<intercept-url pattern="/location*" access="ROLE_USER,ROLE_ADMIN" />
 		<intercept-url pattern="/admin*" access="ROLE_ADMIN" />
-		 <http-basic/>
+		<form-login />
+    <logout />
 	</http>
  
 	<authentication-manager>
@@ -23,6 +24,8 @@
 	       </user-service>
 	   </authentication-provider>
 	</authentication-manager>
+	
+	<global-method-security pre-post-annotations="enabled" />
  
 
  
