@@ -29,7 +29,7 @@
 	<!-- Password encoding -->
  <bean id="authProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
   <property name="userDetailsService" ref="UserServiceImpl" />
-  <property name="passwordEncoder" ref="encoder" />
+  <property name="passwordEncoder" ref="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
 </bean>
 	
 	
