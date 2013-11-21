@@ -28,7 +28,7 @@
 	
 	<!-- Password encoding -->
  <bean id="authProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
-  <property name="userDetailsService" ref="edu.wm.service.PlayerService" />
+  <property name="userDetailsService" ref="playerService" />
   <property name="passwordEncoder" ref="encoder" />
 </bean>
 	
