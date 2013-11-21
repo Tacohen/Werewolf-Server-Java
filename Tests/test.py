@@ -54,7 +54,7 @@ voteJoshuaParams = {"voterId":"elaine","voteId":"joshua"}
 voteElaineParams = {"voterId":"joshua","voteId":"elaine"}
 
 
-loginData = json.dumps({"username":"Tim","password":"12345"})
+loginData = json.dumps({"username":"admin","password":"123"})
 
 print("Welcome to the testing script for the Werewolf game! \n")
 print("There is probably some old data left over from the last game. Let's check: \n")
