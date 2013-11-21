@@ -7,11 +7,12 @@
 	http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
  
 	<!-- HTTP basic authentication in Spring Security -->
-	<http>
+	<http auto-config="true" >
 		<intercept-url pattern="/welcome*" access="ROLE_USER,ROLE_ADMIN" />
 		<intercept-url pattern="/players/*" access="ROLE_USER,ROLE_ADMIN" />
 		<intercept-url pattern="/location*" access="ROLE_USER,ROLE_ADMIN" />
 		<intercept-url pattern="/admin*" access="ROLE_ADMIN" />
+		 <http-basic/>
 	</http>
  
 	<authentication-manager>
