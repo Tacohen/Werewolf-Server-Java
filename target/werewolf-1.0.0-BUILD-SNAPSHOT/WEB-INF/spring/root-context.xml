@@ -26,6 +26,12 @@
 	<bean id="UserServiceImpl" class ="edu.wm.service.UserServiceImpl"/>
 	<bean id="playerService" class ="edu.wm.service.PlayerService"/>
 	
+	<!-- Password encoding -->
+ <bean id="authProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+  <property name="userDetailsService" ref="edu.wm.service.PlayerService" />
+  <property name="passwordEncoder" ref="encoder" />
+</bean>
+	
 	
 	<task:annotation-driven executor="myExecutor" scheduler="myScheduler"/>
 
