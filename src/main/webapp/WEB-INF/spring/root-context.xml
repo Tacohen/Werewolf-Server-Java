@@ -27,10 +27,13 @@
 	<bean id="playerService" class ="edu.wm.service.PlayerService"/>
 	
 	<!-- Password encoding -->
- <bean id="authProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
-  <property name="userDetailsService" ref="UserServiceImpl" />
-  <property name="passwordEncoder" ref="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+<bean id="encoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder"/>
+
+<bean id="authProvider" class="org.springframework.security.authentication.dao.DaoAuthenticationProvider">
+  <property name="userDetailsService" ref="playerDAO" />
+  <property name="passwordEncoder" ref="encoder" />
 </bean>
+
 	
 	
 	<task:annotation-driven executor="myExecutor" scheduler="myScheduler"/>
