@@ -5,6 +5,13 @@
         http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
         http://www.springframework.org/schema/security
         http://www.springframework.org/schema/security/spring-security-3.0.3.xsd">
+        
+        <http auto-config="true">
+                <intercept-url pattern="/welcome*" access="ROLE_USER,ROLE_ADMIN" />
+                <intercept-url pattern="/players/*" access="ROLE_USER,ROLE_ADMIN" />
+                <intercept-url pattern="/location*" access="ROLE_USER,ROLE_ADMIN" />
+                <intercept-url pattern="/admin*" access="ROLE_ADMIN" />
+        </http>
  
         <!-- HTTP basic authentication in Spring Security -->
         <authentication-manager>
