@@ -24,8 +24,6 @@
 	
 	<context:component-scan base-package="werewolf.dao","edu.wm.service" />-->
 	
-	<import resource="spring-security.xml" />
-	
 	<bean id="playerDAO" class="werewolf.dao.PostgresDAO" />
 	<bean id="gameService" class ="edu.wm.service.GameService"/>
 	<bean id="UserServiceImpl" class ="edu.wm.service.UserServiceImpl"/>
