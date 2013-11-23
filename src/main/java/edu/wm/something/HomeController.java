@@ -186,9 +186,9 @@ public class HomeController {
 		gameService.setNight(true);
 	}
 	
-	@SuppressWarnings("unchecked")
+	//@SuppressWarnings("unchecked")
 	@RequestMapping(value ="/users/login",produces = "application/json", method =RequestMethod.POST)
-	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String password,@RequestBody double lat,@RequestBody  double lng){
+	public @ResponseBody JSONObject logint(@RequestParam(value="username",required=true) String username, @RequestParam(value="password",required=true) String password,@RequestParam(value="lat",required=true) double lat,@RequestParam(value="lng",required=true)  double lng){
 		Player p;
 		Random random = new Random();
 		Random randomWerewolf = new Random(4);
