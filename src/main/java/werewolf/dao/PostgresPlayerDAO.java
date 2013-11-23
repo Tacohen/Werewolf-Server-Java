@@ -10,6 +10,7 @@ import edu.wm.something.PlayerRowMapper;
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
 
+import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
@@ -63,7 +64,11 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public Player getPlayerById(String id) throws NoPlayerFoundException {
 		String getPlayerById = "SELECT * FROM WEREWOLF WHERE PLAYER_NAME = '"+id+"';";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
+		Player p = null;
+		try{ p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
+		} catch (IncorrectResultSizeDataAccessException e){
+			p = null;
+		}
 		return p;
 	}
 
