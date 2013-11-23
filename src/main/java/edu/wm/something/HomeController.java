@@ -188,7 +188,7 @@ public class HomeController {
 	
 	@SuppressWarnings("unchecked")
 	@RequestMapping(value ="/users/login",produces = "application/json", method =RequestMethod.POST)
-	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String password,@RequestBody double lat, double lng){
+	public @ResponseBody JSONObject logint(@RequestBody String username,@RequestBody String password,@RequestBody double lat,@RequestBody  double lng){
 		Player p;
 		Random random = new Random();
 		Random randomWerewolf = new Random(4);
