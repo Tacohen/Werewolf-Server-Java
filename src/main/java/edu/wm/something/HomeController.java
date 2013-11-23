@@ -218,9 +218,31 @@ public class HomeController {
 		gameService.setNight(false);
 	}
 	
-	@RequestMapping(value ="/users/register", method =RequestMethod.POST)
-	public @ResponseBody void register(){
-		//TODO: Add a method for adding a user!
-	}
+	//@SuppressWarnings("unchecked")
+		@RequestMapping(value ="/users/register", method =RequestMethod.POST)
+		public @ResponseBody JSONObject register(@RequestParam(value="username",required=true) String username, @RequestParam(value="password",required=true) String password,@RequestParam(value="lat",required=true) double lat,@RequestParam(value="lng",required=true)  double lng){
+			Player p;
+			Random random = new Random();
+			Random randomWerewolf = new Random(4);
+			boolean isWerewolf = false;
+			int isWerewolfSource = randomWerewolf.nextInt();
+			if (isWerewolfSource == 3){
+				isWerewolf = true;
+			}
+			try {
+				p = gameService.getPlayerByIDStr(username);
+				JSONObject json = new JSONObject();
+				json.put("addedUser", false);
+				return json;//Already logged in
+			} catch (NoPlayerFoundException e) {
+				p = new Player(username, false, lat, lng, random.nextInt(), isWerewolf,0);
+				logger.info("Started to add player, in home controller now");
+				playerService.addplayer(p);
+				JSONObject json = new JSONObject();
+				json.put("addedUser", true);
+				return json;//added player sucessfully
+			}
+
+		}
 	
 }
