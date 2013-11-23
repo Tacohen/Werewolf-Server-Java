@@ -101,7 +101,13 @@ public class GameService {
 		public Player getPlayerByIDStr(String playerIdStr) throws NoPlayerFoundException {
 			//return playerService.getPlayerFromDbByID(ownerId);
 			//return postgresPlayerDao.getPlayerById(playerId);
-			return postgresPlayerDao.getPlayerById(playerIdStr);
+			Player p = postgresPlayerDao.getPlayerById(playerIdStr);
+			if (p==null){
+				throw new NoPlayerFoundException(playerIdStr);
+			}
+			else{
+				return p;
+			}
 		}
 
 		public Player getPicByID(int ownerId) throws NoPlayerFoundException {
