@@ -15,7 +15,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
-@SuppressWarnings({"unused", "unchecked"})
+@SuppressWarnings({"unused", "unchecked", "deprecation"})
 public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDAO{
 	
 	private static PostgresDAO postgresDao = new PostgresDAO();
