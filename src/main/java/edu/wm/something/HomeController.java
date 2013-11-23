@@ -187,7 +187,7 @@ public class HomeController {
 	}
 	
 	//@SuppressWarnings("unchecked")
-	@RequestMapping(value ="/users/login",produces = "application/json", method =RequestMethod.POST)
+	@RequestMapping(value ="/users/login", method =RequestMethod.POST)
 	public @ResponseBody JSONObject logint(@RequestParam(value="username",required=true) String username, @RequestParam(value="password",required=true) String password,@RequestParam(value="lat",required=true) double lat,@RequestParam(value="lng",required=true)  double lng){
 		Player p;
 		Random random = new Random();
