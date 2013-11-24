@@ -189,26 +189,15 @@ public class HomeController {
 	//@SuppressWarnings("unchecked")
 	@RequestMapping(value ="/users/login", method =RequestMethod.POST)
 	public @ResponseBody JSONObject logint(@RequestParam(value="username",required=true) String username, @RequestParam(value="password",required=true) String password,@RequestParam(value="lat",required=true) double lat,@RequestParam(value="lng",required=true)  double lng){
-		Player p;
-		Random random = new Random();
-		Random randomWerewolf = new Random(4);
-		boolean isWerewolf = false;
-		int isWerewolfSource = randomWerewolf.nextInt();
-		if (isWerewolfSource == 3){
-			isWerewolf = true;
-		}
 		try {
-			p = gameService.getPlayerByIDStr(username);
+			Player p = gameService.getPlayerByIDStr(username);
 			JSONObject json = new JSONObject();
-			json.put("addedUser", false);
-			return json;//Already logged in
+			json.put("userExists", true);
+			return json;//User is in database
 		} catch (NoPlayerFoundException e) {
-			p = new Player(username, false, lat, lng, random.nextInt(), isWerewolf,0);
-			logger.info("Started to add player, in home controller now");
-			playerService.addplayer(p);
 			JSONObject json = new JSONObject();
-			json.put("addedUser", true);
-			return json;//added player sucessfully
+			json.put("userExists", false);
+			return json;//failed to find player in database
 		}
 
 	}
