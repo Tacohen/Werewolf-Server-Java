@@ -66,8 +66,6 @@ public class HomeController {
 		return "home";
 	}
 	
-	
-	//public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
 	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
 	public  @ResponseBody JSONObject getAllAlive() throws NoPlayersException
 	{
@@ -79,9 +77,7 @@ public class HomeController {
 			j.put(players.get(i).getId(), players.get(i));
 		}
 		
-		//j.put("Players", players);
 		return j;
-		//return players;
 	}
 	
 	
