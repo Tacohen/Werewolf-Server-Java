@@ -75,7 +75,7 @@ public class HomeController {
 		List<Player> players = gameService.getAllAlive();
 		JSONObject j = new JSONObject();
 		for (int i=0; i<players.size();i++){
-			j.put(players.get(i).getId(), players.get(i));
+			j.put("Player"+i, players.get(i));
 		}
 		return j;
 		//return players;
