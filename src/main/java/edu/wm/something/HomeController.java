@@ -31,6 +31,7 @@ import edu.wm.service.GameService;
 import edu.wm.service.PlayerService;
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
+import edu.wm.something.domain.Players;
 
 /**
  * Handles requests for the application home page.
@@ -65,12 +66,20 @@ public class HomeController {
 		return "home";
 	}
 	
+	
+	//public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
 	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
-	public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
+	public  @ResponseBody JSONObject getAllAlive() throws NoPlayersException
 	{
 		logger.info("In players/alive!");
 		List<Player> players = gameService.getAllAlive();
-		return players;
+		JSONObject j = new JSONObject();
+		for (int i=0; i<players.size();i++){
+			j.put("Player", players.get(i));
+		}
+		return j;
+		//return players;
+		//return gameService.getAllAlive();;
 	}
 	@RequestMapping(value="/players/location",method=RequestMethod.POST)
 	public @ResponseBody JsonResponse setlocation(@RequestParam(value="playerId",required=true) String playerId,@RequestParam(value="lat",required=true) Long lat,@RequestParam(value="lng",required=true) Long lng)

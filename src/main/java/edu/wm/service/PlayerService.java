@@ -32,10 +32,12 @@ public class PlayerService {
     	postgresPlayerDao.createPlayer(player);
     }
      
+
     public static List<Player> getAllAlive() throws NoPlayersException{
     	logger.info("In PlayerService.getAllAlive");
     	return postgresPlayerDao.getAllAlive();
     }
+
      
     public void deletePlayer(Player player) throws NoPlayerFoundException {
     	postgresPlayerDao.deletePlayer(player);

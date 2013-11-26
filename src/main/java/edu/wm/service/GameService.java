@@ -15,6 +15,7 @@ import werewolf.dao.PostgresUserDAO;
 
 import edu.wm.something.domain.GPSLocation;
 import edu.wm.something.domain.Player;
+import edu.wm.something.domain.Players;
 
 public class GameService {
 
@@ -48,12 +49,13 @@ public class GameService {
 			return PlayerService.getAllAlive();
 
 		}
-		
+
 		public List<Player> getAllPlayers() throws NoPlayersException {
 			logger.info("In gameSerice.getAllPlayers()");
 			return PlayerService.getAllPlayers();
 
 		}
+
 		
 		public List<Player> getAllWerewolves() throws NoPlayersException {
 			List<Player> playerList = getAllAlive();
