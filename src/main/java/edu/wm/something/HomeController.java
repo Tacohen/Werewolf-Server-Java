@@ -67,20 +67,21 @@ public class HomeController {
 	}
 	
 	
-	//public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
+	//public  @ResponseBody JSONObject getAllAlive() throws NoPlayersException
 	@RequestMapping(value = "/players/alive", method = RequestMethod.GET)
-	public  @ResponseBody JSONObject getAllAlive() throws NoPlayersException
+	public  @ResponseBody List<Player> getAllAlive() throws NoPlayersException
 	{
 		logger.info("In players/alive!");
 		List<Player> players = gameService.getAllAlive();
-		JSONObject j = new JSONObject();
+		//JSONObject j = new JSONObject();
 		/**
 		for (int i=0; i<players.size();i++){
 			j.put("Player"+i, players.get(i));
 		}
 		*/
-		j.put("Players", players);
-		return j;
+		//j.put("Players", players);
+		//return j;
+		return players;
 	}
 	
 	
