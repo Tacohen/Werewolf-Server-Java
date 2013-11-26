@@ -74,12 +74,12 @@ public class HomeController {
 		logger.info("In players/alive!");
 		List<Player> players = gameService.getAllAlive();
 		JSONObject j = new JSONObject();
-		/**
+		
 		for (int i=0; i<players.size();i++){
-			j.put("Player"+i, players.get(i));
+			j.put(players.get(i).getId(), players.get(i));
 		}
-		*/
-		j.put("Players", players);
+		
+		//j.put("Players", players);
 		return j;
 		//return players;
 	}
