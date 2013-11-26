@@ -74,13 +74,16 @@ public class HomeController {
 		logger.info("In players/alive!");
 		List<Player> players = gameService.getAllAlive();
 		JSONObject j = new JSONObject();
+		/**
 		for (int i=0; i<players.size();i++){
 			j.put("Player"+i, players.get(i));
 		}
+		*/
+		j.put("Players", players);
 		return j;
-		//return players;
-		//return gameService.getAllAlive();;
 	}
+	
+	
 	@RequestMapping(value="/players/location",method=RequestMethod.POST)
 	public @ResponseBody JsonResponse setlocation(@RequestParam(value="playerId",required=true) String playerId,@RequestParam(value="lat",required=true) Long lat,@RequestParam(value="lng",required=true) Long lng)
 	{
