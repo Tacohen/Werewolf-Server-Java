@@ -265,12 +265,12 @@ public class HomeController {
 			Player player = gameService.getPlayerByIDStr(username);
 			if (player.isWereWolf()){
 				JSONObject json = new JSONObject();
-				json.put("type", "Werewolf");
+				json.put("isWerewolf", true);
 				return json;
 			}
 			else{
 				JSONObject json = new JSONObject();
-				json.put("type", "Civilian");
+				json.put("isWerewolf", false);
 				return json;
 			}
 		}
