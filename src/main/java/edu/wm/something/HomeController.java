@@ -259,6 +259,21 @@ public class HomeController {
 				return json;
 			}
 		}
+		
+		@RequestMapping(value ="/players/type", method =RequestMethod.GET)
+		public @ResponseBody JSONObject whatType(@RequestParam(value="username",required=true) String username) throws NoPlayerFoundException{
+			Player player = gameService.getPlayerByIDStr(username);
+			if (player.isWereWolf()){
+				JSONObject json = new JSONObject();
+				json.put("type", "Werewolf");
+				return json;
+			}
+			else{
+				JSONObject json = new JSONObject();
+				json.put("type", "civilian");
+				return json;
+			}
+		}
 
 	
 }
