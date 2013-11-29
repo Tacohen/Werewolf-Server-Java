@@ -138,10 +138,11 @@ public class GameService {
 			}
 		}
 		
-		@Scheduled(fixedDelay=5000)
+		@Scheduled(fixedDelay=600000)//Every 10 minutes
 		public void checkGameOperation(){
 			//check if all players have checked in recently
-			//logger.info("checking game operation...");
+			logger.info("checking game operation...");
+			isNight = !isNight;//flip day/night
 		}
 		
 		public void restartGame() throws IOException{
