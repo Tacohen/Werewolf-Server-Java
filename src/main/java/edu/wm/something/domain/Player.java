@@ -80,7 +80,7 @@ public class Player {
 
 	private String votedAgainst;
 	
-	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf,int voteCount) {
+	public Player(String id, boolean isDead, double lat, double lng, int userId, Boolean isWerewolf,int voteCount, int kills) {
 		super();
 		this.id = id;
 		this.isDead = isDead;
@@ -89,6 +89,7 @@ public class Player {
 		this.userID = userId;
 		this.isWereWolf = isWerewolf;
 		this.voteCount = voteCount;
+		this.kills = kills;
 	}
 	
 	public Player() {

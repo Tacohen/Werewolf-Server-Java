@@ -234,7 +234,7 @@ public class HomeController {
 				json.put("addedUser", false);
 				return json;//Already logged in
 			} catch (NoPlayerFoundException e) {
-				p = new Player(username, false, lat, lng, random.nextInt(), isWerewolf,0);
+				p = new Player(username, false, lat, lng, random.nextInt(), isWerewolf,0,0);
 				logger.info("Started to add player, in home controller now");
 				playerService.addplayer(p);
 				JSONObject json = new JSONObject();
