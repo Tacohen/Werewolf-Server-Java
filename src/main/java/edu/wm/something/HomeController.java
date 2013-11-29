@@ -242,5 +242,23 @@ public class HomeController {
 			}
 
 		}
+		
+		@RequestMapping(value ="/players/cankill", method =RequestMethod.GET)
+		public @ResponseBody JSONObject canKill(@RequestParam(value="username",required=true) String username, @RequestParam(value="targetName",required=true) String targetName) throws NoPlayerFoundException, NoPlayersException{
+			Player killer = gameService.getPlayerByIDStr(username);
+			Player victim = gameService.getPlayerByIDStr(targetName);
+		
+			if (gameService.canKill(killer,victim)){
+				JSONObject json = new JSONObject();
+				json.put("canKill", true);
+				return json;
+			}
+			else{
+				JSONObject json = new JSONObject();
+				json.put("canKill", false);
+				return json;
+			}
+		}
+
 	
 }
