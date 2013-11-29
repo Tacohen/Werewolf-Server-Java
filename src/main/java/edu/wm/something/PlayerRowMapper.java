@@ -19,6 +19,7 @@ public class PlayerRowMapper implements RowMapper<Player>
 		p.setDead(rs.getBoolean("IS_DEAD"));
 		p.setVoteCount(rs.getInt("NUM_VOTES_AGAINST"));
 		p.setPicture(rs.getString("PLAYER_PIC"));
+		p.setKills(rs.getInt("NUM_KILLS"));
 		return p;
 	}
  

@@ -10,6 +10,15 @@ public class Player {
 	private boolean isWereWolf;
 	private boolean isAdmin;
 	private boolean isVigilante;
+	private int kills;
+	public int getKills() {
+		return kills;
+	}
+
+	public void setKills(int kills) {
+		this.kills = kills;
+	}
+
 	public boolean isVigilante() {
 		return isVigilante;
 	}

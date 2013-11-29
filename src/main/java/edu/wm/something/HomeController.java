@@ -274,6 +274,14 @@ public class HomeController {
 				return json;
 			}
 		}
+		
+		@RequestMapping(value ="/players/kills", method =RequestMethod.GET)
+		public @ResponseBody JSONObject kills(@RequestParam(value="username",required=true) String username) throws NoPlayerFoundException{
+			Player player = gameService.getPlayerByIDStr(username);
+			JSONObject json = new JSONObject();
+			json.put("kills",player.getKills());
+			return json;
+		}
 
 	
 }
