@@ -142,8 +142,8 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public void createPlayer(Player p) {
-		String createPlayer = "INSERT INTO WEREWOLF (PLAYER_ID, PLAYER_NAME, LAT, LNG, IS_DEAD, IS_WEREWOLF, NUM_VOTES_AGAINST, PLAYER_PIC) VALUES ("
-				+p.getUserID()+",'"+p.getId()+"',"+p.getLat()+","+p.getLng()+","+p.isDead()+","+p.isWereWolf()+","+p.getVoteCount()+",'"+p.getUserID()+"');";
+		String createPlayer = "INSERT INTO WEREWOLF (PLAYER_ID, PLAYER_NAME, LAT, LNG, IS_DEAD, IS_WEREWOLF, NUM_KILLS, NUM_VOTES_AGAINST, PLAYER_PIC) VALUES ("
+				+p.getUserID()+",'"+p.getId()+"',"+p.getLat()+","+p.getLng()+","+p.isDead()+","+p.isWereWolf()+","+p.getKills()+","+ p.getVoteCount()+",'"+p.getUserID()+"');";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(createPlayer);
 	}

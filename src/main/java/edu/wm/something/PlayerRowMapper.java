@@ -16,10 +16,10 @@ public class PlayerRowMapper implements RowMapper<Player>
 		p.setLat(rs.getDouble("LAT"));
 		p.setLng(rs.getDouble("LNG"));
 		p.setWereWolf(rs.getBoolean("IS_WEREWOLF"));
+		p.setKills(rs.getInt("NUM_KILLS"));
 		p.setDead(rs.getBoolean("IS_DEAD"));
 		p.setVoteCount(rs.getInt("NUM_VOTES_AGAINST"));
 		p.setPicture(rs.getString("PLAYER_PIC"));
-		p.setKills(rs.getInt("NUM_KILLS"));
 		return p;
 	}
  
