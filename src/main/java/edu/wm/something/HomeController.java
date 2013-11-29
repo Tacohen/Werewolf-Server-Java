@@ -270,7 +270,7 @@ public class HomeController {
 			}
 			else{
 				JSONObject json = new JSONObject();
-				json.put("type", "civilian");
+				json.put("type", "Civilian");
 				return json;
 			}
 		}
