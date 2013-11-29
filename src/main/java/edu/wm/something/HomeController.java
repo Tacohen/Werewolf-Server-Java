@@ -104,6 +104,7 @@ public class HomeController {
 		Random random = new Random();
 		Player p = new Player();
 		p.setId(playerId);
+		p.setKills(0);
 		p.setDead(false);
 		p.setWerewolf(isWerewolf);
 		p.setLat(lat);
