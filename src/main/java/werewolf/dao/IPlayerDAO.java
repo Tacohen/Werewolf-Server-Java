@@ -36,7 +36,7 @@ public interface IPlayerDAO {
 	
 	public void createPlayer(Player p);
 	
-	public void killPlayer(Player p) throws NoPlayerFoundException;
+	public void killPlayer(Player p, Player killer) throws NoPlayerFoundException;
 	
 	public List<Player> getAllPlayersNear(Player p);
 	

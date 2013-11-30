@@ -149,13 +149,19 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	}
 
 	@Override
-	public void killPlayer(Player p) throws NoPlayerFoundException {
+	public void killPlayer(Player p, Player killer) throws NoPlayerFoundException {
 		String killPlayerSQL = "UPDATE WEREWOLF "
 				+"SET IS_DEAD = TRUE "
 				+"WHERE PLAYER_ID = "+ p.getUserID() +";";
 		logger.info("Killed player "+p.getId());
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(killPlayerSQL);
+		
+		String updateKillCountSql = "UPDATE WEREWOLF "
+				+"SET NUM_KILLS = NUM_KILLS + 1 "
+				+"WHERE PLAYER_ID = "+ killer.getUserID() +";";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		jdbcTemplate.execute(updateKillCountSql);
 		
 	}
 

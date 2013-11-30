@@ -44,7 +44,7 @@ public class PlayerService {
     }
     
     public void killPlayer(Player player, Player killer) throws NoPlayerFoundException {
-    	postgresPlayerDao.killPlayer(player);
+    	postgresPlayerDao.killPlayer(player, killer);
     }
      
     public void updatePlayer(Player player) throws NoPlayerFoundException {
