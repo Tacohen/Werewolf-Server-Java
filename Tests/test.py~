@@ -39,7 +39,6 @@ killNadiaUrlLocal = 'http://localhost:8080/werewolf/players/kill/elaine/nadia'
 isNightUrlLocal = 'http://localhost:8080/werewolf/players/isnight'
 setNightUrlLocal = 'http://localhost:8080/werewolf/admin/setnight'
 
-loginUrl = 'http://localhost:8080/werewolf/users/login'
 
 headers = {'Content-type': 'application/json'}
 
@@ -63,7 +62,7 @@ print("Welcome to the testing script for the Werewolf game! \n")
 print("There is probably some old data left over from the last game. Let's check: \n")
 print("Heroku might take 60 seconds or so to start up please be patient... \n")
 print("Lets's login as the admin so we have more control of the process (Admin has blanket permission to do anything on the server) \n")
-r = requests.post(loginUrl, auth=HTTPBasicAuth(username, password),params=loginParams, headers=headers)
+r = requests.post(loginTimUrl, auth=HTTPBasicAuth(username, password),params=loginParams, headers=headers)
 print (r)
 print("There is probably some old data left over from the last game. Let's check: \n")
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))

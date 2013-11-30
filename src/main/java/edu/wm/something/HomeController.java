@@ -261,6 +261,20 @@ public class HomeController {
 			}
 		}
 		
+		@RequestMapping(value ="/players/getNear", method =RequestMethod.GET)
+		public @ResponseBody JSONObject getNear(@RequestParam(value="username",required=true) String username) throws NoPlayerFoundException, NoPlayersException{
+			Player killer = gameService.getPlayerByIDStr(username);
+			
+			List<Player> playersNear = gameService.getAllNear(killer);
+			JSONObject json = new JSONObject();
+			
+			for (int i = 0; i <playersNear.size(); i++){
+				json.put(playersNear.get(i).getId(),"Near");
+			}
+			
+			return json;
+		}
+		
 		@RequestMapping(value ="/players/type", method =RequestMethod.GET)
 		public @ResponseBody JSONObject whatType(@RequestParam(value="username",required=true) String username) throws NoPlayerFoundException{
 			Player player = gameService.getPlayerByIDStr(username);

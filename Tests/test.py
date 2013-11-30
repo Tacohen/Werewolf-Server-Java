@@ -7,24 +7,14 @@ from requests.auth import HTTPBasicAuth
 username = "admin"
 password = "123"
 
-#addNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/add/nadia/false/31/45'
-#addElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/add/elaine/true/31/45'
-#addJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/add/jake/false/29/29'
-#addJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/add/joshua/true/31/29'
 addPlayerUrl = 'http://powerful-depths-2851.herokuapp.com/players/add'
 checkAllAliveUrl = 'http://powerful-depths-2851.herokuapp.com/players/alive'
 restartGameUrl = 'http://powerful-depths-2851.herokuapp.com/admin/restartGame'
-#killNadiaUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/nadia'
-#killJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill/elaine/jake'
 killUrl = 'http://powerful-depths-2851.herokuapp.com/players/kill'
 isNightUrl = 'http://powerful-depths-2851.herokuapp.com/players/isnight'
 setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
-#moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake/31/45'
-#moveJakeUrl = 'http://powerful-depths-2851.herokuapp.com/players/location/jake'
 moveUrl = 'http://powerful-depths-2851.herokuapp.com/players/location'
 setDayUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setday'
-#voteJoshuaUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/elaine/joshua'
-#voteElaineUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote/joshua/elaine'
 voteUrl = 'http://powerful-depths-2851.herokuapp.com/players/vote'
 loginTimUrl = "http://powerful-depths-2851.herokuapp.com/users/login"
 
@@ -42,7 +32,7 @@ setNightUrlLocal = 'http://localhost:8080/werewolf/admin/setnight'
 
 headers = {'Content-type': 'application/json'}
 
-#data = json.dumps({"lat":31,"lng":45})
+
 params = {"playerId":"jake","lat":31,"lng":45}
 moveJakeParams = {"playerId":"jake","lat":31,"lng":45}
 addNadiaParams = {"playerId":"nadia","lat":31,"lng":45,"isWerewolf":"false"}
@@ -94,6 +84,7 @@ print(r.text)
 print("The key points in that are: Elaine is a werewolf, Nadia is very close to Elaine, and Jake and Joshua far away from all of them. \n")
 time.sleep(1)
 print("Notice that is is daytime. The game automatically starts as day to prevent too many easy kills. To verify, we ask if it is nighttime. It should return false \n")
+r = requests.post(setDayUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
 r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("Now let's have Elaine try to kill Nadia.")

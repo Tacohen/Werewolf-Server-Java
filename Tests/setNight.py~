@@ -1,0 +1,23 @@
+import json
+import requests
+import time
+from requests.auth import HTTPBasicAuth
+
+
+username = "admin"
+password = "123"
+
+headers = {'Content-type': 'application/json'}
+
+loginData = json.dumps({"username":"admin","password":"123"})
+loginTimUrl = "http://powerful-depths-2851.herokuapp.com/users/login"
+setNightUrl = 'http://powerful-depths-2851.herokuapp.com/admin/setnight'
+loginParams = {"username":"admin","password":123,"lat":31,"lng":30}
+isNightUrlLocal = 'http://localhost:8080/werewolf/players/isnight'
+params = {"playerId":"jake","lat":31,"lng":45}
+
+r = requests.post(loginTimUrl, auth=HTTPBasicAuth(username, password),params=loginParams, headers=headers)
+r = requests.post(setNightUrl, auth=HTTPBasicAuth(username, password),params=params, headers=headers)
+print("Is it night? \n")
+r = requests.get(isNightUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
