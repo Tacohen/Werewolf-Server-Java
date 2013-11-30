@@ -85,8 +85,8 @@ public class GameService {
 			postgresPlayerDao.updatePlayer(p);
 		}
 		
-		public List<Player> Kill(Player p) throws NoPlayerFoundException, NoPlayersException {
-			playerService.killPlayer(p);
+		public List<Player> Kill(Player p, Player killer) throws NoPlayerFoundException, NoPlayersException {
+			playerService.killPlayer(p, killer);
 			return PlayerService.getAllAlive();
 		}
 		

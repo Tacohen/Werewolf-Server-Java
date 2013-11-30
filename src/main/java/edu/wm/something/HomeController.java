@@ -129,13 +129,13 @@ public class HomeController {
 		Player victim = gameService.getPlayerByIDStr(victimIdStr);
 	
 		if (gameService.canKill(killer,victim)){
-			gameService.Kill(victim);
+			gameService.Kill(victim,killer);
 			JSONObject json = new JSONObject();
 			json.put("isDead", true);
 			return json;
 		}
 		else{
-			gameService.Kill(victim);
+			//gameService.Kill(victim, killer);
 			JSONObject json = new JSONObject();
 			json.put("isDead", false);
 			return json;
