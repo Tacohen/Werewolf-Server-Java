@@ -138,7 +138,7 @@ public class GameService {
 			}
 		}
 		
-		@Scheduled(fixedDelay=600000)//Every 10 minutes
+		@Scheduled(fixedDelay=300000)//Every 5 minutes
 		public void checkGameOperation(){
 			//check if all players have checked in recently
 			logger.info("checking game operation...");
