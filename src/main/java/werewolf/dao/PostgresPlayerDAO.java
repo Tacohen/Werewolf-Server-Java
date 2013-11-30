@@ -1,5 +1,6 @@
 package werewolf.dao;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.logging.Logger;
@@ -178,8 +179,13 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		String getClosePlayers = "SELECT * FROM WEREWOLF WHERE ((LAT < "+maxLat+" AND LAT > "+
 		minLat+") AND (LNG < "+maxLng+" AND LNG > "+minLng+"));";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
+		List<Player> players = new ArrayList<Player>();
 		BeanPropertyRowMapper<Player> b =new BeanPropertyRowMapper<Player>(Player.class);
-		List<Player> players = (List<Player>) jdbcTemplate.queryForObject(getClosePlayers, b);
+		try {
+			players = (List<Player>) jdbcTemplate.queryForObject(getClosePlayers, b);
+		} catch (IncorrectResultSizeDataAccessException e){
+			logger.warning("No players near!");
+		}
 		return players;
 	}
 
