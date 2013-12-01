@@ -187,7 +187,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		List<Player> players = new ArrayList<Player>();
 		try {
-			players = (List<Player>) jdbcTemplate.queryForObject(getClosePlayers, new PlayerRowMapper());
+			players = (List<Player>) jdbcTemplate.query(getClosePlayers, new PlayerRowMapper());
 		} catch (IncorrectResultSizeDataAccessException e){
 			logger.warning("No players near!");
 		}
