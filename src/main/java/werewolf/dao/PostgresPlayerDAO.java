@@ -170,12 +170,19 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public List<Player> getAllPlayersNear(Player p) {
 		double playerLat = p.getLat();
 		double playerLng = p.getLng();
+		/**
 		//(1/1380) degrees latitude ~ 0.05 miles
 		double maxLat = playerLat+(1/1380);
 		double minLat = playerLat-(1/1380);
 		//(1/1100) degrees longitude ~ 0.05 miles
 		double maxLng = playerLng+(1/1100);
 		double minLng = playerLng-(1/1100);
+		*/
+		double maxLat = playerLat+1;
+		double minLat = playerLat-1;
+		double maxLng = playerLng+1;
+		double minLng = playerLng-1;
+		
 		String getClosePlayers = "SELECT * FROM WEREWOLF WHERE ((LAT < "+maxLat+" AND LAT > "+
 		minLat+") AND (LNG < "+maxLng+" AND LNG > "+minLng+"));";
 		jdbcTemplate = postgresDao.getJdbcTemplate();

@@ -38,6 +38,8 @@ moveJakeParams = {"playerId":"jake","lat":31,"lng":45}
 addNadiaParams = {"playerId":"nadia","lat":31,"lng":45,"isWerewolf":"false"}
 addElaineParams = {"playerId":"elaine","lat":31,"lng":45,"isWerewolf":"true"}
 addJoshuaParams = {"playerId":"joshua","lat":30,"lng":29,"isWerewolf":"true"}
+addRedShirt1Params = {"playerId":"RedShirt1","lat":31,"lng":45,"isWerewolf":"false"}
+addRedShirt2Params = {"playerId":"RedShirt2","lat":31,"lng":45,"isWerewolf":"false"}
 killNadiaParams = {"killerId":"elaine","victimId":"nadia"}
 killJakeParams = {"killerId":"elaine","victimId":"jake"}
 addJakeParams = {"playerId":"jake","lat":29,"lng":29,"isWerewolf":"false"}
@@ -79,6 +81,11 @@ print("Adding Jake...")
 r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addJoshuaParams, headers=headers)
 time.sleep(1)
 print("Adding Joshua...")
+r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
+print(r.text)
+print("Adding a pair of nameless Red Shirts")
+r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addRedShirt1Params, headers=headers)
+r = requests.post(addPlayerUrl, auth=HTTPBasicAuth(username, password),params=addRedShirt2Params, headers=headers)
 r = requests.get(checkAllAliveUrl,auth=HTTPBasicAuth(username, password))
 print(r.text)
 print("The key points in that are: Elaine is a werewolf, Nadia is very close to Elaine, and Jake and Joshua far away from all of them. \n")
