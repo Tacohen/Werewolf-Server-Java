@@ -125,7 +125,7 @@ public class GameService {
 		}
 		
 		public Boolean canKill(Player killer, Player victim){
-			if ((isNight == true) && ((killer.isWereWolf()) | (killer.isVigilante())) && ((victim.getLat()==killer.getLat())) && ((victim.getLng()==killer.getLng()))){
+			if ((isNight == true) && ((killer.isWereWolf()) && ((victim.getLat()==killer.getLat())) && ((victim.getLng()==killer.getLng())))){
 				logger.info("Prepare to set dead");
 				return true;
 			}

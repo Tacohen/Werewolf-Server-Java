@@ -8,9 +8,10 @@ public class Player {
 	private double lng;
 	private int userID;
 	private boolean isWereWolf;
-	private boolean isAdmin;
-	private boolean isVigilante;
 	private int kills;
+	private int voteCount;
+	private String picture;
+	
 	public int getKills() {
 		return kills;
 	}
@@ -19,39 +20,12 @@ public class Player {
 		this.kills = kills;
 	}
 
-	public boolean isVigilante() {
-		return isVigilante;
-	}
-
-	public void setVigilante(boolean isVigilante) {
-		this.isVigilante = isVigilante;
-	}
-
-	public boolean isDoctor() {
-		return isDoctor;
-	}
-
-	public void setDoctor(boolean isDoctor) {
-		this.isDoctor = isDoctor;
-	}
-
-	private boolean isDoctor;
-	private int voteCount;
-	private String picture;
 	public String getPicture() {
 		return picture;
 	}
 
 	public void setPicture(String picture) {
 		this.picture = picture;
-	}
-
-	public boolean isAdmin() {
-		return isAdmin;
-	}
-
-	public void setAdmin(boolean isAdmin) {
-		this.isAdmin = isAdmin;
 	}
 
 	public int getVoteCount() {
@@ -130,19 +104,6 @@ public class Player {
 		this.isWereWolf = b;
 		
 	}
-	
-	public boolean isAdmin(Player player){
-		return player.isAdmin;
-	}
-	
-	public void makeAdmin(){
-		this.isAdmin = true;
-	}
-	
-	public void demoteAdmin(){
-		this.isAdmin = false;
-	}
-
 	public boolean isNear(Player victim) {
 		return this.isNear(victim);
 	}

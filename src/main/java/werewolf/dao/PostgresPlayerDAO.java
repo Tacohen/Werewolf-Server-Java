@@ -14,7 +14,7 @@ import edu.wm.something.domain.Player;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.simple.SimpleJdbcDaoSupport;
-import org.springframework.jdbc.core.BeanPropertyRowMapper;
+//import org.springframework.jdbc.core.BeanPropertyRowMapper;
 
 @SuppressWarnings({"unused", "unchecked", "deprecation"})
 public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDAO{
@@ -87,8 +87,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	public List<Player> getAllPlayers() throws NoPlayersException {
 		String getPlayers = "SELECT * FROM WEREWOLF;";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		BeanPropertyRowMapper<Player> b =new BeanPropertyRowMapper<Player>(Player.class);
-		List<Player> p = (List<Player>) jdbcTemplate.queryForObject(getPlayers, b);
+		List<Player> p = (List<Player>) jdbcTemplate.queryForObject(getPlayers, new PlayerRowMapper());
 		return p;
 	}
 
@@ -187,9 +186,8 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		minLat+") AND (LNG < "+maxLng+" AND LNG > "+minLng+"));";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		List<Player> players = new ArrayList<Player>();
-		BeanPropertyRowMapper<Player> b =new BeanPropertyRowMapper<Player>(Player.class);
 		try {
-			players = (List<Player>) jdbcTemplate.queryForObject(getClosePlayers, b);
+			players = (List<Player>) jdbcTemplate.queryForObject(getClosePlayers, new PlayerRowMapper());
 		} catch (IncorrectResultSizeDataAccessException e){
 			logger.warning("No players near!");
 		}
