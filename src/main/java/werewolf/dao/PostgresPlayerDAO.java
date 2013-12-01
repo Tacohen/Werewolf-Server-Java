@@ -183,7 +183,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		double minLng = playerLng-1;
 		
 		String getClosePlayers = "SELECT * FROM WEREWOLF WHERE ((LAT < "+maxLat+" AND LAT > "+
-		minLat+") AND (LNG < "+maxLng+" AND LNG > "+minLng+") AND IS_DEAD = FALSE));";
+		minLat+") AND (LNG < "+maxLng+" AND LNG > "+minLng+") AND (IS_DEAD = FALSE)));";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		List<Player> players = new ArrayList<Player>();
 		try {
