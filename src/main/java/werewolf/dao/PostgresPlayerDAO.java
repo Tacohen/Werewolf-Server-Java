@@ -74,12 +74,13 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 	}
 
 	@Override
-	public void setPlayerLocation(String id, GPSLocation loc) {
+	public void setPlayerLocation(String id, double lat, double lng) {
 		String locationSQL = "UPDATE WEREWOLF "
-				+"SET (LAT,LNG) = ("+loc.getLat()+","+loc.getLng()+") "
+				+"SET (LAT,LNG) = ("+lat+","+lng+") "
 				+"WHERE PLAYER_ID = "+ id +";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(locationSQL);
+		
 		
 	}
 
@@ -104,6 +105,14 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		String delete = "DELETE FROM WEREWOLF WHERE PLAYER_ID = "+p.getUserID()+";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(delete);
+		
+		String insertPlayerSQL = "INSERT INTO WEREWOLF"
+				+ "(PLAYER_ID, PLAYER_NAME, LAT, LNG, IS_DEAD, IS_WEREWOLF, NUM_KILLS, NUM_VOTES_AGAINST, PLAYER_PIC) " + "VALUES"
+				+ "("+p.getUserID()+",'"+ p.getId() +"',"+ p.getLat()+","+p.getLng()+","+p.isDead()+","+p.isWereWolf()
+				+","+p.getKills()+","+p.getVoteCount()+","+"'picture'"+")";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		logger.info("sql query was: "+insertPlayerSQL);
+		jdbcTemplate.execute(insertPlayerSQL);
 	}
 
 	@Override

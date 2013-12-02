@@ -75,10 +75,10 @@ public class GameService {
 			return playerService.getAllNear(p);
 		}
 		
-		public List<Player> Move(Player p, long lat,long lng) throws NoPlayersException {
+		public void Move(Player p, double lat,double lng) throws NoPlayersException, NoPlayerFoundException {
 			p.setLat(lat);
 			p.setLng(lng);
-			return getAllAlive();
+			postgresPlayerDao.movePlayer(p, lat, lng);
 		}
 		
 		public void Update(Player p) throws NoPlayerFoundException {

@@ -117,7 +117,6 @@ public class HomeController {
 	}
 	
 	
-
 	@SuppressWarnings("unchecked")
 	@RequestMapping(value = "/players/kill", method=RequestMethod.POST)
 	public @ResponseBody JSONObject killPlayerById(@RequestParam(value="killerId",required=true) String killerIdStr,@RequestParam(value="victimId",required=true) String victimIdStr) throws NoPlayerFoundException, NoPlayersException
@@ -196,15 +195,18 @@ public class HomeController {
 		gameService.setNight(true);
 	}
 	
-	//@SuppressWarnings("unchecked")
+	@SuppressWarnings("unchecked")
 	@RequestMapping(value ="/users/login", method =RequestMethod.POST)
 	public @ResponseBody JSONObject logint(@RequestParam(value="username",required=true) String username, @RequestParam(value="password",required=true) String password,@RequestParam(value="lat",required=true) double lat,@RequestParam(value="lng",required=true)  double lng){
 		try {
 			Player p = gameService.getPlayerByIDStr(username);
+			p.setLat(lat);
+			p.setLat(lng);
+			gameService.Move(p, lat, lng);
 			JSONObject json = new JSONObject();
 			json.put("userExists", true);
 			return json;//User is in database
-		} catch (NoPlayerFoundException e) {
+		} catch (NoPlayerFoundException | NoPlayersException e) {
 			JSONObject json = new JSONObject();
 			json.put("userExists", false);
 			return json;//failed to find player in database

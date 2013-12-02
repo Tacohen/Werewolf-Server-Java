@@ -20,7 +20,7 @@ public interface IPlayerDAO {
 	
 	public Player getPlayerById(double id) throws NoPlayerFoundException;
 
-	void setPlayerLocation(String id, GPSLocation loc);
+	void setPlayerLocation(String id, double lat, double lng);
 	
 	List<Player> getAllPlayers() throws NoPlayersException;
 	
