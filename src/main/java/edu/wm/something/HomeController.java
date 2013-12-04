@@ -290,9 +290,7 @@ public class HomeController {
 
 	@RequestMapping(value = "/players/getNear", method = RequestMethod.GET)
 	public @ResponseBody
-	JSONObject getNear(
-			@RequestParam(value = "username", required = true) String username)
-			throws NoPlayerFoundException, NoPlayersException {
+	JSONObject getNear(@RequestParam(value = "username", required = true) String username) throws NoPlayerFoundException, NoPlayersException {
 		Player killer = gameService.getPlayerByIDStr(username);
 
 		List<Player> playersNear = gameService.getAllNear(killer);
