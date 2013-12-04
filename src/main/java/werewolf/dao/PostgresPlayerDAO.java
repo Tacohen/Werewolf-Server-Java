@@ -178,11 +178,15 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		float playerLng = (float) p.getLng();
 
 		//(1/1380) degrees latitude ~ 0.05 miles
-		float maxLat = (playerLat+(1/690));
-		float minLat = (playerLat-(1/690));
+		//float maxLat = (playerLat+(1/690));
+		double maxLat = (playerLat+(0.001));
+		double minLat = (playerLat-(0.001));
+		//float minLat = (playerLat-(1/690));
 		//(1/1100) degrees longitude ~ 0.05 miles
-		float maxLng = (playerLng+(1/550));
-		float minLng = (playerLng-(1/550));
+		//float maxLng = (playerLng+(1/550));
+		//float minLng = (playerLng-(1/550));
+		double maxLng = (playerLng+(0.001));
+		double minLng = (playerLng-(0.001));
 
 		/**
 		double maxLat = playerLat+1;
