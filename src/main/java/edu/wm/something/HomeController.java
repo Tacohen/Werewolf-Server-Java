@@ -271,18 +271,17 @@ public class HomeController {
 
 	@RequestMapping(value = "/players/cankill", method = RequestMethod.GET)
 	public @ResponseBody
-	JSONObject canKill(
-			@RequestParam(value = "username", required = true) String username,
-			@RequestParam(value = "targetName", required = true) String targetName)
-			throws NoPlayerFoundException, NoPlayersException {
+	JSONObject canKill(@RequestParam(value = "username", required = true) String username,@RequestParam(value = "targetName", required = true) String targetName) throws NoPlayerFoundException, NoPlayersException {
 		Player killer = gameService.getPlayerByIDStr(username);
 		Player victim = gameService.getPlayerByIDStr(targetName);
 
 		if (gameService.canKill(killer, victim)) {
+			logger.info("Can kill");
 			JSONObject json = new JSONObject();
 			json.put("canKill", true);
 			return json;
 		} else {
+			logger.info("cannot kill");
 			JSONObject json = new JSONObject();
 			json.put("canKill", false);
 			return json;
