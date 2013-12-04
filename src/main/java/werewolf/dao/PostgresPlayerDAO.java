@@ -215,6 +215,14 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 		jdbcTemplate.execute(movePlayerSQL);
 		
 	}
+
+	@Override
+	public Player getPlayerWithMostVotes() {
+		String getPlayerById = "SELECT * FROM WEREWOLF WHERE (PLAYER_ID,VOTE_COUNT) IN ( SELECT PLAYER_ID, MAX(VOTE_COUNT) FROM WEREWOLF GROUP BY PLAYER_ID);";
+		jdbcTemplate = postgresDao.getJdbcTemplate();
+		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
+		return p;
+	}
 	
 	
 	

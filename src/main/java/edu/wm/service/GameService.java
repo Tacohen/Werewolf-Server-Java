@@ -143,6 +143,12 @@ public class GameService {
 			//check if all players have checked in recently
 			logger.info("checking game operation...");
 			isNight = !isNight;//flip day/night
+			
+			if (isNight){
+				//time to hang the player with the most votes
+				logger.info("time to hang!");
+				
+			}
 		}
 		
 		public void restartGame() throws IOException{

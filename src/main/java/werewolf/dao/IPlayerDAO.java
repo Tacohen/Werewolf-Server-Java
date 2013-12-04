@@ -41,4 +41,6 @@ public interface IPlayerDAO {
 	public List<Player> getAllPlayersNear(Player p);
 	
 	public void movePlayer(Player p, double lat, double lng);
+	
+	public Player getPlayerWithMostVotes();
 }

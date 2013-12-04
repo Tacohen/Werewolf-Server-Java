@@ -68,6 +68,10 @@ public class PlayerService {
 	public static List<Player> getAllPlayers() throws NoPlayersException {
 		return postgresPlayerDao.getAllPlayers();
 	}
+	
+	public Player getPlayerWithMostVotes(){
+		return postgresPlayerDao.getPlayerWithMostVotes();
+	}
     
     
 
