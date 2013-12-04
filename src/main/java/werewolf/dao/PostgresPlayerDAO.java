@@ -174,15 +174,15 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public List<Player> getAllPlayersNear(Player p) {
-		double playerLat = p.getLat();
-		double playerLng = p.getLng();
+		float playerLat = (float) p.getLat();
+		float playerLng = (float) p.getLng();
 
 		//(1/1380) degrees latitude ~ 0.05 miles
-		double maxLat = (playerLat+(1/690));
-		double minLat = (playerLat-(1/690));
+		float maxLat = (playerLat+(1/690));
+		float minLat = (playerLat-(1/690));
 		//(1/1100) degrees longitude ~ 0.05 miles
-		double maxLng = (playerLng+(1/550));
-		double minLng = (playerLng-(1/550));
+		float maxLng = (playerLng+(1/550));
+		float minLng = (playerLng-(1/550));
 
 		/**
 		double maxLat = playerLat+1;
