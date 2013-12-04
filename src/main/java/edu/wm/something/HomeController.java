@@ -221,7 +221,7 @@ public class HomeController {
 			Player p = gameService.getPlayerByIDStr(username);
 			p.setLat(Math.abs(lat));
 			p.setLat(Math.abs(lng));
-			gameService.Move(p, lat, lng);
+			gameService.Move(p, Math.abs(lat), Math.abs(lng));
 			JSONObject json = new JSONObject();
 			json.put("userExists", true);
 			return json;// User is in database
