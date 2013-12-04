@@ -20,6 +20,7 @@
 			<user name="admin" password="123" authorities="ROLE_ADMIN" />
 			<user name="user" password="123" authorities="ROLE_USER" />
 			<user name="a" password="a" authorities="ROLE_USER" />
+			<user name="vincent" password ="vega" authorities="ROLE_USER" />
 			<user name="elaine" password="elaine" authorities="ROLE_USER"/>
 			<user name="joshua" password="joshua" authorities="ROLE_USER"/>
 			<user name="nadia" password="nadia" authorities="ROLE_USER"/>
