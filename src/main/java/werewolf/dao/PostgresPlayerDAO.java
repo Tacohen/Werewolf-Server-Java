@@ -222,9 +222,17 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public Player getPlayerWithMostVotes() {
-		String getPlayerById = "SELECT * FROM WEREWOLF WHERE (PLAYER_ID,VOTE_COUNT) IN ( SELECT PLAYER_ID, MAX(VOTE_COUNT) FROM WEREWOLF GROUP BY PLAYER_ID);";
+		String getVotedPlayersSQL = "select t1.* from werewolf t1 inner join(select max(num_votes_against) numvotes from werewolf where is_dead = false) t2 on t1.num_votes_against = t2.numvotes;";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
-		Player p =(Player) jdbcTemplate.queryForObject(getPlayerById, new PlayerRowMapper());
+		List<Player> players = new ArrayList<Player>();
+		Player p = new Player();
+		//Player p = jdbcTemplate.queryForList(getVotedPlayersSQL, new PlayerRowMapper());
+		try {
+			players = (List<Player>) jdbcTemplate.query(getVotedPlayersSQL, new PlayerRowMapper());
+		} catch (IncorrectResultSizeDataAccessException e){
+			logger.warning("No players most voted!");
+		}
+		p = players.get(0);
 		return p;
 	}
 	

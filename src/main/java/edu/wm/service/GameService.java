@@ -147,6 +147,8 @@ public class GameService {
 			if (isNight){
 				//time to hang the player with the most votes
 				logger.info("time to hang!");
+				Player p = postgresPlayerDao.getPlayerWithMostVotes();
+				postgresPlayerDao.setDead(p);
 				
 			}
 		}
