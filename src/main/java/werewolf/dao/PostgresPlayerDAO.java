@@ -42,6 +42,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 					+"WHERE PLAYER_ID = "+ p.getUserID() +";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
 		jdbcTemplate.execute(setDeadSQL);
+		logger.info("set dead sql is: "+setDeadSQL);
 		
 	}
 
