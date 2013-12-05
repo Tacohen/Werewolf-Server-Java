@@ -37,7 +37,7 @@ public class PostgresPlayerDAO extends SimpleJdbcDaoSupport implements IPlayerDA
 
 	@Override
 	public void setDead(Player p) {
-		String setDeadSQL = "UPDATE WEREWOLF"
+		String setDeadSQL = "UPDATE WEREWOLF "
 					+"SET IS_DEAD = TRUE "
 					+"WHERE PLAYER_ID = "+ p.getUserID() +";";
 		jdbcTemplate = postgresDao.getJdbcTemplate();
