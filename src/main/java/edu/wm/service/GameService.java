@@ -138,6 +138,13 @@ public class GameService {
 			}
 		}
 		
+		public void hang(){
+			logger.info("time to hang!");
+			Player p = postgresPlayerDao.getPlayerWithMostVotes();
+			postgresPlayerDao.setDead(p);
+			logger.info("hanged "+p.getId());
+		}
+		
 		@Scheduled(fixedDelay=900000)//Every 15 minutes
 		public void checkGameOperation(){
 			//check if all players have checked in recently
@@ -149,6 +156,7 @@ public class GameService {
 				logger.info("time to hang!");
 				Player p = postgresPlayerDao.getPlayerWithMostVotes();
 				postgresPlayerDao.setDead(p);
+				logger.info("hanged "+p.getId());
 				
 			}
 		}

@@ -207,6 +207,7 @@ public class HomeController {
 	public @ResponseBody
 	void setNight() {
 		gameService.setNight(true);
+		gameService.hang();//for demonstration purposes
 	}
 
 	@SuppressWarnings("unchecked")
