@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<launchConfiguration type="com.amazonaws.eclipse.wtp.elasticbeanstalk.launchConfigurationType">
-<stringAttribute key="server-id" value="environment1 at AWS Elastic Beanstalk - US East (Virginia)"/>
-</launchConfiguration>

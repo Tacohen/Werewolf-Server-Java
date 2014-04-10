@@ -1,9 +1,0 @@
-127.0.0.1 - - [22/Sep/2013:13:48:45 -0400] "GET / HTTP/1.1" 404 951
-127.0.0.1 - - [22/Sep/2013:13:48:49 -0400] "GET /werewolf/ HTTP/1.1" 200 167
-127.0.0.1 - - [22/Sep/2013:13:48:49 -0400] "GET /favicon.ico HTTP/1.1" 404 973
-127.0.0.1 - - [22/Sep/2013:13:48:52 -0400] "GET /werewolf/players HTTP/1.1" 404 949
-127.0.0.1 - - [22/Sep/2013:13:48:55 -0400] "GET /werewolf/player HTTP/1.1" 404 949
-127.0.0.1 - - [22/Sep/2013:13:49:05 -0400] "GET /werewolf/players/alive HTTP/1.1" 200 -
-127.0.0.1 - - [22/Sep/2013:13:49:09 -0400] "GET /werewolf/players/alive/303 HTTP/1.1" 200 -
-127.0.0.1 - - [22/Sep/2013:13:49:13 -0400] "GET /werewolf/players/alive/303/pik HTTP/1.1" 404 949
-127.0.0.1 - - [22/Sep/2013:13:49:15 -0400] "GET /werewolf/players/alive/303/pic HTTP/1.1" 200 -
